@@ -1,0 +1,32 @@
+body{ 
+    background-color: rgb(0, 0, 0);
+    padding-left: 500px;
+}
+a {
+    padding: 2px;
+    font-size: 30px;
+    text-decoration: none;
+    color: rgb(236, 230, 230);
+}
+
+a:hover {
+    background: rgb(123, 109, 255);
+    border-bottom: 8px double red ;
+    color:  rgb(21, 255, 0);
+}
+
+.x {
+    border-radius: 30px;
+    border: 1px solid red;
+    padding: 7px;
+    text-decoration: none;
+}
+
+.x:hover{
+    border-radius: 30px;
+    border: 1px solid red;
+    background: rgb(82, 78, 78);
+}
+a[href^="http://"]  {
+    background: url(https://alphabetonline.ru/images/letters/sh/shesterenki.png) 100% 5px no-repeat; /* Рисунок */
+    padding-right: 18px; /

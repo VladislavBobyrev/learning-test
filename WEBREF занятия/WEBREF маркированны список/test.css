@@ -1,0 +1,37 @@
+body {
+    background-color:rgb(0, 100, 100) ;
+    color: rgb(48, 48,48);
+}
+.toc {
+    padding: 0,20;
+    display: inline-block;
+}
+
+h2:target {
+    background: rgb(207, 142, 19);
+}
+
+.one ul {
+    list-style:square;
+}
+
+.two li {
+    /* скрываем маркеры списка */
+    list-style: none;
+    /* сдвигаем элементы списка в лево */
+    text-indent: -1em;
+}
+
+ .two li::before {
+    /* добавляем маркер в 16 формате */
+    content: '\26ba';
+    color: red;
+    padding-right: 10px;
+}
+
+.fre li {
+    list-style-position:inside;
+    padding-left: 10px;
+    list-style-image: url(https://s1.iconbird.com/ico/2013/1/630/w128h1281390856477MapMarkerMarkerOutsideChartreuse.png);
+}
+    

@@ -1,0 +1,152 @@
+body {  
+   
+    background-color:rgb(0, 100, 100) ;
+    color: rgb(48, 48,48);
+   
+}
+
+.pager {
+    margin: 0;
+    padding: 0;
+    border-bottom: 2px solid#006cc9;
+    display: inline-block;
+}
+
+.pager li {
+    width: 30px;
+    inset-block: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    background: #006cc9;
+    line-height: 30px;
+    position: relative; top: 30px;
+    margin-left: 10px;
+}
+
+.pager li:first-child {
+    margin-left: 0;
+}
+
+.pager a {
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+
+.pager .active a {
+    color: #000;
+    font-weight: bold;
+}
+
+.pager .active {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background: #fff;
+    border: 3px solid #006cc9;
+    font-size: 20px;
+}
+
+/* меню */
+
+.menu1 {
+    background: linear-gradient(to bottom #fff, #f1f2f2);
+    border: 1px solid #999;
+    padding: 0 5px;
+    font: 14px arial, sans-serif;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.menu1 li {
+    display: inline-block;
+    border-right: 1px solid #fff;
+}
+
+.menu1 a {
+    text-decoration: none;
+    color: rgb(48, 48, 48);
+    display: block;
+    padding: 10px 15px;
+    border-right: 1px solid #d8d8d8;
+}
+
+.menu1 a:hover {
+    background: salmon;
+    color: #006cc9;
+}
+
+.block {
+    margin-top: 90px;
+}
+
+/* Выпадающее меню */
+
+.menu, .menu ul {
+    /* обнуляем отступы и убираем маркеры у списков */
+    list-style: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    font: 14px montserat, san-serif;
+    padding: 0 5px;
+    border: 1px solid #999;
+    background: linear-gradient(to bottom, #fff, #f1f2f2);
+}
+
+.menu > li {
+    display: inline-block;
+    border-right: 1px solid #fff;
+    position: relative;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #4c4c4c;
+    /* Блочные ссылки */
+    display: block;
+}
+
+.menu > li > a {
+    padding: 10px 15px;
+    border-right: 1px solid #d8d8d8;
+    position: relative ;
+    z-index:3 ;
+}
+
+.menu ul {
+    position: absolute;
+    display: none;
+    width:1500px;
+    background-color: #fff;
+    box-shadow: 0 0 10px #666;
+
+}
+
+.menu ul a {
+    padding: 5px 10px;
+}
+.menu ul a:hover {
+    background:  #008df2;
+    color: #fff;
+}
+
+.menu li:hover ul {
+    /* Показываем подменю */
+    display: block;
+}
+
+.menu li:hover::before {
+    content: '';
+    top: 0;left: 0;right: 0;bottom: 0;
+    box-shadow: 0 5px 10px #666;
+    position: absolute;
+}
+
+.menu > li:hover > a {
+    /* цыет фона */
+    background: #fff;
+}

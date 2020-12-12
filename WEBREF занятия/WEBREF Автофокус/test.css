@@ -1,0 +1,19 @@
+body {
+  /*  задаем цвет фона голубой */
+  background-color: rgb(0, 100, 100);
+  /* цвет текста серый */
+  color: rgb(48, 48, 48);
+  font-size: 26px;
+  
+}
+
+input {
+  border: 1px solid #666;
+}
+
+input:focus {
+  box-shadow: 0 0 5px 1px #00de38; /*Свечение вокруг поля*/
+  background: #00a7de3f;  
+}
+
+

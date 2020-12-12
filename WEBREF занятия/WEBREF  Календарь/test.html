@@ -1,0 +1,32 @@
+<!-- указывает на сатндарт языка -->
+<!DOCTYPE html>
+<!-- оболочка укфазывает язык содерджимого -->
+<html lang="ru">
+    <!-- заголовок страницы метаданные -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBREF</title>
+    <link rel="stylesheet" href="test.css">
+    
+</head>
+
+<body>
+  <Form>
+    <p> Выберите любую дату:<input type="date" name="calendar"></p>
+    <p><input type="submit" value="Отправить"></p>
+  </Form>
+  <Form>
+    <p> Выберите дату:<input type="date" name="calendar" value="2017-09-01" min="2017-08-25" max="2017-09-05"></p>
+    <p><input type="submit" value="Отправить"></p>
+  </Form>
+  <Form>
+    <p> Укажите месяц:<input type="month" name="calendar" value="2017-09-01" min="2017-08-25" max="2017-09-05"></p>
+    <p><input type="submit" value="Отправить"></p>
+  </Form>
+  <Form>
+    <p> Укажите неделю:<input type="week" name="calendar" value="2017-09-01" min="2017-08-25" max="2017-09-05"></p>
+    <p><input type="submit" value="Отправить"></p>
+  </Form>
+</body>
+</html>

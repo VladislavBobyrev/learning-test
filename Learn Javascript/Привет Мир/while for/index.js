@@ -1,22 +1,29 @@
- let i = 10;
-  while (i < 3) {
-      alert( i++);
-  
-// /while (4 > i) { // в префиксной форме сначала выыполниться префиксная форма прибавит еденицу ++i 1 2 3 4
-      alert(++i);
- /}
-
- while (i < 4) { //  0 1 2 3 затем код останловиться в постфиксной форме тк I++ сначала выполниться код затем прибавиться еденици 
-     alert(i++);
+let num= 0;
+  while   ( num <= 3) {
+   
+     alert(num++);
  }
 
- while (i < 4) {
-   alert(i++)  
+
+ for ( let num = 0; num < 5; ++num) {     if (num == 3) {
+         alert('three');
+     }
+     alert(num)
  }
 
-for (let index = 0; index < 5; ++index){
-    if( index != 3 ) {
-        alert(`Этот скрипт пропустит цифру "3" : ${index}`)
-    }
-}
+
+// for (;;) {}
     
+// Бесконечный цикл
+
+let sum = 0;
+
+while (true) {
+    let value = +prompt('number ', '');
+
+    if ( !value ) break;
+    sum += value
+
+    
+}
+alert('summa :' + sum);

@@ -63,3 +63,10 @@ function Cino (age) {
     }
     alert('Вам показывается кино')
 }
+ function checkAge( age) {
+     (age > 18) ? console.log('Dobro pozalovat') : console.log('Родители разрешили?');
+ }
+// ||
+function checkAge (age) {
+    return (age > 18) || console.log('Родители разрешили?');
+}

@@ -1,4 +1,22 @@
- const num = 3;
+ //+========== Код который работает сейчас =====
+let userNameEl = document.getElementById('userNameEl')
+
+setMaru(userNameEl);
+sum();
+
+// ================ Код который работает потом ===
+function sum() {
+    a = 20;
+   console.log(a)
+}
+
+
+function setMaru(userNameEl) {
+    userNameEl.value = 'Maru'
+}
+
+
+const num = 3;
 
  function sowMessage() {
      return (num > 0) ? console.log(true) : console.log(false);

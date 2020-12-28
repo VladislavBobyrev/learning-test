@@ -148,3 +148,37 @@ const num = 3;
 
 console.log(a)
  let a = 10;
+let rezultGetAge = getAge();
+getAge(19);
+checkAge(15);
+min(5, 7);
+  
+  
+  function getAge(age) {       
+     if (age > 18) {
+         return console.log(true);      } 
+         confirm('А родители разрешили?')
+ }
+
+
+
+    function checkAge(age) {
+     return (age > 18) ? true : confirm('Родители разрешили?')
+    }
+
+   function checkAge(age) {
+       (age > 18)|| confirm('А родитетли разрешили?')
+   }
+
+
+   function min(a, b) {
+       if (a > b) {
+           return cosnole.l(b);
+          
+       } else {
+           return console.log(a);
+       }
+   }
+
+
+

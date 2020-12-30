@@ -50,5 +50,13 @@
     if(i % 2 == 0) continue; //Пропустить если процент от деления на 2 = 0 выведет 3 5 7 9
     console.log(i)
     }
+for (let num = 2; num > 1; num++) {
+    console.log(num)
+}
+//Бесконечно увеличивает
 
+for (let index = 1; index < 2; index--) {
+    console.log(index)
+}
+//Бесконечнно уменьшает
    

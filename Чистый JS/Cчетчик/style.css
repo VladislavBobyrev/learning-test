@@ -1,22 +1,52 @@
-body { 
-     background: rgb(0, 100, 100);
-    color: rgb(17, 19, 19);
-}
-
-.minus, .plus , input {
-    border-radius: 20px;   
-    margin: 40px;
-    padding: 50px;
-    width: 300px;
-    background: #9899a1;
+body {
+    font-size: 30px;
+    position: relative;
+    margin: 0;
+    left: 0;
+    text-align: center;
 }
 
 .block {
-    display: flex;
-    width: 100%;
-    text-align: center;
-    padding-top: 200px;
-    padding-left: 200px;
     
+    position: absolute;
+    margin: 0;
+    left: 0;
+    background: rgb(8, 82, 8);
+    width: 100%;
+    height: 700px; 
 }
 
+.minus {
+    font-size: 60px;
+    position: absolute;
+    background: black;
+    color:white;
+    height: 200px;
+    width: 300px;
+    border-radius: 50px;
+    left: 800px;
+    top: 220px;
+}
+ .plus {
+    font-size: 60px;
+    position: absolute;
+    background: black;
+    color:white;
+    height: 200px;
+    width: 300px;
+    border-radius: 50px;
+    left: 300px;
+    top: 220px;
+}
+
+.counter {
+    position: absolute;
+    left: 650px;
+    top: 250px;
+    background: rgb(7, 10, 46);
+    width: 100px;
+    height: 70px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+}

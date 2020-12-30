@@ -1,0 +1,60 @@
+.body {
+    position: relative;
+   background: black;
+}
+
+.box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(51, 148, 13);
+    color:  rgb(255, 255, 255);
+}
+
+.box   div {
+    background: rgb(14, 17, 197);
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 100px;
+    line-height: 50px;
+}
+
+.heder  {
+    height: 200px;
+    font-size: 60px; 
+   
+}
+.footer {
+    top: 450px;
+    width: 100%;
+    position: absolute;
+    height: 200px;
+    font-size: 60px; 
+   
+}
+
+
+.bloock1 {
+    width: 50% ;    
+    height: 220px;
+}
+
+.bloock2 {
+    height: 100px;
+    max-width: 50%;
+    position: relative;
+    left: 50% ;
+    bottom: 235px;
+}
+
+.bloock3 {
+    height: 100px;
+    width: 50%; ;
+    position: relative;
+    left: 50%;
+    bottom: 240px;
+}
+
+
+

@@ -1,0 +1,39 @@
+body {
+    position: absolute;
+    background: rgb(1, 1, 32);
+    align-items: center;
+}
+
+form {
+    border-radius: 10px;
+    position: relative;
+    background:rgb(21, 53, 38);
+    width: 300px;
+    height: 400px;
+    margin-top: 100px;
+    margin-left: 500px;
+    box-sizing: border-box;
+}
+
+input {
+    height: 2em;
+    color:white;
+    background: rgb(0, 0, 0);
+    position: relative;
+    margin-top: 30px;
+    margin-left: 60px;
+    border-radius: 5px;
+}
+
+.btn {
+    width: 100px;
+   
+}
+
+input:hover {
+    background: violet;
+    transition: 1s;
+    height: 40px; 
+    width: 200px;
+    transform: 1s;  
+}

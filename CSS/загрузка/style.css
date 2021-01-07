@@ -38,7 +38,7 @@ body {
     border-top-color: transparent ;
   
    
-    animation: roteidREd 3s  linear infinite;
+    animation: roteidREd 3s alternate-reverse linear infinite;
 
 }
 .circle-black {
@@ -52,7 +52,7 @@ body {
     border-top-color: transparent ;
  
 
-    animation: roteidBlack linear 3s  infinite;
+    animation: roteidBlack linear 3s forwards infinite;
 }
 
 @keyframes roteidREd {

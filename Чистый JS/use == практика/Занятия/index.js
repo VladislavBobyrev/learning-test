@@ -125,3 +125,44 @@ let task6 = () => {
 }
 
 btn6.addEventListener('click', task6)
+// ==================    Section
+
+let btn7 = document.querySelector('.btn7')
+let res7 = document.querySelector('.res7')
+
+let clearScreen7 = () => res7.innerHTML = ''
+
+let task7 = () => {
+    clearScreen7()
+    let randomNum = Math.floor(Math.random() * 10) + 1
+        if ((randomNum % 2 == 0) || (randomNum % 3 == 0)) {
+            res7.innerHTML = randomNum
+        }  else {
+            res7.innerHTML = `Не делиться не 3 и 2, число ${randomNum}`
+        }  
+}
+btn7.addEventListener('click', task7)
+
+// ==================    Section
+
+let btn8 = document.querySelector('.btn8')
+let res8 = document.querySelector('.res8')
+
+let clearScreen8 = () => res8.innerHTML = ''
+
+
+let task8 = () => { 
+    let  randomNum  = '' 
+    let i = 0
+        while (i <= 15) {
+           
+            do { 
+                randomNum = (Math.random * 100) + 1
+            }  while ((randomNum % 2 == 0 ) || (randomNum % 3 == 0)) {
+                res8.innerHTML = randomNum
+            }
+             i++
+    }
+        
+}
+btn8.addEventListener('click', task8 )

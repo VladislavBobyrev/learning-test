@@ -58,3 +58,33 @@ for (let i = 0; i < people.length; i++) {
 
 
 console.log(amount);
+ // Find ======================================================================================================
+const vlad = people.find(person => person.userName === 'Vlad')
+console.log(vlad);
+
+// FindIndex ======================================================================================================
+const vladIndex = people.findIndex(person => person.userName === 'Vlad')
+console.log(vladIndex);
+
+const newPeople = people 
+    .filter( person => person.budget > 30000)
+    .map(person => {
+        return {
+            Info: `${person.userName} ${person.age}`,
+            budget: `${person.budget}`,
+        }
+    })
+
+    console.log(newPeople);
+
+
+    const redus = people
+    .filter(person => person.budget > 1000)
+    .map(person => {
+        return {
+        info: `${person.userName} (${person.age})`,
+        budget: Math.sqrt(person.budget),
+        }
+    })
+    .reduce((tatal, person) => tatal + person.budget , 0)
+    console.log(redus);

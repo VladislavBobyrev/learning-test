@@ -34,6 +34,44 @@ btn2.addEventListener('click', task2 )
 
 // ==================    Section
 
+
+let party = {
+    transport: 'car',
+    marca: 'tesla',
+    ofise: {
+        adres: {
+            town: 'Moscov',
+            street: 'novaya',
+            houm: '1',
+        },
+        rekvizits: {
+            sber: '20039948928402',
+            bitcoin: 'ioajfj439334j3903jr0j'
+        },
+    },
+}
+
+let copu =  party
+console.log(copu == party);
+
+let a = []
+let b = []
+console.log(a == b);
+
+let clone = {}
+
+for(let key in party) {
+    clone[key] = party[key]
+}
+
+console.log(clone);
+// Копируем все свойства из party
+let one = {}
+let two = {}
+
+Object.assign(one, party)
+console.log(one);
+
 let btn3 = document.querySelector('.btn3')
 let res3 = document.querySelector('.res3')
 let clearScreen = () => res3.innerHTML = ''

@@ -204,3 +204,119 @@ let task8 = () => {
         
 }
 btn8.addEventListener('click', task8 )
+
+//let user = new Object() // Синтаксис  Обьекта
+//let user2 = {
+//    userName: 'Mary',
+//    age: 29,
+//} //синтаксис литерал
+
+//console.log(user2.age)
+//let key = prompt('', 'age')
+//console.log(user2[key])
+
+// Синтаксис массива
+//let scoup = [60, 50, 60, 58, 298, 58, 93];
+
+//let clone = scoup
+//console.log(clone[2])
+
+//let text = ['onFormal', 'formal', 'text']
+
+//console.log(text[1])
+//text[1] = true
+
+//console.log(text[1])
+//console.log(text)
+
+//let numFavorits = text.length
+
+function makeFrazes() {
+    let word1 = ['24/7', 'Eashe', 'day','ticket', 'cloud', 'apposits']
+    let word2 = ['мы', 'команда', 'сотрудники ','персонал', ]
+    let word3 = ['работаем', 'отдызаем', 'зарабатываем','едим тортик',]
+
+    let rand1 = Math.floor(Math.random() * word1.length)
+    let rand2 = Math.floor(Math.random() * word2.length)
+    let rand3 = Math.floor(Math.random() * word3.length)
+    
+    let phrase = `${word1[rand1]}  ${word2[rand2]}   ${word3[rand3]}`
+    console.log(phrase)
+} 
+makeFrazes()
+//Числа
+
+let num = 456
+console.log(num)
+ //Запишим нули после цифры
+    num = 5e6 //5 * 1000000
+    console.log(num)
+    num = 7e-5
+    console.log(num)
+    console.log(num.toString(2))
+
+    let one = Math.floor(5.8)
+    let two = Math.round(2.4)
+    let three = Math.ceil(-2.2)
+    console.log(one)
+    console.log(two)
+    console.log(three)
+    let bigNum = 9.8375937459
+    // 3 знака после запятой ту фиксед
+    console.log(bigNum.toFixed(3))
+
+    //Проблемма плавающих точек
+    let problems = 0.1 + 0.2 === 0.3
+    console.log(0.1 + 0.2)
+
+    let min = 1.005 + Number.EPSILON
+    let numFor = Math.round(min * 100) / 100
+    console.log(numFor)
+
+    // Проверка  is NAN
+    console.log(Number(25 + 'hello'))
+    console.log(isNaN(25 + 'hello'))
+
+    // parseInt
+    let pars = +'150'
+    console.log(pars)
+    console.log(typeof pars)
+    let pars1 = +'150px'
+    console.log(pars1)
+    console.log(typeof pars1)
+    // parseFloat
+    let parse = parseInt('150.58px')
+    console.log(parse)
+    let parse1 = parseFloat('150.58px')
+    console.log(parse1)
+
+    // math
+    console.log(Math.random()) 
+    console.log(Math.max(5, 82, 49)) 
+    console.log(Math.min(5, 82, 49)) 
+    let nummer = -58
+    console.log(Math.abs(nummer)) 
+    console.log(Math.pow(5,9))
+
+    //  Задачи
+
+    let numeOne = Math.round((1.005 + Number.EPSILON) * 100) / 100
+    console.log(numeOne )
+
+    let str = '150.180px'
+    console.log( parseFloat(str))
+    
+
+    let example = 58 + 'sourse'
+    if (example == NaN) {
+        console.log('Результат выражения NAN')
+    }
+
+    
+    console.log(Math.max(10, 49, -169, 0))
+ 
+
+
+    let x = 159.158
+   
+    console.log(parseInt(x)) 

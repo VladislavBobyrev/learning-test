@@ -44,7 +44,57 @@ console.log(arr);
 arr.unshift('just' , 'me')
 console.log(arr); //добавляет элем в начале
 
+//let duttins = [but, but2, but3]
 
+//for(let i = 0; i < duttins.length; i++) {
+//    duttins[i].addEventListener('clcik', operationClick)
+//}
+
+// массивы
+
+const a = {
+    a: 5,
+    b: 'hello',
+    z2: 'hi',
+    Y43: 1999,
+    'vila de': 489,
+}
+
+delete a.a
+
+let out = ''
+
+for(let key in a) {
+    out += key+ '===' +a[key] + '</br> '
+}
+document.querySelector('.out').innerHTML = out;
+
+
+let car =  {
+    color: 'black',
+    maxSpeed: 240,
+    audio: {
+        brand: 'sony',
+        speacers: 12,
+    }
+}
+
+    car.color = 'red'
+    console.log(car.audio)
+
+    let car1 = {
+        color: 'red',
+        speed: 399
+    }
+
+    let car2 = {
+        color: 'green',
+        speed: 399
+    }
+
+    car1.color = car2.color
+    console.log(car1)
+    console.log(car2)
         
     </script>
     <script src="script.js"></script>

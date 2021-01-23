@@ -7,6 +7,96 @@
 </head>
 <body>
     <script>
+//// обекты
+
+let user = {
+    name: 'jon',
+    age: 35,
+    town: 'bg'
+}
+//for in
+
+for (let key in user) {
+    console.log(key)
+    console.log(user[key])
+}
+// проверка свойства если есть то тру
+if ('age' in user) {
+    console.log('hello')
+}
+// clone
+
+let a = {}
+Object.assign(a,(user))
+console.log(a)
+a = null
+console.log(a)
+
+// this
+
+let game = {
+    wow: 13,
+    ks: 16,
+  sayHi() {
+    console.log(this.ks)
+    }
+}
+game.sayHi()
+
+let usr1 = {name: 'vald'}
+let usr2 = {name: 'Mary'}
+
+let x = () => this.name
+
+usr1.f = x
+console.log(usr1)
+usr2.f = x
+console.log(usr2)
+
+//DZ
+
+let user = {
+    name: "Джон",
+    go: function() { alert(this.name) }
+  };
+  
+  (user.go)()
+
+
+
+let calcul = { 
+   
+    sum() {
+    return this.zn1 + this.zn2  
+    },
+    mul() {
+      return  console.log( this.zn1 * this.zn2)
+    } ,
+    read() {
+        this.zn1 = +prompt('xn');
+        this.zn2 = +prompt('zn2');
+    
+    }
+}
+calcul.read()
+calcul.mul()
+//==========================
+
+let ladder = {
+    step: 0,
+    up() {
+      this.step++;
+      
+    },
+    down() {
+      this.step--;
+    },
+    showStep: function() { // показывает текущую ступеньку
+      alert( this.step );
+    }
+  };
+
+
 
 //  slice Получить фрагмент из массива
 
@@ -33,6 +123,7 @@ console.log(arr);
 //push
 arr = ['hello'] 
 console.log(arr);
+       
 arr.push('world') // добавляет элем в конец
 console.log(arr);
 

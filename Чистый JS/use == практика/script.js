@@ -301,7 +301,113 @@ delete vasua['javascript']
 console.log(vasua);
 
 
+// строки  '', "", ``
+let text = "Я строка"
+text = 'Я строка'
+text = `Я строка`  //в косые запятые можно вставить  выражение
 
+let message = `Hello ${text}`
+console.log(message)
+
+let func = (a, b) => a * b
+
+console.log(`summa: ${func(4,7)}`)
+
+text = `hello
+we by shenale
+Frilanser to life`
+console.log(text)
+
+let someString = '158' // string
+let num = 158
+ console.log(someString + num) // nomber
+// перевод строки \n
+ text = "hello \nVladislav \nwhot is your name?"
+console.log(text)
+// табуляция \t
+text = 'helo world \n\t how are you?'
+console.log(text)
+// Обратный слэш \\ 
+
+text = " hello my name is \\ valdislav"
+console.log(text)
+text = 'hello my name is  \"valdislav\"'
+console.log(text)
+
+// Смайлики
+text = " hello my name is \\ valdislav \u00A9 \u{1F60D}"
+console.log(text)
+
+//длинна строки
+console.log(text.length)
+
+// получаем символы строки
+
+text = 'hello'
+let firstSymbol = text[0] // onw
+let lsatSymbol = text[text.length -1] // last   
+console.log(lsatSymbol)
+console.log(firstSymbol)
+
+for(let chair of text) {
+    console.log(chair)
+}
+
+//  Изменеие строки
+ text[2] = '&' //  не поменяется 
+ console.log(text)
+
+// Изменение регистров
+
+console.log(text.toUpperCase()) 
+console.log(text.toLocaleLowerCase())
+
+// поиск подстрок
+console.log(text.indexOf('ll'))
+console.log(text.indexOf('o'))
+console.log(text.indexOf('h'))
+console.log(text.indexOf('q')) // совпаденимй нет выведет -1
+
+// includes
+console.log(text.includes('h')) // true
+console.log(text.includes('[')) // false
+
+//startWidth
+console.log(text.startsWith('he'))
+console.log(text.endsWith('o'))
+
+
+// регистр имеет значение
+text = 'Hello'
+let searsh = 'hE'
+console.log(text.toLocaleLowerCase().includes(searsh.toLocaleLowerCase()))
+
+//slice(start[, end]) возвращает часть строки от старт до енд не включая
+console.log(text.slice(0,4))
+console.log(text.slice(-2,-1))
+console.log(text.slice(1))
+
+//сравнение строк
+console.log('A' > 'B') //  б в алфавитном порядке больше а
+
+console.log('vald' > 'vald')
+
+// dz
+// one away
+text = 'Freelanser'
+let simv = text[6]
+// two away
+console.log(simv)
+console.log(text[6]) 
+
+// верхоний регистр toUppercase
+console.log(text.toUpperCase())
+
+// Подстроки
+console.log( text.slice(4,7))
+
+// true || foolse
+console.log(text.includes('lan',4))
 
 
 

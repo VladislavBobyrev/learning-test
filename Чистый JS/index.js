@@ -1,3 +1,12 @@
+let optimalTime = 80;
+let walkTime = 80;
+
+if (walkTime >= optimalTime) {
+  console.log('Прогулка достаточно длинная');
+} else {
+  console.log('Нужно ещё погулять');
+}
+
 let euroRate = 74;
 let dollarRate = 63;
 

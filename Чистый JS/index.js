@@ -1,4 +1,80 @@
+let canvas = document.querySelector('canvas')
+let ctx = canvas.getContext('2d')
 
+canvas.width = window.innerHeight
+canvas.height = window.innerWidth
+
+
+ctx.beginPath()
+ctx.arc(80, 100, 40, 3/4 * Math.PI, 1/4 * Math.PI, true )
+ctx.fill()
+ctx.moveTo(30,100)
+ctx.lineTo(30,0)
+ctx.lineTo(90,70)
+ctx.lineTo(100,100)
+ctx.lineTo(50,50)
+
+canvas.height = 480;
+canvas.width  = 640;
+ctx.beginPath();
+ctx.moveTo(10, 15);
+ctx.bezierCurveTo(75, 55, 175, 20, 250, 15);
+ctx.moveTo(10, 15);
+ctx.quadraticCurveTo(100, 100, 250, 15);
+ctx.stroke();
+
+ctx.strokeStyle = "red";\
+
+ctx.strokeStyle = '#B70A02'
+ctx.strokeRect(15, 15, 266, 266)
+ctx.strokeRect(18, 18, 260, 260)
+ctx.strokeStyle = '#AF5200'
+ctx.fillRect(20, 20, 256, 256)
+for(let i = 0; i < 8; i += 2) {
+    for(let j = 0; j < 8; j += 2) {
+        ctx.clearRect(20 + i * 32, 20 + j * 32, 32, 32);
+        ctx.clearRect(20 + (i + 1) * 32, 20 + (j + 1) * 32, 32, 32);
+    }
+}
+ctx.fillStyle = 'red'
+ctx.fillRect(500,300, 200, 200)
+
+
+ctx.fillStyle = '#ccddff'
+ctx.beginPath()
+ctx.moveTo(500, 80)
+ctx.lineTo(400, 80)
+ctx.lineTo(350, 130)
+ctx.closePath()
+ctx.fill()
+ctx.strokeStyle = 'red'
+ctx.lineWidth = 5
+
+ctx.stroke()
+
+ctx.fillStyle = 'red'
+ctx.beginPath()
+ctx.moveTo(10,30)
+ctx.bezierCurveTo(50, 90, 159, -30, 200, 30)
+ctx.lineTo(200, 90)
+ctx.lineTo(10, 90)
+ctx.closePath()
+ctx.fill()
+ctx.lineWidth =4 
+ctx.strokeStyle = 'black'
+ctx.stroke()
+
+
+
+let grad = ctx.createLinearGradient(0, 0, 300, 00 )
+grad.addColorStop(0, 'white')
+grad.addColorStop(.5, 'blue')
+grad.addColorStop(1, 'green')
+ctx.fillStyle  = grad
+ctx.fillRect(0, 0, 1600 ,400)
+ctx.fillStyle = "black";
+ctx.font = "italic "+96+"pt Arial ";
+ctx.fillText("Hello world", 20,150);
 let temperature = 20;
 let itsRaining = false;
 

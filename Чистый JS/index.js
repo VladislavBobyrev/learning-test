@@ -1,3 +1,29 @@
+let number = 15;
+let taskResult;
+
+number % 3  == 0  && number % 5 == 0? taskResult = 'FizzBuzz':
+number % 5  == 0  ? taskResult = 'Buzz':
+number % 3  == 0  ? taskResult = 'Fizz' :
+taskResult = number
+console.log(taskResult)
+
+/* Техническое задание
+
+Программа должна анализировать числа.
+
+Если число делится на 3, результат работы программы — строка 'Fizz'.
+
+Если число делится на 5 — строка 'Buzz'.
+
+Если число одновременно делится на 3 и на 5 — результат 'FizzBuzz'.
+
+В остальных случаях результат работы программы — изначальное число.
+
+Число записано в переменную number.
+
+Результат работы программы записывайте в переменную taskResult.
+
+*/
 
 let weight = 5;
 let recommendation;

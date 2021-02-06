@@ -1,3 +1,13 @@
+let sum = 0;
+
+for (let i = 1; i <= 10; i++) {
+
+  // Добавляйте условие сюда
+
+  sum += i;
+  console.log('i: ' + i);
+  console.log('sum: ' + sum);
+}
 let canvas = document.querySelector('canvas')
 let ctx = canvas.getContext('2d')
 

@@ -1,0 +1,1 @@
+(()=>{"use strict";let o=0;const l=()=>o++;console.log(o),console.log([l(),l(),l()].join(", "))})();

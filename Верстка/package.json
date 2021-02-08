@@ -1,0 +1,15 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "private": true,
+  
+  "scripts": {
+    "build": "webpack"
+  },
+  "author": "bobyrev",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.21.2",
+    "webpack-cli": "^4.5.0"
+  }
+}

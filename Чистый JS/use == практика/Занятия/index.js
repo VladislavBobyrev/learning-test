@@ -401,3 +401,55 @@ cats = runGame(gameRules, cats);
 let tops = getWinners(cats);
 
 printWinners(cats, tops);ameRules
+
+let name1 = {
+  name:"Васька",
+  goals:0,
+  passes:0,
+  }
+let name2 = {
+  name:"Байт",
+  goals:0,
+  passes:0,
+  }
+let name3 = {
+  name:"Снежок",
+  goals:0,
+  passes:0,
+  }  
+let players = [name1, name2, name3]
+
+let getStatistics = function (players) {
+  let coefficient = 0
+  let allGol = 0
+  let percent = 0
+  
+  for(let i = 0; i < players.length; i++){
+   allGol += players[i].goals 
+    
+  }  
+  
+  for(let i = 0; i < players.length; i++){
+    percent = Math.round((players[i].goals * 100) / allGol )
+    coefficient = players[i].goals * 2 +  players[i].passes 
+   players[i].coefficient =  coefficient
+   players[i].percent = percent
+  }
+  return players
+};
+
+getStatistics(players)
+
+/* Техническое задание
+
+Мяу! Мне нужна программа, которая подсчитает полезность и результативность игроков на основе их статистики. Оформи код в виде функции getStatistics с одним параметром — массивом игроков.
+
+Каждый футболист в этом массиве описывается объектом с тремя полями: имя (свойство name), забитые голы (свойство goals) и голевые пасы (свойство passes).
+
+Функция должна возвращать этот же массив, в котором каждому игроку добавлены ещё два поля: коэффициент полезности по Кексу® (свойство coefficient) и результативность (свойство percent).
+
+Коэффициент полезности считается так: умножаем голы игрока на 2 (потому что я считаю, что голы важнее всего) и прибавляем к этому значению все голевые пасы футболиста.
+
+Результативность (процент забитых мячей футболиста от результата всей команды) считаем так: находим сумму голов всех игроков и выясняем, сколько процентов от этого числа забил каждый футболист. Округляй значение с помощью Math.round.
+
+*/

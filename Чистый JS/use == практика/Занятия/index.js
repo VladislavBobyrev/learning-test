@@ -453,3 +453,35 @@ getStatistics(players)
 Результативность (процент забитых мячей футболиста от результата всей команды) считаем так: находим сумму голов всех игроков и выясняем, сколько процентов от этого числа забил каждый футболист. Округляй значение с помощью Math.round.
 
 */
+let displayPrice = {
+  13: 5000,
+  15: 10000
+};
+
+let memoryPrice = {
+  8: 3000,
+  16: 4000
+};
+
+let buildComputer = function (memory, display, processor) {
+  let computer = {
+    basicPrice: 5000,
+    processor: processor,
+    display: display,
+    memory: memory,
+
+    getDescription: function () {
+      return 'компьютер с процессором ' + computer.processor + ', диагональю ' + computer.display + ', оперативной памятью ' + computer.memory;
+    },
+
+    getPrice: function () {
+      return computer.basicPrice + processorPrice[computer.processor] + displayPrice[computer.display] + memoryPrice[computer.memory];
+    },
+  };
+
+  return computer;
+};
+
+let myComputer = buildComputer(8, 13, 'i7');
+console.log('В корзине ' + myComputer.getDescription() + ' стоимостью ' + myComputer.getPrice());
+

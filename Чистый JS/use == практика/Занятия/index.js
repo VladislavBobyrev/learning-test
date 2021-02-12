@@ -710,3 +710,63 @@ for (var i = 0; i < cardsData.length; i++) {
   cardList.appendChild(cardItem)
 }
 
+const cnv = document.querySelector('canvas')
+const ctx = cnv.getContext('2d')
+
+
+    cnv.width = 1000
+    cnv.height = 600
+    console.log(cnv)
+// тетрадный лист
+// прямые линии
+    for(let j = 20 ; j < 800; j += 20) {
+    ctx.beginPath() // начни новыйю фигуру
+    ctx.moveTo(0,j) // начни отсюда
+    ctx.lineTo(1000,j)
+
+    ctx.stroke()
+    }
+// косые линии
+for(let i = 30; i < 1900; i+=30){ 
+ctx.beginPath()
+ctx.moveTo(i,0)
+ctx.lineTo(i - 180,600 )
+ctx.stroke()
+}
+
+
+
+
+//    // pictures
+//ctx.beginPath() // начни новый элемевт
+//ctx.moveTo(0,0) // поставь перво на 0 по х и 50 по у
+//ctx.lineTo(100,300) // нарисуй линия к координате по x 100 по у 300 
+//ctx.stroke() // обведи то что нарисовал
+//    // pictures2
+//ctx.beginPath() // начни новый элемевт
+//ctx.moveTo(100,300) // поставь перво на 0 по х и 50 по у
+//ctx.lineTo(500,0) // нарисуй линия к координате по x 100 по у 300 
+//ctx.stroke() // обведи то что нарисовал
+
+//ctx.beginPath()
+//ctx.moveTo(0,0)
+//ctx.lineTo(68, 50)
+//ctx.lineTo(20,0)
+//ctx.lineTo(8,70)
+
+//ctx.lineWidth = 5
+//ctx.strokeStyle = 'white'
+//ctx.lineCap = 'round'// закругление конца
+//ctx.lineJoin = 'round' // закр соедин
+//ctx.stroke()
+
+//ctx.beginPath() // новая геометрич фигура
+//ctx.moveTo(200,70) // начни отсюда
+//ctx.lineTo(50,240) // нарисуй линию
+
+
+//ctx.lineCap = 'round' // закругление конца
+//ctx.lineJoin = 'bevel' // закр соедин
+//ctx.lineWidth = 15
+//ctx.strokeStyle = 'blue'
+//ctx.stroke()

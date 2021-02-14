@@ -1,6 +1,13 @@
 // =================   header
 let btn = document.querySelector('.btn')
-let res = document.querySelector('.res')
+let res = document.querySelector('.res')var popup = document.querySelector('.modal');
+var openPopupButton = document.querySelector('.button-open');
+
+openPopupButton.addEventListener('click', function (evt) {
+  evt.preventDefault() // preventDefault  отменяет дуйствия по умолчанию  действие было при клике на тег а переходим по ссылке мы  его отменили 
+  console.log('Клик по кнопке');
+});
+
 
 let task  = () => {
    res.innerHTML = ''

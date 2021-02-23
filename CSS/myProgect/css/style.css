@@ -1,3 +1,18 @@
+<svg width="300" height="290">
+  
+  <rect width= 100% height= 65% fill='skyblue'/>
+  <rect width= 100% height= 40% fill='yellowgreen' y='180px'/>
+  
+    <rect width='10px' height='30px' x='28%' y='80%' rx='5px'/>
+  <rect width='10px' height='30px' x='70%' y='80%' rx='5px'/>
+   <circle r=100  cx='50%' cy='55%' fill='crimson'/>
+  <circle r=80  cx='50%' cy='55%' fill='white'/>
+  <circle r=60  cx='50%' cy='55%' fill='crimson'/>
+  <circle r=40  cx='50%' cy='55%' fill='white'/>
+  
+  <circle r=20  cx='50%' cy='55%' fill='crimson'/>
+
+</svg>
 * {
   padding: 0px;
   margin: 0px;

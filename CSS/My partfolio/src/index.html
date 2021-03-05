@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="card">
+        
+      <div class="card-image" ></div>
+      <div class="card-text">
+        <span class="date"></span>
+        <a href="https://github.com/VladislavBobyrev/Snake">
+        <h2>< MY CODE /></h2>
+        <p>Базовые навыки работы с технологиями: webpack, canvas, npm, scss.
+        </p>
+        </a>
+      </div>
+      <div class="card-stats">
+        <div class="stat">
+          <div class="value">HTML</div>
+        </div>
+        <div class="stat border">
+          <div class="value">SCSS</div>
+        </div>
+        <div class="stat">
+          <div class="value">JS</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-image card2"></div>
+      <div class="card-text card2">
+        <span class="date"></span>
+        <a href=""> <h2>ОБО МНЕ</h2>
+            <p>Я начинающий front-end разработчик JavaScript</p>
+        </a>
+    </div>
+      <div class="card-stats card2">
+        <div class="stat">
+          <div class="value">1</div>
+        </div>
+        <div class="stat border">
+          <div class="value">09</div>
+        </div>
+        <div class="stat">
+          <div class="value">95</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+        <div class="card-image card3"></div>
+        <div class="card-text card3">
+        <a href="https://t.me/VladislavBobyrev">
+          <h2>CПОСОБ СВЯЗИ</h2>
+          <P>TELEGRAMM </P>
+        </a>
+        </div>
+        <div class="card-stats card3">
+          <div class="stat">
+            <div class="value">5<sup>m</sup></div>
+            <div class="type">read</div>
+          </div>
+          <div class="stat border">
+            <div class="value">3021</div>
+            <div class="type">views</div>
+          </div>
+          <div class="stat">
+            <div class="value">15</div>
+            <div class="type">comments</div>
+          </div>
+        </div>
+    </div>
+    <script src="vanilla-tilt.min.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelectorAll(".card"),{
+        glare: true,
+        reverse: true,
+        "max-glare": 0.5
+      });
+    </script>
+  </body>
+</html>

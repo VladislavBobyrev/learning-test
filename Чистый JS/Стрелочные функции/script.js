@@ -53,4 +53,4 @@ let str = () => {
 str();
 console.log(a)
 
-
+let calcNum = () => a + b

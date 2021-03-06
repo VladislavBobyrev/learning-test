@@ -1,3 +1,34 @@
+function checkAge(age) {
+   return age > 18 ? true : console.log('close')
+}
+checkAge(18)
+function checAgeTwo(age) {
+   return age > 18 ?? console.log('close')
+}
+ console.log(checAgeTwo(19)) 
+
+     let a = prompt('mum 1')
+     let b = prompt('nqum 2')
+ function showMinNum(a, b) {
+
+    return a < b ? a : b
+ }
+ console.log( showMinNum(a, b))
+
+ let x = prompt('число которое возвести в степень')
+ let n = prompt('степень')
+
+ function getNum(x, n) {
+  return  x ** n
+ }
+console.log( getNum(x, n))
+
+ let pow = (x, n) => {
+    return n === 1 ? x : x * pow(x, n - 1)  // х умножаем на результат вызова функции pow(10, 3)
+// 10 умн на результат  pow( 10 , 3 - 1)  х = 100 , 2
+// 100 умн на результат вызова pow(10 , 2 - 1)  х = 1000 , 1 и n === 1 выводим х = 1000
+  }
+ console.log(pow(10, 3))
 // Алфавит let diceNumber = 2;
 
 let firstCat = {

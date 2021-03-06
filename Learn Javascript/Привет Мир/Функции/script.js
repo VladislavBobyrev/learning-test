@@ -1,3 +1,36 @@
+const a = null
+const b = null
+
+console.log((a ?? 100)  * ( b ?? 50)) // если а не null and undefined то а  иначе 100 
+
+
+let car = 'tesla'
+function name(userName, age, index = 'index не добавлен') { // значение по умолчанию
+   
+    console.log(index)// если не переданно значение оно становиться ундефайнд
+    let car  = 'ford'
+    console.log(car)
+    console.log(`${userName} hello your are  ${age} age !`)
+    return 1 + 2 
+}
+name('Anya', 1)
+
+console.log(name())
+
+function nam(params) {
+    
+}
+
+console.log(nam() == undefined)
+
+  
+  function isPrime(n) {
+    for (let i = 2; i < n; i++) {
+       n % i == 0 ? console.log(i) : console.log(` ${i} noy`)
+
+  }
+}
+  console.log( isPrime(20))
 function sowMessage() {
     console.log('Квант электромагнитного поля, фонон')
 }

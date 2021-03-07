@@ -1,7 +1,6 @@
 const { createServer } = require('http')
 
 const { array } = require('./data')
-
 const port = 6678
 
 const server = createServer((_, res) => {
@@ -11,5 +10,4 @@ const server = createServer((_, res) => {
 })
 
 server.listen(port)
-
 console.log(`Server is listening ${port} port...`)

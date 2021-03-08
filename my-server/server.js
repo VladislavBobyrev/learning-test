@@ -10,4 +10,4 @@ const server = createServer((_, res) => {
 })
 
 server.listen(port)
-console.log('nade server working...')
+console.log('Node server working...')

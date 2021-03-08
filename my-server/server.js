@@ -1,13 +1,13 @@
-const { creatServer } = require('http') // деструктурируем и принимаем в переменную обьект из рекваир
+const { createServer } = require('http')
 
-const { array } = require('./data') // передаем в рекваер модуль
-const port = 6678
+const { array } = require('./data')
+const port = 6687
 
-const server = creatServer((_, res) => {
-    res.setHeader('Access-Control-Allow-Origin', 'http://127.0.0.1:5500/')
+const server = createServer((_, res) => {
+    res.setHeader('Acces-Control-Allow-Origin', 'http://localhost:5500')
     res.write(JSON.stringify(array))
     res.end()
 })
 
 server.listen(port)
-console.log(`server is listening ${port} port..`)
+console.log('nade server working...')

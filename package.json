@@ -1,0 +1,19 @@
+{
+  "name": "learning-test",
+  "version": "1.0.0",
+  "description": "learn js\r MDN\r NPM \r webpack\r vue\r canvas\r webGL",
+  "main": "game.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VladislavBobyrev/learning-test.git"
+  },
+  "author": "bobyrev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VladislavBobyrev/learning-test/issues"
+  },
+  "homepage": "https://github.com/VladislavBobyrev/learning-test#readme"
+}

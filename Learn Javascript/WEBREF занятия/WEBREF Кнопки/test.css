@@ -1,0 +1,41 @@
+body {
+  /*  задаем цвет фона голубой */
+  background-color: rgb(0, 100, 100);
+  /* цвет текста серый */
+  color: rgb(48, 48, 48);
+
+}
+
+
+/* размер текста */
+input {
+  font-size: 40px;
+  
+}
+
+/* размер текста и отступов*/
+button {
+  font-size: 40px;
+  padding: 10px;
+}
+/* при наведении изменит цвет и размер */
+.btn:hover {
+  background-color: rgb(233, 115, 19);
+  padding: 7px 13px;
+  margin: 1em;
+}
+
+.btn3 {
+  /* прозрачная рамка */
+  border: 6px transparent;
+}
+
+.btn4 {
+  font-size: 20px;
+  border-radius: 20px;
+}
+
+
+
+
+

@@ -1,0 +1,21 @@
+.heart, .checkbox {
+    /* размер спрайта */
+    width: 64px; height: 64px;
+    /* ссылка */
+    background: url(https://webref.ru/assets/images/html5-css3/sprite.png)
+    no-repeat;
+    /* выравниваем по горизонтали */
+    display: inline-block;
+}
+/* действия при наведении */
+.heart:hover {
+    background-position: 0 -64px;
+}
+
+.checkbox {
+    background-position: -64px 0;
+}
+
+.checkbox:hover {
+    background-position: -64px -64px;
+}

@@ -1,0 +1,13 @@
+@import '_null';
+@import '_peremennyi';
+@import '_shablons';
+
+
+
+body{
+    background:#048;
+    text-transform: uppercase;
+}
+p{
+    @extend %border
+}

@@ -1,0 +1,40 @@
+/* градиент cнизу вверх */
+.gradient { 
+    border-radius: 30px;
+    padding: 10px;
+    border: 1px solid #333;
+    background: linear-gradient(to top, #587e61, #66d68c);
+}
+/* справа на лево */
+.gradient2 {
+    border-radius: 30px;
+    padding: 10px;
+    border: 1px solid #333;
+    background: linear-gradient(to left, #587e61, #66d68c);
+}
+/* от левого нижнего к правому верхнему */
+.gradient3 {
+    border-radius: 30px;
+    padding: 10px;
+    border: 1px solid #333;
+    background: linear-gradient(to top right , #587e61, #66d68c);
+}
+/* от правого верхнего к левому нижнему */
+.gradient4 {
+    border-radius: 30px;
+    padding: 10px;
+    border: 1px solid #333;
+    background: linear-gradient(to bottom left, #587e61, #66d68c);
+}
+/*  */
+.gradient5 {
+    border-radius: 30px;
+    padding: 10px;
+    border: 1px solid rgb(196, 28, 28);
+    background: linear-gradient(-45deg, #587e61, #66d68c);
+}
+body  {
+  background: linear-gradient(transparent 50%, rgba(71, 0, 186, 0.2) 50%),
+              linear-gradient(90deg, rgba(34, 0, 186, 0.2) 50%, transparent 50%);
+  background-size: 40px 40px;
+}

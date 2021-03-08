@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//// обекты
+let getNum = (a, b) => {
+   return b === 1 ? a : a * getNum(a, b -1)
+}
+console.log( getNum(3, 2))
+
+let showNum = a => console.log(`num ${a}`)
+showNum(5)
+
+
+
+
+let age =  18
+let welkom =  (age > 18) ? 
+() => console.log('f') :
+ () => console.log('f')
+   
+ 
+ welkom()
+const coolPiple = [
+    {
+        name: 'Tema',
+        tel: 8901777777,
+        from:[ 'SPB' , 'Moscow' ],
+        adress: {
+            gorod: 'Moskow',
+            region: 'Hovrino',
+            street: 'Petrowa',
+            hous: 57,
+        },
+        
+    }, 
+    {
+        name: 'Vitya',
+        tel: 89277777777,
+        from:[ 'SPB' , 'Moscow' ],
+        adress: {
+            gorod: 'Moskow',
+            region: 'Hovrino',
+            street: 'Petrowa',
+            hous: 57,
+        },
+    }, 
+    {
+        name: 'Ylia',
+        tel: 89999999999,
+        from:[ 'SPB' , 'Moscow' ],
+        adress: {
+            gorod: 'Moskow',
+            region: 'Hovrino',
+            street: 'Petrowa',
+            hous: 57,
+        },
+    }, 
+    {
+        name: 'Vlad',
+        tel: 8911111111111,
+        from:[ 'Belgorod' , 'Moscow' ],
+        adress: {
+            gorod: 'Nakhabino',
+            region: 'Istra',
+            street: 'Novaya',
+            hous: 1,
+        },
+    }, 
+    {
+        name: 'Masha',
+        tel: 8911111111112,
+        from:[ 'Belgorod' , 'Moscow' ],
+        adress: {
+            gorod: 'Nakhabino',
+            region: 'Istra',
+            street: 'Novaya',
+            hous: 1,
+        },
+    }, 
+    
+]
+
+let text = {
+    texts: 'Я узнал, что у меня Есть огромная семья И тропинка и лесок В поле каждый колосок Речка, небо голубое — Это все мое родное Это Родина моя, Всех люблю на свете я!',
+    number: 77777777744453537 
+}
+
+console.log(coolPiple[0].adress.street)
+console.log(text.texts)
+
+
+coolPiple.push({
+    name:'snegok',
+    from:'Moscow',
+})
+
+coolPiple.forEach(
+    elem =>console.log( elem['from'][0] + ' hello my name' + elem['name'] + 'I from' + elem['adress'['region']])
+)
+coolPiple.forEach(  // для каждого обьекта, сделай функцию
+   elenm  => console.log( elenm['tel']) // принимает в себя текуший обьект
+)
+
+
+console.log( text.number)
+
+
+
+let fruit = prompt('frukt',)
+let korzina = {
+    [fruit]: 10,
+}
+console.log(korzina)
+
+let obj = (name) => {
+    return {
+        name,    // тоде что и name : neme
+        age : 20,
+    }
+} 
+'name' in obj // оператор in проверяет есть ли свойство в обьекте
+console.log( 'name' in obj )
+
+for(let key in coolPiple){
+    console.log(coolPiple[key].name)
+}
+
+let users = {}
+users.obj = 'Vlad'
+users.surname = 'Bobyrev'
+users.name = 'Mashenka'
+delete users.name
+console.log(users)
+
+let getProp = (obj) => {
+ for(let  key in obj ){
+   return false
+ }
+  return true
+}
+
+console.log( getProp(users))
+
+getProp(users)
+
+const zp = {
+  John: 100,
+  Ann: 160,
+  Pete: 130,
+}
+
+let calcZp = () => {
+    let result = 0
+    for(let key in zp) {
+        result += zp[key]
+    }
+    return result
+}
+
+console.log( calcZp())
+
+let myltiNum = (obj) => {
+    let result = 0
+    for(let key in zp) {
+        result += obj[key] *= 2
+    }
+    return result
+}
+console.log( myltiNum(zp))
+console.log(zp)
+
+
+
+
+
+
+
+
+
+
+
+
+let user = {
+    name: 'jon',
+    age: 35,
+    town: 'bg'
+}
+//for in
+
+for (let key in user) {
+    console.log(key)
+    console.log(user[key])
+}
+// проверка свойства если есть то тру
+if ('age' in user) {
+    console.log('hello')
+}
+// clone
+
+let a = {}
+Object.assign(a,(user))
+console.log(a)
+a = null
+console.log(a)
+
+// this
+
+let game = {
+    wow: 13,
+    ks: 16,
+  sayHi() {
+    console.log(this.ks)
+    }
+}
+game.sayHi()
+
+let usr1 = {name: 'vald'}
+let usr2 = {name: 'Mary'}
+
+let x = () => this.name
+
+usr1.f = x
+console.log(usr1)
+usr2.f = x
+console.log(usr2)
+
+//DZ
+
+let user = {
+    name: "Джон",
+    go: function() { alert(this.name) }
+  };
+  
+  (user.go)()
+
+
+
+let calcul = { 
+   
+    sum() {
+    return this.zn1 + this.zn2  
+    },
+    mul() {
+      return  console.log( this.zn1 * this.zn2)
+    } ,
+    read() {
+        this.zn1 = +prompt('xn');
+        this.zn2 = +prompt('zn2');
+    
+    }
+}
+calcul.read()
+calcul.mul()
+//==========================
+
+let ladder = {
+    step: 0,
+    up() {
+      this.step++;
+      
+    },
+    down() {
+      this.step--;
+    },
+    showStep: function() { // показывает текущую ступеньку
+      alert( this.step );
+    }
+  };
+
+
+
+//  slice Получить фрагмент из массива
+
+arr.slice(-1)
+console.log(arr);
+
+let array = [1, 2, 3, 4, 5]
+let clone = array.slice()// создали клон !!! не скопировали ссылку
+
+clone.push(6)
+console.log(clone);
+console.log(array);
+
+console.log(array[3]); 
+     
+// Массивы
+let arr = [1, 2, 'sri']
+console.log(arr[2]);
+
+//pop
+arr.pop() // удаляет элем в конце
+console.log(arr);
+
+//push
+arr = ['hello'] 
+console.log(arr);
+       
+arr.push('world') // добавляет элем в конец
+console.log(arr);
+
+// shift
+arr.shift() // удаляет элем в начале
+console.log(arr);
+
+//unishift
+arr.unshift('just' , 'me')
+console.log(arr); //добавляет элем в начале
+
+//let duttins = [but, but2, but3]
+
+//for(let i = 0; i < duttins.length; i++) {
+//    duttins[i].addEventListener('clcik', operationClick)
+//}
+
+// массивы
+
+const a = {
+    a: 5,
+    b: 'hello',
+    z2: 'hi',
+    Y43: 1999,
+    'vila de': 489,
+}
+
+delete a.a
+
+let out = ''
+
+for(let key in a) {
+    out += key+ '===' +a[key] + '</br> '
+}
+document.querySelector('.out').innerHTML = out;
+
+
+let car =  {
+    color: 'black',
+    maxSpeed: 240,
+    audio: {
+        brand: 'sony',
+        speacers: 12,
+    }
+}
+
+    car.color = 'red'
+    console.log(car.audio)
+
+    let car1 = {
+        color: 'red',
+        speed: 399
+    }
+
+    let car2 = {
+        color: 'green',
+        speed: 399
+    }
+
+    car1.color = car2.color
+    console.log(car1)
+    console.log(car2)
+        
+        // new Objekt
+
+function User(name) {
+    this.name = name;
+    this.admin = false;
+}
+
+let user = new User('Vladik')
+user = new User('Maru')
+
+console.log(user.name)
+console.log(user.admin)
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

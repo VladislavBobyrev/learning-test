@@ -1,0 +1,32 @@
+body {
+    background-color:rgb(0, 100, 100) ;
+    color: rgb(48, 48,48); 
+    font-size: 60px;
+}
+
+.doors {
+    display: inline-block;
+}
+
+.door {
+    width: 400px;
+    height: 620px;
+    display: inline-block;
+    background: rgb(155, 43, 43);
+    border: 2px solid #333;
+    transition: transform 2s;
+}
+
+.door_left {
+    transform: 0 50% ;
+}
+.door_right{
+    transform: 100% 50% ;
+}
+
+.doors:hover .door_left {
+    transform: perspective(400px) rotateY(40deg);
+}
+.doors:hover .door_right {
+    transform: perspective(400px) rotateY(-40deg);
+}

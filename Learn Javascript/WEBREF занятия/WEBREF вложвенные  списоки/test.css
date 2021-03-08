@@ -1,0 +1,19 @@
+body {  
+   
+    background-color:rgb(0, 100, 100) ;
+    color: rgb(48, 48,48);
+   align: center;
+}
+
+
+ol li {
+    font-weight: bold;
+}
+
+ol ol {
+    list-style: lower-alpha;
+}
+
+ol ol li {
+    font-weight: normal;
+}

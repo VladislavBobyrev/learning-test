@@ -1,0 +1,24 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 1fr;
+    background: rgb(30, 103, 199);
+    text-align: center;
+    text-transform: uppercase;
+}
+.cnv{
+    grid-column: 2 ;
+}
+.info{
+    border: springgreen 2px solid;
+    
+    height: 100vh;
+}
+.info__block{
+    grid-column: 1 / 2;
+}
+.next__block{
+    grid-column: 3 / 4;
+}

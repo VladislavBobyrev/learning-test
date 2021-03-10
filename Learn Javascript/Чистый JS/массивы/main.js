@@ -52,3 +52,14 @@ console.log(user)
 
 let somUser = users.filter((item) => item.id < 3)
 console.log(somUser)
+
+let result = text.map(item => item.length)
+console.log(result)
+
+let sorting = [1, 2, 15, 16]
+console.log(sorting.sort( (a, b) => a - b)) //пока не понял что передаем 
+ 
+console.log( sorting.reverse() )// обратный порядок
+
+
+

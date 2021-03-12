@@ -44,4 +44,26 @@ let users = [
   console.log(solilder[1])
 
   //push добавляет элемент в конец массива
-  //pop извоекает  элеме 
+  //pop извоекает  элемент с конца
+
+  let camelize = (str) => {
+      let arr = str.split('-')
+      console.log(arr)
+      console.log( arr.join(''))
+     }
+
+camelize("-webkit-transition")
+
+
+let arrs = [5, 3, 8, 1]
+let filterRand = (arr, a, b) => {
+    let result = []
+    for(let num of arr){
+        num >= a && num < b ? result += num : ''
+    } 
+    
+    return result   
+}
+
+
+console.log(filterRand(arrs, 1, 4))

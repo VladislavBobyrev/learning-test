@@ -61,9 +61,15 @@ let filterRand = (arr, a, b) => {
     for(let num of arr){
         num >= a && num < b ? result += num : ''
     } 
-    
+
     return result   
 }
 
 
 console.log(filterRand(arrs, 1, 4))
+
+let filterRandPlase = (arrays, a, b) => {
+    return arrays.filter( (item) => a >=item && b <= item )
+}
+
+console.log(filterRandPlase(arrs, 1, 9))

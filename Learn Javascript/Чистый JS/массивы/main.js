@@ -68,8 +68,31 @@ let filterRand = (arr, a, b) => {
 
 console.log(filterRand(arrs, 1, 4))
 
-let filterRandPlase = (arrays, a, b) => {
-    return arrays.filter( (item) => a >=item && b <= item )
+//let filterRandPlase = (arr, a, b) => {
+//    for(let i of arr){
+//        let result = arr.filter(arr[i] > a && arr[i] < b)
+//        console.log(result)
+//    }
+//}
+
+//console.log(filterRandPlase(arrs, 2, 8 ))
+
+//let sort = ["HTML", "JavaScript", "CSS"]
+//let result = sort.concat()
+
+//console.log(result)
+
+let copuSort = (arr) => {
+    return arr.slice(0, 4).sort()
 }
 
-console.log(filterRandPlase(arrs, 1, 9))
+let result = copuSort(arr)
+console.log(result)
+
+const numberSort = [1, 2, 3, 4, 5, 6, 7]
+
+let sort = (arr) => {
+    return arr.reverse()
+}
+let numS = sort(numberSort)
+console.log(numS)

@@ -96,3 +96,26 @@ let sort = (arr) => {
 }
 let numS = sort(numberSort)
 console.log(numS)
+
+let str = '1 + 2'
+let rashObj = (str) => {
+    return str
+}
+rashObj(str)
+
+
+
+
+
+
+
+
+let vasya = { name: "Вася", age: 25 };
+let petya = { name: "Петя", age: 30 };
+let masha = { name: "Маша", age: 28 };
+
+let usersis = [ vasya, petya, masha ]
+
+let names = usersis.map(user => user.name)
+console.log(names)
+

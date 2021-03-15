@@ -114,14 +114,27 @@ rashObj(str)
 //let names = usersis.map(user => user.name)
 //console.log(names)
 
-let vasya = { name: "Вася", age: 25 };
-let petya = { name: "Петя", age: 30 };
-let masha = { name: "Маша", age: 29 };
+//let vasya = { name: "Вася", age: 25 };
+//let petya = { name: "Петя", age: 30 };
+//let masha = { name: "Маша", age: 29 };
 
-let arrm = [ vasya, petya, masha ];
-let getAverageAge = (users) => {
-let old = users.map(person => person.age)
-console.log(old.reduce(previev, item => item + previev))
+//let arrm = [ vasya, petya, masha ];
+//let getAverageAge = (users) => {
+//let old = users.map(person => person.age)
+//console.log(old.reduce(previev, item => item + previev))
 
+//}
+//getAverageAge(arrm)
+
+let vasya = { name: "Вася", surname: "Пупкин", id: 1 };
+let petya = { name: "Петя", surname: "Иванов", id: 2 };
+let masha = { name: "Маша", surname: "Петрова", id: 3 };
+
+let users = [ vasya, petya, masha ];
+
+let usersMapped = () => {
+    users.concat()
 }
-getAverageAge(arrm)
+
+alert( usersMapped[0].id ) // 1
+alert( usersMapped[0].fullName ) // Вася Пупкин

@@ -137,3 +137,15 @@ let usersMapped = us.map(user => ({
     id: user.id,
 }))
 console.log(usersMapped[1].fullName)
+
+let arr = [1, 2, 3];
+
+shuffle(arr);
+// arr = [3, 2, 1]
+
+shuffle(arr);
+// arr = [2, 1, 3]
+
+shuffle(arr);
+// arr = [3, 1, 2]
+// ...

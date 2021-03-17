@@ -147,5 +147,3 @@ shuffle(arr);
 // arr = [2, 1, 3]
 
 shuffle(arr);
-// arr = [3, 1, 2]
-// ...

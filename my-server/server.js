@@ -1,10 +1,11 @@
 const http = require('http')
 const host = 'localhost'
-const port = 8000
+const port = 8001
 
 const requestListener = (req, res) => {
+    res.setHead('Content-Type', 'text/html')
     res.writHead(200)
-    res.end('My One server')
+    res.end(`<html><body><h1>This is HTML</h1></body></html>`)
 }
 const server = http.createServer(requestListener)
 server.listen(port, host, () => {

@@ -1,15 +1,9 @@
-const { createServer, request } = require('http')
+const http = require('http');
+const static = require('node-static');
+const file = new static.Server('.');
 
-//const { array } = require('./data')
-const port = 3000
+http.createServer((req, res) => {
+  file.serve(req, res);
+}).listen(8080);
 
-const requairHendler = (request, response) => {
-    console.log(request.url)
-    response.end(`Hello my one Nade.js Server ! ${request.url}`)
-}
-const server = http.createServer(requairHendler)
-
-server.listen(port, (err) => {
-    err ? console.log(`sometaimsing bad happend`, err) :
-    console.log(`Server is listening port ${port}`)
-})
+console.log('Server running on port 8080');

@@ -69,3 +69,12 @@ console.log(array)
 
 const set = new Set([1, 2, 3, 4, 4, 5, 6, 6, 6, 6]) // у сета каждое значение уникально
 console.log(set)
+
+let values = ["Hare", "Krishna", "Hare", "Krishna",
+  "Krishna", "Krishna", "Hare", "Hare", ":-O"
+];
+const showArr = (arr) => {
+    const set = new Set(values)
+    return console.log(set)
+}
+showArr(values)

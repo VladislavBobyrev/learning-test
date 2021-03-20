@@ -27,3 +27,21 @@ const unique = (arr) => {
     return result
 }
 console.log( unique(arr) )
+
+let map = new Map()
+console.log(map)
+map.set('1', 'tesla')
+console.log(map)
+
+const obj = {
+    name: 'valdislav',
+    age: 26,
+    job: 'webdev',
+}
+const entries = [
+    ['name', 'valdislav'],
+    ['age', '25'],
+    ['job', 'frontend'],
+]
+console.log( Object.entries(obj))
+console.log( Object.fromEntries(entries))

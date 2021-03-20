@@ -6,7 +6,7 @@ console.log(typeof !{})
 
 //let remove = arr.splice(0, 2)
 //console.log(remove)
-arr.splice(2, 0, 'learn JS to')
+arr.splice(2, 0, 'learn JS to', 'I', 'I')
 console.log(arr)
 arr.splice(1, 0, 'am')
 console.log(arr)
@@ -17,11 +17,13 @@ arr.forEach((item, index, array) => {
 console.log(arr.includes('I'))
 
 const unique = (arr) => {
-    let result
-   
-    arr.forEach((item)  => {
-        console.log(item )
-    })
+    let result = []
+   for(let i of arr){
+    //   if(!result.includes(i)){
+    //    result.push(i)
+    //   }
+       result.includes(i) ? result : result.push(i)
+   }
     return result
 }
-unique(arr)
+console.log( unique(arr) )

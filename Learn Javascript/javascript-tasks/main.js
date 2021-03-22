@@ -8,3 +8,16 @@ let finalGrade = (exam, project) => {
 }
 
 console.log( finalGrade(70, 2))
+
+let example = (text) => {
+
+
+     let string = text.toUpperCase()
+     console.log(string == toUpperCase())
+     string.toLowerCase()
+
+
+     return string
+}
+
+example('dsfl')

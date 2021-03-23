@@ -11,3 +11,6 @@ let weak = new WeakMap()
 weak.set(jon, 'jon this key and text this value')
 jon = null
 console.log( weak)
+console.log( weak.get(25))
+weak.set(jon, 'Sekret Data...') // if jon dead secret data too
+

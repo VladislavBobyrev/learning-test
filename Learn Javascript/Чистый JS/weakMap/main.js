@@ -12,5 +12,14 @@ weak.set(jon, 'jon this key and text this value')
 jon = null
 console.log( weak)
 console.log( weak.get(25))
-weak.set(jon, 'Sekret Data...') // if jon dead secret data too
+//weak.set(jon, 'Sekret Data...') // if jon dead secret data too
 
+
+const visetUser = new WeakMap()
+
+let countUser = (user) => {
+    let count = visetUser.get(user) ?? 0 
+    visetUser.set(user, count +1)
+    console.log(count)
+}
+countUser(jon)

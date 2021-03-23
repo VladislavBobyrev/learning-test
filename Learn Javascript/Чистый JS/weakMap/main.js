@@ -19,7 +19,25 @@ const visetUser = new WeakMap()
 
 let countUser = (user) => {
     let count = visetUser.get(user) ?? 0 
-    visetUser.set(user, count +1)
+    //visetUser.set(user, count +1)
     console.log(count)
 }
 countUser(jon)
+
+let visitSet = new WeakSet()
+
+let pete = {name: 'pete'}
+let ivan = {name: 'ivan'}
+let sergey = {name: 'sergey'}
+
+visitSet.add(pete)
+visitSet.add(ivan)
+
+visitSet.add(pete)
+console.log(visitSet)
+
+console.log(visitSet.has(pete)) // заходил
+console.log(visitSet.has(sergey)) // no
+
+pete = null
+console.log(visitSet) // структура будет очищена автоматически

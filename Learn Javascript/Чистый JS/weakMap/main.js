@@ -41,3 +41,20 @@ console.log(visitSet.has(sergey)) // no
 
 pete = null
 console.log(visitSet) // структура будет очищена автоматически
+
+// task
+let messages = [
+    {text: "Hello", from: "John"},
+    {text: "How goes?", from: "John"},
+    {text: "See you soon", from: "Alice"}
+  ];
+const readMessage = new WeakSet()
+
+readMessage.add(messages[1])
+readMessage.add(messages[2])
+console.log(readMessage)
+
+readMessage.add(messages[1]) // добавили еще раз но все равно внутри прочитанных 2 obj
+console.log(readMessage)
+
+console.log(`read massage 0 : ${readMessage.has(messages[0])}`)

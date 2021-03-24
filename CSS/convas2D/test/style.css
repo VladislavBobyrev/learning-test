@@ -1,7 +1,9 @@
 body{
     margin: 0;
     padding: 0;
+    background: #000;
 }
 canvas{
     background: rgb(78, 112, 96);
+    margin-left: 20%;
 }

@@ -58,10 +58,14 @@ const carFront = new Promise(resolve => {
    img.src = './img/bmw1.png' 
    img.onload = () => resolve(img)
 })
+let xCarFront = 310
+let yCarFront = 200 
+
 const front = carFront.then(img => img)
 
 let goingFront = async() => {
     const carFront = await front
- 
-    ctx.drawImage(carFront,310 +  Math.cos(speed * 0),200 + Math.sin(speed + .5))
+    yCarFront += 2
+    xCarFront -= 0.9    
+    ctx.drawImage(carFront,xCarFront +  Math.cos(speed * 0), yCarFront + Math.sin(speed + .5))
 }

@@ -66,6 +66,9 @@ const front = carFront.then(img => img)
 let goingFront = async() => {
     const carFront = await front
     yCarFront += 2
-    xCarFront -= 0.9    
+    xCarFront -= 0.9   
+    ctx.beginPath()
     ctx.drawImage(carFront,xCarFront +  Math.cos(speed * 0), yCarFront + Math.sin(speed + .5))
+    ctx.translate(0, 1)
+    ctx.closePath()
 }

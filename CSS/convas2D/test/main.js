@@ -3,12 +3,14 @@ const ctx = cnv.getContext('2d')
 
 let resize = () => {
     cnv.width = 850
-    cnv.height = 800   
+    cnv.height = 660   
 }
 resize()
 addEventListener('resize', resize)
 
 let speed = 0
+let xCar = 160
+let yCar = 430
 
 const fonImg = new Promise((resolve) => {
         const img = new Image
@@ -24,7 +26,7 @@ let  drowGame = async() => {
     ctx.fillStyle = patern
     ctx.fillRect(0, 0, cnv.width, cnv.height)
     goingCar()
-  
+    goingFront()
 }
 drowGame()
 
@@ -36,8 +38,30 @@ const carImg = new Promise(resolve => {
 })
 const imgCar = carImg.then(img => img)
 
+
 let goingCar = async() => {
     const car = await imgCar
-    speed += 0.8
-    ctx.drawImage(car,160 +  Math.cos(speed - 0.3),430 + Math.sin(speed))    
+    speed += .9
+
+    ctx.drawImage(car,xCar +  Math.cos(speed - 0.3),yCar + Math.sin(speed))    
+}
+let move = (event) => {
+    event.key == 'ArrowLeft' ? xCar -= 10 : 
+    event.key == 'ArrowRight' ? xCar += 10 : 
+    ''
+}
+addEventListener('keydown', move)
+
+
+const carFront = new Promise(resolve => {
+   const img = new Image()
+   img.src = './img/bmw1.png' 
+   img.onload = () => resolve(img)
+})
+const front = carFront.then(img => img)
+
+let goingFront = async() => {
+    const carFront = await front
+ 
+    ctx.drawImage(carFront,310 +  Math.cos(speed * 0),200 + Math.sin(speed + .5))
 }

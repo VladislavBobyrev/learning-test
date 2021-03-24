@@ -7,27 +7,22 @@ let resize = () => {
 }
 resize()
 addEventListener('resize', resize)
-let drowGame = () => {
 
-}
 
-const loadImg = new Promise((resolve) => {
-    const bg = new Image()
-    const car = new Image()
-    bg.src = './img/bg.jpg'
-    car.src = './img/car.png'
-    car.onload = () => resolve(bg, car)
-})
+const promisImg = new Promise((resolve) => {
+        const img = new Image
+        img.src = './img/bg.jpg'
+        img.onload = () => resolve(img)
+    })
+const image = promisImg.then((data) => data)
 
-const image = loadImg.then(img => img)
-
-let drowGame =  async () => {
-    const img = await image
-    const drawImade = ctx.createPattern(img, 'repeat')
-    ctx.fillStyle = drawImade
+async function drowGame() { 
+    requestAnimationFrame(drowGame)   
+    const img = await image 
+    const patern = ctx.createPattern(img, 'repeat-x')
+    ctx.fillStyle = patern
     ctx.fillRect(0, 0, cnv.width, cnv.height)
 }
 drowGame()
-
 
 

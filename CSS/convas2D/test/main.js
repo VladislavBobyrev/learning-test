@@ -8,6 +8,7 @@ let resize = () => {
 resize()
 addEventListener('resize', resize)
 
+let speed = 0
 
 const fonImg = new Promise((resolve) => {
         const img = new Image
@@ -23,6 +24,7 @@ let  drowGame = async() => {
     ctx.fillStyle = patern
     ctx.fillRect(0, 0, cnv.width, cnv.height)
     goingCar()
+  
 }
 drowGame()
 
@@ -36,7 +38,6 @@ const imgCar = carImg.then(img => img)
 
 let goingCar = async() => {
     const car = await imgCar
-     let angelX =  
-     let angelY = 
-    ctx.drawImage(car, 160 + angelX, 430 + angelY)    
+    speed += 0.8
+    ctx.drawImage(car,160 +  Math.cos(speed - 0.3),430 + Math.sin(speed))    
 }

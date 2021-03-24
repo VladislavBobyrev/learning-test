@@ -70,5 +70,5 @@ let goingFront = async() => {
     ctx.beginPath()
     ctx.drawImage(carFront,xCarFront +  Math.cos(speed * 0), yCarFront + Math.sin(speed + .5))
     ctx.translate(0, 1)
-    ctx.closePath()
+ 
 }

@@ -49,3 +49,15 @@ a = factor(1)
 b = factor(2)
 c = factor(3)
 d = factor(5)
+
+
+//function scoup
+let a, b, c  // this variable global
+
+const fn = () => { // funciton  global scoup
+    const a // htis variable local
+
+    const fn2 = () => { // function local scoup
+        b + a        // b global  a local
+    }
+}

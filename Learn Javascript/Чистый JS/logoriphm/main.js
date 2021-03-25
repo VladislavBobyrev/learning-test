@@ -43,21 +43,56 @@ const factor = (n) => {
 }
 console.dir(factor(5))
 
-let a, b, c, d
+let b, c, d
 
-a = factor(1)
+
 b = factor(2)
 c = factor(3)
 d = factor(5)
 
 
 //function scoup
-let a, b, c  // this variable global
+let q, o  // this variable global
 
 const fn = () => { // funciton  global scoup
-    const a // htis variable local
+    const a = 0 // htis variable local
 
     const fn2 = () => { // function local scoup
-        b + a        // b global  a local
+        q + b       // b global  a local
     }
 }
+
+let loop = (node) => {
+if(node < 0) return
+    console.dir(`begin : ${node}`)
+    loop(node -1)
+    console.dir(`end : ${node}`)
+}
+loop(3)
+//begin : 3
+//begin : 0
+//begin : 1
+//begin : 2
+//end : 0
+//end : 1
+//end : 2
+//end : 3
+
+// clousure 
+
+const addzn = (a, b) => {
+    const zn = (x) =>  x * x 
+    return zn(a) + zn(b)    
+}
+console.dir(addzn(2, 2))
+
+const outside = (m) => {
+    const inside = (n) => {
+         return m + n
+    }
+    return inside
+}
+const ins = outside(3)
+console.dir( ins(5))
+//outside(3)(5)  one in one
+

@@ -96,3 +96,14 @@ const ins = outside(3)
 console.dir( ins(5))
 //outside(3)(5)  one in one
 
+function A(x) {
+    function B(y) {
+                function C(z) {
+                    console.log(x + y + z);
+                }
+      C(3);
+    }
+    B(2);
+  }
+  A(1); 
+

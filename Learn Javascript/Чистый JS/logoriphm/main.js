@@ -13,3 +13,10 @@ let lineralSearh = (array, item) => {
 
 console.dir(`Nomber El :  ${lineralSearh(array, 3)}`)
 console.dir(`amount itteratibl : ${count}`)
+
+
+// function statment
+
+function a(num) { // name a have one parametr num
+    return num * num // return parametr func myltiply on yourself
+}

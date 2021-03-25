@@ -1,8 +1,12 @@
-const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+const array = [1, 2, 5, 8, 5, 6, 7, 3, 9, 10, 15, 12, 13, 14, 12]
 
-let lineralSearh = () => {
+let lineralSearh = (array, item) => {
     for(let key of array){
-      console.dir(key)  
-    }
+        if(array[key] == item){
+            return key
+        }
+    }  
+    return null  
 }
-lineralSearh()
+let result = lineralSearh(array, 12)
+console.dir(result)

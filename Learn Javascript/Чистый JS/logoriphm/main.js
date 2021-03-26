@@ -106,13 +106,13 @@ function A(x) {
     B(2);
   }
   A(1); 
+
+//  function outside() {
+//    var x = 5;
+//    function inside(x) {
+//      return x * 2;  // conflict x variable and x parametr
+//    }
+//    return inside;
+//  }
   
-  function outside() {
-    var x = 5;
-    function inside(x) {
-      return x * 2;
-    }
-    return inside;
-  }
-  
-  outside()(10); //
+//  outside()(10); //

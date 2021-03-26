@@ -129,3 +129,13 @@ console.dir( scoup('Bobyrev Vladislav')() )
 
 
 
+function muContact(separator) {
+    let result = ''
+    let i = 0
+
+    for(i = 1; i < arguments.length; i++){
+        result += arguments[i] +separator
+    }
+    return result
+}
+   console.dir( muContact('!', 'hello', ' my name Vladislav firstname Bobyrev'))

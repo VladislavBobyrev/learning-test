@@ -116,3 +116,16 @@ function A(x) {
 //  }
   
 //  outside()(10); //
+
+//closure замыкание
+
+const scoup = (name) => {
+    const inScoup = () => {
+        return name
+    }
+    return inScoup
+}
+console.dir( scoup('Bobyrev Vladislav')() )
+
+
+

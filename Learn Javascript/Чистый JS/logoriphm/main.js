@@ -146,3 +146,10 @@ function val (){
     }
 }
 val(1, 2, 3, 4)
+
+let valTwo = () => {
+    for(value in arguments){
+        console.dir(value)
+    }
+}
+valTwo(1, 2, 3)  // err !! arguments is psevdomassiv

@@ -139,3 +139,10 @@ function muContact(separator) {
     return result
 }
    console.dir( muContact('!', 'hello', ' my name Vladislav firstname Bobyrev'))
+
+function val (){
+    for(value in arguments){
+        console.dir(value)
+    }
+}
+val(1, 2, 3, 4)

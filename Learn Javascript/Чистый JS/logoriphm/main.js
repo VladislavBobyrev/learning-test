@@ -147,9 +147,15 @@ function val (){
 }
 val(1, 2, 3, 4)
 
-let valTwo = () => {
-    for(value in arguments){
-        console.dir(value)
-    }
+//let valTwo = () => {
+//    for(value in arguments){
+//        console.dir(value)
+//    }
+//}
+//valTwo(1, 2, 3)  // err !! arguments is psevdomassiv
+
+function multipl(a, b){
+    b = typeof b !== 'undefined' ? b : 1
+    return a * b
 }
-valTwo(1, 2, 3)  // err !! arguments is psevdomassiv
+console.dir( multipl(2, 6))

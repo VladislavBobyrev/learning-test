@@ -159,3 +159,9 @@ function multipl(a, b){
     return a * b
 }
 console.dir( multipl(2, 6))
+
+
+let mute = (a, b = 777) => { //значение по умолчпнию если параметр небыл передан присвоиться 1
+    console.dir(b)
+}
+mute(3)

@@ -165,3 +165,10 @@ let mute = (a, b = 777) => { //значение по умолчпнию если
     console.dir(b)
 }
 mute(3)
+
+function arc (a, ...theArc) {
+    console.dir(theArc) // this map
+    console.dir(a)
+}
+
+arc(3, 4, 5, 5, 6, 9)

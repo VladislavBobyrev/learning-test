@@ -1,14 +1,15 @@
 body{
     margin: 0px;
     padding: 0px;
-    text-transform: uppercase;
     overflow-x: hidden;
+    font-family: 'Roboto';
 }
 a{
     text-decoration: none;
     color: #000;
 }
 header{
+    text-transform: uppercase;
     display: grid;
     height: 60px;
     grid-template-columns: 20px 0.8fr 0.95fr 0.3fr 0.6fr;
@@ -34,4 +35,42 @@ header{
     position: relative;
     text-align: center;
     top: 10px;
+}
+
+.prieviv{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    &_text{
+        position: relative;
+        top: -70vh;
+        left: 26vw;
+        color: white;
+        font-size: 48px;
+    }
+    p{
+        position: relative;
+        top: -75vh;
+        left: 45vw;
+        color: white;
+        font-size: 16px;
+    }
+}
+.btn{
+    width: 160px;
+    height: 38px;
+    background: #fff;
+    position: absolute;
+    text-align: center;
+    padding:  20px 0 0 0;
+    text-transform: uppercase;  
+}
+.btn1{
+    top: 110vh;
+    left: 30vw;
+}
+.btn2{    
+    top: 110vh;
+    left: 60vw;
 }

@@ -2,40 +2,36 @@ body{
     margin: 0px;
     padding: 0px;
     text-transform: uppercase;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    color: #000;
 }
 header{
     display: grid;
     height: 60px;
-    border: 1px solid #000;
-    grid-template-columns: 1fr 1fr 0.6fr 0.4fr;
+    grid-template-columns: 20px 0.8fr 0.95fr 0.3fr 0.6fr;
 }
-
-
 .men{
     position: relative;
-    left: 27px;
     top: 18px;
+    left: 66px;
 }
-.woomen{
+.stores{
+    left: 156px;
+}
+.icon{
     position: relative;
-    left: 96px;
+    top: -15px;
+    text-align: center;
+        a{
+        display: inline-block;
+        margin: 10px;
+    }
 }
-
 .logo{
     position: relative;
     text-align: center;
     top: 10px;
-}
-.stories{
-    text-align: center;
-    margin: 0 0 0 156px;
-}
-.icon{
-    display: dlock;
-    position: relative;
-    text-align: center;
-    top: 10px;
-    a{
-        padding: 0 20px 0 0;
-    }
 }

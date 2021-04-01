@@ -1,0 +1,20 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    text-transform: uppercase;
+}
+header{
+    display: grid;
+    height: 60px;
+    border: 1px solid #000;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.men{
+    justify-self: start;
+    margin: 21px 18px 0 27px;
+    font-size: 12px ;
+    font-weight: 400;
+}
+.woomen{
+    
+}

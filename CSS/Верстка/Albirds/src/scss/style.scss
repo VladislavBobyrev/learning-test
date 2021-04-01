@@ -7,14 +7,35 @@ header{
     display: grid;
     height: 60px;
     border: 1px solid #000;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 0.6fr 0.4fr;
 }
+
+
 .men{
-    justify-self: start;
-    margin: 21px 18px 0 27px;
-    font-size: 12px ;
-    font-weight: 400;
+    position: relative;
+    left: 27px;
+    top: 18px;
 }
 .woomen{
-    
+    position: relative;
+    left: 96px;
+}
+
+.logo{
+    position: relative;
+    text-align: center;
+    top: 10px;
+}
+.stories{
+    text-align: center;
+    margin: 0 0 0 156px;
+}
+.icon{
+    display: dlock;
+    position: relative;
+    text-align: center;
+    top: 10px;
+    a{
+        padding: 0 20px 0 0;
+    }
 }

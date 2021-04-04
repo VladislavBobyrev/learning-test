@@ -51,9 +51,15 @@ header {
   display: -ms-grid;
   display: grid;
   width: 100vw;
-  height: 100vh;
+  height: 130vh;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
+}
+
+.prieviv img {
+  position: relative;
+  left: -60px;
+  background-size: 100%;
 }
 
 .prieviv_text {
@@ -83,13 +89,13 @@ header {
 }
 
 .btn1 {
-  top: 110vh;
-  left: 30vw;
+  top: 650px;
+  left: 30%;
 }
 
 .btn2 {
-  top: 110vh;
-  left: 60vw;
+  top: 650px;
+  left: 55%;
 }
 
 figure {
@@ -109,10 +115,39 @@ figcaption {
 }
 
 .white {
+  position: relative;
+  top: 80px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 0.5fr 0.5fr;
-      grid-template-rows: 0.5fr 0.5fr;
+  -ms-grid-columns: 3% 1fr 1fr 1fr;
+      grid-template-columns: 3% 1fr 1fr 1fr;
+}
+
+.favorit {
+  text-align: center;
+}
+
+.fav {
+  text-align: inherit;
+  list-style: none;
+  position: relative;
+  top: 10px;
+}
+
+.fav li {
+  display: inline;
+  margin: 0 13% 0 15%;
+}
+
+.line {
+  width: 90vw;
+  margin: 0 0 0 70px;
+  border-bottom: solid 1px black;
+  position: relative;
+  bottom: 110%;
+}
+
+.fav2 {
+  top: 100px;
+  left: -170px;
 }

@@ -74,3 +74,15 @@ header{
     top: 110vh;
     left: 60vw;
 }
+
+figure {
+    display: inline-block; /* Выстраиваем по горизонтали */
+  
+    padding: 10px; /* Поля */
+    margin: 0 1em 0 0; /* Отступ справа */
+    vertical-align: middle; /* Выравниваем по верхнему краю */
+   }
+figcaption{
+    float: right;
+    margin: 0;
+}

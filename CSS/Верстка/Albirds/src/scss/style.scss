@@ -63,7 +63,7 @@ header{
     }
 }
 .btn{
-    width: 160px;
+    width: 200px;
     height: 38px;
     background: #fff;
     position: absolute;
@@ -122,4 +122,32 @@ text-align: center;
 .fav2{
 top: 100px;
 left: -170px;
+}
+.lines{
+    position: relative;
+    width: 320px;
+    border-bottom: 1px solid black;
+}
+.line1{   
+    left: 65px; 
+    top: 70px;
+}
+.line2{
+    left: 520px;
+    top: 70px;
+}
+.line3{
+    left:970px;
+    top: 70px;
+}
+.bottom{
+    text-transform: uppercase;
+    width: 250px;
+    top: 120px;
+    left: 120px;
+}
+.bottom2{
+    width: 250px;
+    top: 230px;
+    left: 120px;
 }

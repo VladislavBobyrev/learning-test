@@ -40,8 +40,11 @@ let drowClock = () => {
 
     ctx.rotate((Math.PI / 6) * hr + (Math.PI / 360) * min + (Math.PI / 21600) * sec)
     ctx.lineWidth = 10
+
     ctx.beginPath()
     ctx.moveTo(- 20, 0)
+    ctx.lineTo(500, 0)
     ctx.stroke()
+    ctx.restore()
 }
 drowClock()

@@ -234,7 +234,7 @@ figcaption {
   margin: 0 0 0 70%;
 }
 
-.slider {
+.four {
   width: 100%;
   height: 430px;
   overflow: hidden;
@@ -257,4 +257,18 @@ span {
 span:nth-of-type(2) {
   left: 97%;
   text-align: right;
+}
+
+.slider {
+  width: 97%;
+  height: 580px;
+  background: #bbb8b8;
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  overflow-x: auto;
 }

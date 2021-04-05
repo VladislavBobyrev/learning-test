@@ -188,7 +188,7 @@ left: -170px;
         margin:0 0 0 70%;
     }     
 }
-.slider{
+.four{
     width: 100%;
     height: 430px;
     overflow: hidden;
@@ -209,4 +209,13 @@ span{
 span:nth-of-type(2){
     left: 97%;
     text-align: right;
+}
+.slider{
+    width: 97%;
+    height: 580px;
+    background: rgb(187, 184, 184);
+    margin: 10px;
+    display: flex;
+    justify-content:left;
+    overflow-x: auto;
 }

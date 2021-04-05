@@ -128,6 +128,8 @@ figcaption {
 }
 
 .favorit {
+  position: relative;
+  top: -40px;
   text-align: center;
 }
 
@@ -188,4 +190,46 @@ figcaption {
   width: 250px;
   top: 230px;
   left: 120px;
+}
+
+.three {
+  background-size: 100%;
+  position: relative;
+  top: 250px;
+}
+
+.text {
+  size: 32px;
+  position: relative;
+  top: 300px;
+  text-align: center;
+}
+
+.meriono {
+  size: 16px;
+  position: relative;
+  top: 300px;
+  text-align: center;
+}
+
+.black {
+  background: #000;
+  color: white;
+  position: relative;
+  top: 300px;
+}
+
+.gribBtn {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 0.2fr 1fr;
+      grid-template-columns: 1fr 0.2fr 1fr;
+}
+
+.gribBtn .btn {
+  margin: 0 0 0 90%;
+}
+
+.gribBtn .btn:first-child {
+  margin: 0 0 0 70%;
 }

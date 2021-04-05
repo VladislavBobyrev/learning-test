@@ -101,7 +101,9 @@ figcaption{
     grid-template-columns: 3% 1fr 1fr 1fr;    
 }
 .favorit{
-text-align: center;
+    position: relative;
+    top: -40px;
+    text-align: center;
 }
 
 .fav{
@@ -116,8 +118,7 @@ text-align: center;
 }
 .line{
     width: 90vw;
-    margin: 0 0 0 70px;
-    
+    margin: 0 0 0 70px;    
     border-bottom: solid 1px black ;
     position: relative;
     bottom: 110%;
@@ -153,4 +154,38 @@ left: -170px;
     width: 250px;
     top: 230px;
     left: 120px;
+}
+.three{
+    background-size: 100%;
+    position: relative;
+    top: 250px;
+}
+.text{
+    size: 32px;
+    position: relative;
+    top: 300px;
+    text-align:center;
+}
+.meriono{
+    size: 16px;
+    position: relative;
+    top: 300px;
+    text-align:center;
+}
+.black{
+    background: #000;
+    color: white;
+    position:relative;
+    top: 300px;
+}
+.gribBtn{
+    display: grid;
+    grid-template-columns: 1fr 0.2fr 1fr;
+   .btn{
+     margin: 0 0 0 90%;   
+    }
+     .btn:first-child{
+        margin:0 0 0 70%;
+    } 
+    
 }

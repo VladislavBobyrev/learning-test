@@ -219,3 +219,6 @@ span:nth-of-type(2){
     justify-content:left;
     overflow-x: auto;
 }
+.slider::-webkit-scrollbar{
+    visibility: hidden;
+}

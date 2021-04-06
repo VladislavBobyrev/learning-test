@@ -286,3 +286,10 @@ span:nth-of-type(2) {
   width: 100%;
   height: 100vh;
 }
+
+.slide {
+  -webkit-transform: translate(-396px, 0);
+          transform: translate(-396px, 0);
+  -webkit-transition: ease-in 1s;
+  transition: ease-in 1s;
+}

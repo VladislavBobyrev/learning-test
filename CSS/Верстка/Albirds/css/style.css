@@ -261,7 +261,7 @@ span:nth-of-type(2) {
 
 .slider {
   width: 97%;
-  height: 580px;
+  height: 600px;
   background: #bbb8b8;
   margin: 10px;
   display: -webkit-box;
@@ -273,6 +273,16 @@ span:nth-of-type(2) {
   overflow-x: auto;
 }
 
+.slider img {
+  position: relative;
+  top: -70px;
+}
+
 .slider::-webkit-scrollbar {
   visibility: hidden;
+}
+
+.five {
+  width: 100%;
+  height: 100vh;
 }

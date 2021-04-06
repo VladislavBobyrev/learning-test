@@ -212,13 +212,21 @@ span:nth-of-type(2){
 }
 .slider{
     width: 97%;
-    height: 580px;
+    height:600px;
     background: rgb(187, 184, 184);
     margin: 10px;
     display: flex;
     justify-content:left;
     overflow-x: auto;
+    img{
+        position: relative;
+        top: -70px;
+    }
 }
 .slider::-webkit-scrollbar{
     visibility: hidden;
+}
+.five{
+    width: 100%;
+    height: 100vh   ;
 }

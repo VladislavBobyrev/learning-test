@@ -46,5 +46,14 @@ let drowClock = () => {
     ctx.lineTo(500, 0)
     ctx.stroke()
     ctx.restore()
+
+    ctx.save()
+
+    //sec
+    ctx.rotate(sec * Math.PI / 30)
+    ctx.strokeStyle = '#D4000'
+    ctx.fillStyle = '#D4000'
+    ctx.lineWidth = 6
+    
 }
 drowClock()

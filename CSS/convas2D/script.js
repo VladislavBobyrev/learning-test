@@ -54,6 +54,17 @@ let drowClock = () => {
     ctx.strokeStyle = '#D4000'
     ctx.fillStyle = '#D4000'
     ctx.lineWidth = 6
-    
+
+    ctx.beginPath()
+    ctx.moveTo(-30, 0)
+    ctx.lineTo(83, 0)
+    ctx.stroke()
+    ctx.restore()
+
+    ctx.restore()
+
+}
+window.onload =  fn = () => {
+    setInterval(drowClock, 1000)
 }
 drowClock()

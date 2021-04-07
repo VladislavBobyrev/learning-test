@@ -1,11 +1,25 @@
+// constant
 const container = document.querySelector('.slider_container')
 const track = document.querySelector('.slider_track')
 const item = document.querySelector('.slide_item')
 const frontBtn = document.querySelector('.btn_prev')
 const nextBtn = document.querySelector('.btn_next')
+const img = document.querySelector('.item_img')
+let countImg = 0
 
+// map img
+const images = []
+images.push('./src/img/Rectangle (10).png')
+images.push('./src/img/Rectangle (11).png')
+images.push('./src/img/Rectangle (9).png')
+images.push('./src/img/Rectangle (8).png')
+
+img.src = images.countImg
+
+// function btn
 let clikFront = () => {
     console.dir('front')
+    img.src = images.countImg
 }
 frontBtn.addEventListener('click', clikFront)
 

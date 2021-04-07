@@ -9,22 +9,26 @@ let countImg = 0
 
 // map img
 const images = []
-images.push('./src/img/Rectangle (10).png')
-images.push('./src/img/Rectangle (11).png')
-images.push('./src/img/Rectangle (9).png')
-images.push('./src/img/Rectangle (8).png')
+images.push('./src/img/Rectangle(10).png')
+images.push('./src/img/Rectangle(11).png')
+images.push('./src/img/Rectangle(9).png')
+images.push('./src/img/Rectangle(8).png')
 
 img.src = images.countImg
+console.dir(img.src = images.countImg)
 
 // function btn
 let clikFront = () => {
-    console.dir('front')
+    console.dir(`front ${countImg}`)
+    --countImg
     img.src = images.countImg
 }
 frontBtn.addEventListener('click', clikFront)
 
 let clikNext = () => {
-    console.dir('Next')
+    console.dir(`Next ${countImg}`)
+    ++countImg
+    img.src = images.countImg
 }
 nextBtn.addEventListener('click', clikNext)
 

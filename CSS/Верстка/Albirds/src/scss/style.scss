@@ -188,6 +188,18 @@ left: -170px;
         margin:0 0 0 70%;
     }     
 }
+.btn_prev{
+    position: absolute;
+    top: 50%;
+    font-size: 60px;
+}
+.btn_next{
+    position: absolute;
+    top: 50%;
+    right: 1%;
+    font-size: 60px;
+    z-index: 3;
+}
 
 .wrapper{
     position: relative;
@@ -202,7 +214,10 @@ left: -170px;
 }
 .slider_track{
     display: flex;
+    transition: .2s ease-in-out;
 }
 .slide_item{
     height: 400px;
+    width: 400px;
+    margin: 0 20px ;
 }

@@ -1,15 +1,16 @@
-const slider = document.querySelector('span')
-const img = document.querySelector('.slide')
-let i = 0
+const container = document.querySelector('.slider_container')
+const track = document.querySelector('.slider_track')
+const item = document.querySelector('.slide_item')
+const frontBtn = document.querySelector('.btn_prev')
+const nextBtn = document.querySelector('.btn_next')
 
-const click = () => {
-    console.dir('kk')
-    i++
-    for(i of slider){
-        i == 0 ? i.style.left = '0px' :
-        i == 1 ? i.style.left = '-740px' :
-        i == 2 ? i.style.left = '-1480px' :
-        i == 3 ? i.style.left = '-2220px' : i = 0
-    }
+let clikFront = () => {
+    console.dir('front')
 }
-slider.addEventListener('click', click)
+frontBtn.addEventListener('click', clikFront)
+
+let clikNext = () => {
+    console.dir('Next')
+}
+nextBtn.addEventListener('click', clikNext)
+

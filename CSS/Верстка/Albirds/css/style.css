@@ -270,6 +270,6 @@ figcaption {
 
 .slide_item {
   height: 400px;
-  width: 400px;
+  min-width: 400px;
   margin: 0 20px;
 }

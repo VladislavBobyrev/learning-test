@@ -22,6 +22,7 @@ let clikFront = () => {
     console.dir(`front ${countImg}`)
     --countImg
     img.src = images.countImg
+    img.style.left = '0px'
 }
 frontBtn.addEventListener('click', clikFront)
 

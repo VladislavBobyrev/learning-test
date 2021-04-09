@@ -17,3 +17,8 @@ body{
     color: desatyrete(#302638, 30%); // скомпилирует в хекс
     color: light(#302638, 20%);
 }
+@media(min-width:1200px)  {
+    .block{
+        color: $Variable;
+    }
+}

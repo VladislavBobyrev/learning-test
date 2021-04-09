@@ -12,3 +12,9 @@ body {
   color: desatyrete(#302638, 30%);
   color: light(#302638, 20%);
 }
+
+@media (min-width: 1200px) {
+  .block {
+    color: tomato;
+  }
+}

@@ -8,4 +8,7 @@ html {
 
 body {
   margin: calc(100vw -50px * 2);
+  color: rgba(48, 38, 56, 0.5);
+  color: desatyrete(#302638, 30%);
+  color: light(#302638, 20%);
 }

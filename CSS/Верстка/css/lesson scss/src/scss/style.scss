@@ -1,0 +1,5 @@
+@import 'null';
+@import 'variable';
+body{
+    background: $variableOne;
+}

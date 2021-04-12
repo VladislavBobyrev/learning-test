@@ -1,4 +1,38 @@
 @charset "UTF-8";
+.five img {
+  position: relative;
+  background-size: 100%;
+  top: 500px;
+}
+
+.five_text {
+  margin: 550px 0 0 38%;
+  size: 32px;
+}
+
+.five_opisanie {
+  margin: 40px 0 0 0;
+  size: 16px;
+  text-align: center;
+}
+
+.six figure {
+  display: inline;
+}
+
+.button {
+  background: #000;
+  color: white;
+  width: 384px;
+  height: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  text-align: center;
+  line-height: 49px;
+  text-transform: uppercase;
+}
+
 body {
   margin: 0px;
   padding: 0px;

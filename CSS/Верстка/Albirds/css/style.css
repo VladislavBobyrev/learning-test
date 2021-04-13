@@ -20,6 +20,27 @@
   display: inline;
 }
 
+.seven_text {
+  margin: 0 auto;
+}
+
+.eight {
+  width: 100%;
+  height: 10px;
+}
+
+.eight_title {
+  margin: 100px;
+}
+
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
 .button {
   background: #000;
   color: white;

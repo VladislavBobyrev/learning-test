@@ -1,0 +1,12 @@
+.eight{
+    width: 100%;
+    height: 10px;
+}
+.eight_title{
+    margin: 100px ;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr ;
+    gap: 10px;
+}

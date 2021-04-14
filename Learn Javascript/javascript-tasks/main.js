@@ -21,3 +21,13 @@ let example = (text) => {
 }
 
 example('dsfl')
+//=========================ivan-petrishenko
+let pow = (a, b) => {
+  let result = 1
+}
+// пустая строка между логическими блоками
+if(1 < 2){
+  console.dir('step')
+} else {
+  console.dir( ('step no found') ) // gap beetwen вложенными вызовами
+}

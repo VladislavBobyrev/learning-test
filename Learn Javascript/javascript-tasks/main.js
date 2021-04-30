@@ -40,3 +40,6 @@
 
 //console.dir(document.body)
 console.dir(document.body.childNodes)
+console.dir(document.documentElement)
+console.dir(document.body.firstChild)
+console.dir(document.querySelector('.html'))

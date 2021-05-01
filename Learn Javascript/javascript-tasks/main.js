@@ -43,3 +43,7 @@ console.dir(document.body.childNodes)
 console.dir(document.documentElement)
 console.dir(document.body.firstChild)
 console.dir(document.querySelector('.html'))
+
+setTimeout(function(){
+	alert('Hello Mashenka')
+}, 10000)

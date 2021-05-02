@@ -1,140 +1,24 @@
-<svg width="300" height="290">
-  
-  <rect width= 100% height= 65% fill='skyblue'/>
-  <rect width= 100% height= 40% fill='yellowgreen' y='180px'/>
-  
-    <rect width='10px' height='30px' x='28%' y='80%' rx='5px'/>
-  <rect width='10px' height='30px' x='70%' y='80%' rx='5px'/>
-   <circle r=100  cx='50%' cy='55%' fill='crimson'/>
-  <circle r=80  cx='50%' cy='55%' fill='white'/>
-  <circle r=60  cx='50%' cy='55%' fill='crimson'/>
-  <circle r=40  cx='50%' cy='55%' fill='white'/>
-  
-  <circle r=20  cx='50%' cy='55%' fill='crimson'/>
-
-</svg>
-* {
-  padding: 0px;
-  margin: 0px;
-  border: 0px;
+body{
+	margin: 0px;
+	padding: 0px;
+	background: rgb(255, 255, 255);
+	position: absolute;
+}
+.modal{
+	
+	width: 100%;
+	height: 100vh;
+	overflow:hidden;
+	background: hsla(0, 0%, 0%, 0.3);
 }
 
-*, *:before, *:after {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-:focus, :active {
-  outline: none;
-}
-
-a:focus, a:active {
-  outline: none;
-}
-
-aside, nav, footer, header, section {
-  display: block;
-}
-
-html, body {
-  height: 100%;
-  min-width: 380px;
-}
-
-body {
-  line-height: 1;
-  font-size: 14px;
-  font-family: "Montserat";
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-
-input, button, textarea {
-  font-family: "Montserat";
-}
-
-input::-ms-clear {
-  display: none;
-}
-
-button {
-  cursor: pointer;
-}
-
-button::-moz-focus-inner {
-  padding: 0;
-  margin: 0;
-}
-
-a, a:visited {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-ul li {
-  list-style: none;
-}
-
-img {
-  vertical-align: top;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: inherit;
-  font-size: inherit;
-}
-
-.ibg {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.ibg img {
-  display: none;
-}
-
-.page {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 0px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.main-screen {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 100%;
-          flex: 1 0 100%;
-  position: relative;
-}
-
-.main-screen__bg {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-}
-
-.ibg {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.ibg img {
-  display: none;
+.modal__box{
+	display: block;
+	background: rgb(80, 76, 76);
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%);	
+	width: 20vw;
+	height: 50vh;
 }

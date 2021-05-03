@@ -4,21 +4,14 @@ body{
 	background: rgb(255, 255, 255);
 	position: absolute;
 }
-.modal{
-	
-	width: 100%;
-	height: 100vh;
-	overflow:hidden;
-	background: hsla(0, 0%, 0%, 0.3);
-}
-
-.modal__box{
-	display: block;
-	background: rgb(80, 76, 76);
+.a{
 	position: relative;
+	width: 10vw;
+	height: 10vh;
 	top: 50%;
 	left: 50%;
-	transform: translateY(-50%);	
-	width: 20vw;
-	height: 50vh;
+background: rgb(47, 81, 231);
+}
+.modal{
+	display: none;
 }

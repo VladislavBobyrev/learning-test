@@ -69,3 +69,10 @@ class Rect { 	// с заглавной название класа
 
 const box = new Rect(10, 5)
 box.metod()
+
+//========================================= JSON
+const person = {
+	name: 'Mary',
+	tel: '+7444444444444',
+}
+console.log(JSON.stringify(person))

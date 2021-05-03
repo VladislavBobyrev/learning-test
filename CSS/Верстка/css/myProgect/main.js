@@ -75,4 +75,6 @@ const person = {
 	name: 'Mary',
 	tel: '+7444444444444',
 }
-console.log(JSON.stringify(person))
+const sersshowAnsver = JSON.stringify(person)
+
+console.log( JSON.parse(sersshowAnsver))

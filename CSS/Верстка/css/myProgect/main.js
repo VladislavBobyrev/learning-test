@@ -54,3 +54,18 @@ const user = {
 
 SayName.call(user)
 SayName.apply(user)
+
+//===================================== Class
+class Rect { 	// с заглавной название класа
+	constructor(h, w){	//конструктор класса
+		this.h = h
+		this.w = w
+	}
+	
+	metod () {
+	return console.log(this.w * this.h)
+	}
+}
+
+const box = new Rect(10, 5)
+box.metod()

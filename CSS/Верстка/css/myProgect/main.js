@@ -28,4 +28,29 @@ let Vlad = new User('Vlad drakul', 25)
 console.dir(Vlad)
 Vlad.hello()
 
-const obj 
+const obj = {
+	name: 'Vladislav Dracul',
+	age: 29, 
+	years: 2021,
+	summ: () => {
+		console.log(this.age - this.years)
+		//context this = window or use strict to undefined
+		//function a(){
+		//	console.log(this)
+		//}
+		//a()
+	}
+}
+obj.summ()
+
+function SayName() {
+	console.log(this)
+	console.log(this.name)
+}
+
+const user = {
+	name: 'Vlad dracul'
+}
+
+SayName.call(user)
+SayName.apply(user)

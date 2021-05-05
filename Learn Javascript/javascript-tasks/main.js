@@ -28,15 +28,25 @@ class MenuCard {
 			</div>		
 			</div>
 		`;
+		element.classList.add('wrapper')
 		this.parent.append(element)
 	}
 }
 
 new MenuCard(
-	"./index.html",
+	"./IMG_E3364.JPG",
 	'Boss Mary',
 	'Menu "FITNES"',
-	'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem aspernatur non unde porro nam neque quaerat doloribus, tempora totam quis suscipit ipsa itaque reprehenderit harum quos eos maiores culpa vero?',
+	'Lorem ipsum dolor sit lorem asjjfsl flks flks hdlkfh slkhf;lkshflkhsddf khsoidfh ks hd',
 	9,
+	'.root',
+).render()
+
+new MenuCard(
+	"./IMG_3257.JPG",
+	'Boss Snow',
+	'What my eat',
+	'Lorem ipsum dolor sit ',
+	11,
 	'.root',
 ).render()

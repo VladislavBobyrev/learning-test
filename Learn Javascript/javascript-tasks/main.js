@@ -6,7 +6,7 @@ class MenuCard {
 		this.description = description
 		this.price = price
 		this.parent = document.querySelector(parentSelector)
-		this.transfer = transfer		// значение доллара с сервера
+		this.transfer = 70		 					// значение доллара 
 		this.chandeToDollar()						// вызываем метод каторый переводит рубли в доллары
 	}
 
@@ -27,7 +27,7 @@ class MenuCard {
 				<div class="meny_price__total">${this.transfer}</div>			
 			</div>		
 			</div>
-		`
+		`;
 		this.parent.append(element)
 	}
 }
@@ -38,5 +38,5 @@ new MenuCard(
 	'Menu "FITNES"',
 	'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem aspernatur non unde porro nam neque quaerat doloribus, tempora totam quis suscipit ipsa itaque reprehenderit harum quos eos maiores culpa vero?',
 	9,
-	'.menu .container'
+	'.root',
 ).render()

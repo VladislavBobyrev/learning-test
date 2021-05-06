@@ -50,3 +50,15 @@ new MenuCard(
 	11,
 	'.root',
 ).render()
+
+let options = {
+	name: 'Vlad',
+	car: 'tesla',
+	town: 'new york',
+	adress: {
+		yl: 'new',
+		hous: 1,
+	}
+}
+
+console.log(options)

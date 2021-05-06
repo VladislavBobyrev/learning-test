@@ -62,3 +62,13 @@ let options = {
 }
 
 console.log(options)
+for (key in options) {
+	if (typeof options[key] === 'object') {
+		for (let i in options[key]) {
+			console.log(`Property ${i} have ${options[key][i]}`)
+		}
+	} else {
+		console.log(`Property ${key} have ${options[key]}`)
+	}
+
+}

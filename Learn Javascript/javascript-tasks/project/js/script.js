@@ -42,9 +42,8 @@ reclama.forEach(item => {
 movieDB.movies.sort()
 
 movieDB.movies.forEach((item, i) => {
-	 moveList.innerHTML += `
-	 <li class="promo__interactive-item">${movieDB[i]}
+	moveList.innerHTML += `
+	 <li class="promo__interactive-item">${i + 1}. ${item}
 							<div class="delete"></div>
-						</li>
-	 `
-}
+						</li>`
+})

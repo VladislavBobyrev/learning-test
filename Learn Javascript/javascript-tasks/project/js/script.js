@@ -54,5 +54,5 @@ const checkBox = addForm.querySelector('[type="checkBox"]')
 
 addForm.addEventListener('submit', (event) => {
 	event.preventDefault()
-	
+	console.log(addForm)
 })

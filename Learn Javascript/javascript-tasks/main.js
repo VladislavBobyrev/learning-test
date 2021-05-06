@@ -70,5 +70,18 @@ for (key in options) {
 	} else {
 		console.log(`Property ${key} have ${options[key]}`)
 	}
-
 }
+
+const arr = [1, 3, 5, 6, 7]
+arr.forEach(function(item, i, arr){
+	console.log(`item: ${item} i: ${i} arr: ${arr}`)
+})
+
+//spread operator
+const q = {
+	one: 1,
+	two: 2,
+}
+
+const a = {...q}
+console.log(a)

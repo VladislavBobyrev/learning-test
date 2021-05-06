@@ -25,6 +25,26 @@ const movieDB = {
 };
 
 const reclama = document.querySelectorAll('.promo__adv img')
+const poster = document.querySelector('.promo__bg')
+const gener = poster.querySelector('.promo__genre')
+const moveList = document.querySelector('.promo__interactive-list')
+
+moveList.innerHTML = ''
+
+gener.textContent = `Dramma`
+poster.style.backgroundImage = 'url("img/bg.jpg")'
+
+
 reclama.forEach(item => {
 	item.remove()
 })
+
+movieDB.movies.sort()
+
+movieDB.movies.forEach((item, i) => {
+	 moveList.innerHTML += `
+	 <li class="promo__interactive-item">${movieDB[i]}
+							<div class="delete"></div>
+						</li>
+	 `
+}

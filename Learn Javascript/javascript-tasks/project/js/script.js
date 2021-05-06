@@ -47,3 +47,12 @@ movieDB.movies.forEach((item, i) => {
 							<div class="delete"></div>
 						</li>`
 })
+
+const addForm =document.querySelector('form.add')
+const addInput = addForm.querySelector('.adding__input')
+const checkBox = addForm.querySelector('[type="checkBox"]')
+
+addForm.addEventListener('submit', (event) => {
+	event.preventDefault()
+	
+})

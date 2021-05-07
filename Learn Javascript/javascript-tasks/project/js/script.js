@@ -32,13 +32,25 @@ const addForm = document.querySelector('form.add')
 const addInput = addForm.querySelector('.adding__input')
 const checkBox = addForm.querySelector('[type="checkBox"]')
 
-gener.textContent = `Dramma`
-poster.style.backgroundImage = 'url("img/bg.jpg")'
-reclama.forEach(item => {
-	item.remove()
-})
+const makeChanges = () => {
+	gener.textContent = `Dramma`
+	poster.style.backgroundImage = 'url("img/bg.jpg")'
+}
 
-movieDB.movies.sort()
+makeChanges()
+
+const deletReclam = (arr) => {
+	arr.forEach(item => {
+		item.remove()
+	})
+}
+
+deletReclam(reclama)
+
+const sortArray = (arr) => {
+	arr.sort()
+}
+sortArray(movieDB.movies)
 
 let createMoviList = (films, parent) => {
 	parent.innerHTML = ''
@@ -61,7 +73,7 @@ addForm.addEventListener('submit', (event) => {
 	const favorit = checkBox.checked
 
 	movieDB.movies.push(newFIlm)
-	movieDB.movies.sort()
+	sortArray(movieDB.movies)
 	createMoviList(movieDB.movies, moveList)
 	addInput.value = ''
 })

@@ -37,19 +37,20 @@ poster.style.backgroundImage = 'url("img/bg.jpg")'
 reclama.forEach(item => {
 	item.remove()
 })
+
 movieDB.movies.sort()
-let createMoviList = () => {
-	moveList.innerHTML = ''
 
+let createMoviList = (films, parent) => {
+	parent.innerHTML = ''
 
-	movieDB.movies.forEach((item, i) => {
-		moveList.innerHTML += `
+	films.forEach((item, i) => {
+		parent.innerHTML += `
 		 <li class="promo__interactive-item">${i + 1}. ${item}
 								<div class="delete"></div>
 							</li>`
 	})
 }
-
+createMoviList(movieDB.movies, moveList)
 
 
 // при отправке формы
@@ -61,5 +62,6 @@ addForm.addEventListener('submit', (event) => {
 
 	movieDB.movies.push(newFIlm)
 	movieDB.movies.sort()
-
+	createMoviList(movieDB.movies, moveList)
+	addInput.value = ''
 })

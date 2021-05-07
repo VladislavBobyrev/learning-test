@@ -49,13 +49,21 @@ const sortArray = (arr) => {
 
 let createMoviList = (films, parent) => {
 	parent.innerHTML = ''
+	sortArray(movieDB.movies)
 
 	films.forEach((item, i) => {
 		parent.innerHTML += `
 		 <li class="promo__interactive-item">${i + 1}. ${item}
 								<div class="delete"></div>
-							</li>`
+							</li>`	
 	})
+	document.querySelectorAll('.delete').forEach((btn, i) => {
+		btn.addEventListener('click', () => {
+			btn.parentElement.remove()
+			movieDB.movies.splice(i, 1)
+			createMoviList(films, parent)
+		})
+	} )
 }
 
 // при отправке формы
@@ -69,6 +77,7 @@ addForm.addEventListener('submit', (event) => {
 		if (newFIlm.length > 21) {
 			newFIlm = `${newFIlm.substring(0, 22)}...`
 		}	
+		favorit ? console.log('My like film') : false
 		movieDB.movies.push(newFIlm)
 		sortArray(movieDB.movies)
 		createMoviList(movieDB.movies, moveList)
@@ -83,5 +92,4 @@ addForm.addEventListener('submit', (event) => {
 // вызовы функций
 makeChanges()
 deletReclam(reclama)
-sortArray(movieDB.movies)
 createMoviList(movieDB.movies, moveList)

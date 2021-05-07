@@ -37,20 +37,15 @@ const makeChanges = () => {
 	poster.style.backgroundImage = 'url("img/bg.jpg")'
 }
 
-makeChanges()
-
 const deletReclam = (arr) => {
 	arr.forEach(item => {
 		item.remove()
 	})
 }
 
-deletReclam(reclama)
-
 const sortArray = (arr) => {
 	arr.sort()
 }
-sortArray(movieDB.movies)
 
 let createMoviList = (films, parent) => {
 	parent.innerHTML = ''
@@ -62,18 +57,31 @@ let createMoviList = (films, parent) => {
 							</li>`
 	})
 }
-createMoviList(movieDB.movies, moveList)
-
 
 // при отправке формы
 addForm.addEventListener('submit', (event) => {
 	event.preventDefault()
 
-	const newFIlm = addInput.value
+	let newFIlm = addInput.value
 	const favorit = checkBox.checked
 
-	movieDB.movies.push(newFIlm)
-	sortArray(movieDB.movies)
-	createMoviList(movieDB.movies, moveList)
-	addInput.value = ''
+	if (newFIlm) {
+		if (newFIlm.length > 21) {
+			newFIlm = `${newFIlm.substring(0, 22)}...`
+		}	
+		movieDB.movies.push(newFIlm)
+		sortArray(movieDB.movies)
+		createMoviList(movieDB.movies, moveList)
+	
+	}
+
+	event.target.reset()
+
+	//addInput.value = ''
 })
+
+// вызовы функций
+makeChanges()
+deletReclam(reclama)
+sortArray(movieDB.movies)
+createMoviList(movieDB.movies, moveList)

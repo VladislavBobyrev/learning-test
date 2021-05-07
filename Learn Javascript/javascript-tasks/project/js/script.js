@@ -28,31 +28,38 @@ const reclama = document.querySelectorAll('.promo__adv img')
 const poster = document.querySelector('.promo__bg')
 const gener = poster.querySelector('.promo__genre')
 const moveList = document.querySelector('.promo__interactive-list')
-
-moveList.innerHTML = ''
-
-gener.textContent = `Dramma`
-poster.style.backgroundImage = 'url("img/bg.jpg")'
-
-
-reclama.forEach(item => {
-	item.remove()
-})
-
-movieDB.movies.sort()
-
-movieDB.movies.forEach((item, i) => {
-	moveList.innerHTML += `
-	 <li class="promo__interactive-item">${i + 1}. ${item}
-							<div class="delete"></div>
-						</li>`
-})
-
-const addForm =document.querySelector('form.add')
+const addForm = document.querySelector('form.add')
 const addInput = addForm.querySelector('.adding__input')
 const checkBox = addForm.querySelector('[type="checkBox"]')
 
+gener.textContent = `Dramma`
+poster.style.backgroundImage = 'url("img/bg.jpg")'
+reclama.forEach(item => {
+	item.remove()
+})
+movieDB.movies.sort()
+let createMoviList = () => {
+	moveList.innerHTML = ''
+
+
+	movieDB.movies.forEach((item, i) => {
+		moveList.innerHTML += `
+		 <li class="promo__interactive-item">${i + 1}. ${item}
+								<div class="delete"></div>
+							</li>`
+	})
+}
+
+
+
+// при отправке формы
 addForm.addEventListener('submit', (event) => {
 	event.preventDefault()
-	console.log(addForm)
+
+	const newFIlm = addInput.value
+	const favorit = checkBox.checked
+
+	movieDB.movies.push(newFIlm)
+	movieDB.movies.sort()
+
 })

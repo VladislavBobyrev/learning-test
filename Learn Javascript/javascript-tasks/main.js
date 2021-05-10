@@ -119,6 +119,11 @@ const test =  time => {
 //test(1000).then(() => console.log('1000 ms'))
 //test(2000).then(() => console.log('2000 ms'))
 
-Promise.all([test(1000), test(2000)]).then(() => {
-		console.log('All')
+//Promise.all([test(1000), test(2000)]).then(() => {
+//		console.log('All')
+//})
+
+//Rase действует после выполнения первого скрипта
+Promise.race([test(1000), test(2000)]).then(() => {
+	console.log('Race')
 })

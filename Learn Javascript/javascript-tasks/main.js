@@ -93,7 +93,8 @@ const req = new Promise((resolve, reject) => {
 			name: 'Vladislav',
 			age: 25, 
 		}
-		resolve(product)
+		//resolve(product)
+		reject()		// Errros обрабатывает
 	}, 2000)
 })
 
@@ -102,5 +103,7 @@ req.then(data => {
 	return data
 }).then(data => {
 	console.log(data)
+}).catch(() => {
+	console.error('произошла ошибка')
 })
 //	+ promises в  том что его результат можно обрабатывать по цепочке

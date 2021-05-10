@@ -85,3 +85,22 @@ const q = {
 
 const a = {...q}
 console.log(a)
+
+// Promises
+const req = new Promise((resolve, reject) => {
+	setTimeout(() => {
+		const product = {
+			name: 'Vladislav',
+			age: 25, 
+		}
+		resolve(product)
+	}, 2000)
+})
+
+req.then(data => {
+	data.modify = true
+	return data
+}).then(data => {
+	console.log(data)
+})
+//	+ promises в  том что его результат можно обрабатывать по цепочке

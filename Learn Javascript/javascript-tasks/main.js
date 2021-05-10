@@ -105,5 +105,20 @@ req.then(data => {
 	console.log(data)
 }).catch(() => {
 	console.error('произошла ошибка')
+}).finally(() => {
+	console.log('finish')
 })
 //	+ promises в  том что его результат можно обрабатывать по цепочке
+
+const test =  time => {
+	return new Promise(resolve => {
+		setTimeout(() => resolve(), time)
+	})
+}
+
+//test(1000).then(() => console.log('1000 ms'))
+//test(2000).then(() => console.log('2000 ms'))
+
+Promise.all([test(1000), test(2000)]).then(() => {
+		console.log('All')
+})

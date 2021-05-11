@@ -1,3 +1,4 @@
+import respons from 'fetch.js'
 class MenuCard {
 	constructor(src, alt, title, description, price, parentSelector) { // кончтруктор примимает в себя путь картинки фльт титулное название описание цену
 		this.src = src
@@ -127,3 +128,5 @@ const test =  time => {
 Promise.race([test(1000), test(2000)]).then(() => {
 	console.log('Race')
 })
+
+//==================================================		Fetch

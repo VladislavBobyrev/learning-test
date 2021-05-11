@@ -1,4 +1,4 @@
-import respons from 'fetch.js'
+
 class MenuCard {
 	constructor(src, alt, title, description, price, parentSelector) { // кончтруктор примимает в себя путь картинки фльт титулное название описание цену
 		this.src = src
@@ -130,3 +130,9 @@ Promise.race([test(1000), test(2000)]).then(() => {
 })
 
 //==================================================		Fetch
+//import respons from 'fetch.js'
+
+//================================================== metods arr
+const array = [1, 4, 6, 7, 4, 7, 3]
+const res = array.reduce((sum, i) => sum + i)
+console.log(res)

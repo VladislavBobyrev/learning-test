@@ -134,5 +134,5 @@ Promise.race([test(1000), test(2000)]).then(() => {
 
 //================================================== metods arr
 const array = [1, 4, 6, 7, 4, 7, 3]
-const res = array.reduce((sum, i) => sum + i)
+const res = array.reduce((sum, i) => sum + i, 3)
 console.log(res)

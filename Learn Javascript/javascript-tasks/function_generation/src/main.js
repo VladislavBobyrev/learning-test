@@ -8,5 +8,5 @@ function* generation(n) {
 const counter = generation(7)
 
 console.log(counter.next())
-console.log(counter.return())
+ 
 console.log(counter.throw())

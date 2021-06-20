@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/VladislavBobyrev/learning-test/issues"
   },
-  "homepage": "https://github.com/VladislavBobyrev/learning-test#readme"
+  "homepage": "https://github.com/VladislavBobyrev/learning-test#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.23.0",
+    "@typescript-eslint/parser": "^4.23.0",
+    "eslint": "^7.26.0",
+    "eslint-plugin-react": "^7.23.2"
+  }
 }

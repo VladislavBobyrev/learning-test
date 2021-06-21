@@ -6,10 +6,24 @@
 //}
 //console.dir( rec(4))
 
-function recurs (a){
-	if(a > 10) {
-		return
+//function recurs (a){
+//	if(a > 10) {
+//		return
+//	}
+//return	a >=10 ? null : recurs(a + 1 )	
+//}
+//console.log(recurs(2))
+
+
+
+
+
+const recursia = (n) => {
+	if(n === 0 ) {
+		return 1
+	} else {
+		return n * recursia(n -1)
 	}
-return	a >=10 ? null : recurs(a + 1 )	
 }
-console.log(recurs(2))
+
+console.log(recursia(4))

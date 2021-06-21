@@ -24,10 +24,14 @@ const num = 3;
 
  sowMessage();
 
- function rezylt(userNme, text) {
-     console.log(userNme + ':' + text)
- }
+// function rezylt(userNme, text) {
+//     console.log(userNme + ':' + text)
+// }
  rezylt('Vlad', 'Horosh')
+
+ function rezylt(userN, text){
+	 console.log(`${userN} ${text}`)
+ }
 
  function message(form, text = 'text no dobavlen') {
      from = '*' + from + '*';

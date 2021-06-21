@@ -88,9 +88,7 @@ const num = 3;
 
  function isPrime(n) {
      for( let i = 2; i < n; i++) {
-         if (n % i == 0) return false;
-        
-            
+         if (n % i == 0) return false;           
          }
          return true
      }
@@ -100,8 +98,7 @@ const num = 3;
 
  function hey() {
     a = 5;
-    return (a);
-   
+    return (a);   
  }
 
  let b = hey();
@@ -184,5 +181,10 @@ min(5, 7);
        }
    }
 
-
+	 function b(num) {
+		console.log(num)
+	}
+	b(p)
+	let p = 2
+	
 

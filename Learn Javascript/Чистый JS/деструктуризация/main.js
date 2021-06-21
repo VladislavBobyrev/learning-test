@@ -24,3 +24,8 @@ const numb = [34, 5, 345, 4, 43, 5 ]
 const lete = ['sdf', 'sdf', 'skfa', 'sfd']
 const concat = [...numb, ...lete]
 console.log(concat)
+
+let obj = [ 'vlad', 25, 'js']
+
+let [nameVL, ageVL, jobVL] = obj
+console.log(ageVL)

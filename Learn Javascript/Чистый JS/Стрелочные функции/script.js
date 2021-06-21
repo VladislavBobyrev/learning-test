@@ -6,6 +6,14 @@
 //    return a - b
 // };
 
+let strFunc = (n, m) => {
+	console.log( n ** m)
+}
+
+const a = [5]
+const b = 10
+strFunc(a, b)
+
 // console.log(strFunc(10, 1))
 
 // let sum = (x, n) => x + n;
@@ -43,7 +51,7 @@
 // )
 
 
-let a = [10]
+//let a = [10]
  
 //let str = () => {
 //    let a = 14;
@@ -56,5 +64,8 @@ let a = [10]
 //let calcNum = () => a + b
 
 
-let a3 = a.map(s => s.length)
-console.dir(a3)
+//let a3 = a.map(s => s.length)
+//console.dir(a3)
+
+let leng = a.map(item => item.length)
+console.log(leng)

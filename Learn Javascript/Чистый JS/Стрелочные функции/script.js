@@ -69,3 +69,22 @@ strFunc(a, b)
 
 let leng = a.map(item => item.length)
 console.log(leng)
+
+function setNum(a) {
+	let rez = 0
+	if(a === 0){
+		return 1
+	} else{
+		rez =	a * setNum(a -1)
+	}
+return rez
+}
+
+console.log(setNum(5))
+
+const setNumbers = (a) => {
+	let rez = a === 0 ? a = 1 : a * setNumbers(a -1) 
+	return rez
+}
+
+console.log( setNumbers(3 ))

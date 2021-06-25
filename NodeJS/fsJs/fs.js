@@ -19,8 +19,23 @@ const filePath = path.join(__dirname, 'test.txt')
 //	} : console.log('file compleet')
 //})
 // обновляет файл и дабавляет новый контент
-fs.appendFile(filePath, 'Hello appendFile', err => {
+//fs.appendFile(filePath, 'Hello appendFile', err => {
+//	err ? () => {
+//		throw err
+//	} : console.log('file compleet')
+//})
+
+fs.readFile(filePath, 'utf-8', (err, content) => {
 	err ? () => {
 		throw err
-	} : console.log('file compleet')
-})
+	} : console.log(content)	
+		
+	}
+)
+//fs.readFile(filePath, (err, content) => {
+//	err ? () => {
+//		throw err
+//	} : console.log(Buffer.from(content).toString())	
+		
+//	}
+//)

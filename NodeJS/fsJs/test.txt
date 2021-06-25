@@ -1,1 +1,2 @@
-Hello writeFileHello appendFile
+Hello writeFileHello 
+appendFileHello appendFile

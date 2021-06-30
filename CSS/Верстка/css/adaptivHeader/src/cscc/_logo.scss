@@ -1,0 +1,39 @@
+.logo {
+	display: grid;
+	grid-template-columns: min-content 1fr;
+	column-gap: 8px;
+	line-height: 1;
+}
+
+.logo__image {
+	width: 40px;
+	height: 44px;
+}
+@media (min-width: 320px) {
+	.logo__image {
+		grid-row: span 2;
+	}
+}
+
+.logo__title {
+	font-weight: bold;
+	letter-spacing: -0.03em;
+	margin: 0;
+}
+@media (max-width: 320px) {
+	.logo__title {
+		align-self: center;
+	}
+}
+.logo__tegilie {
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	margin: 0;
+}
+
+@media (max-width: 320px) {
+	.logo__tegilie {
+		display: none;
+	}
+}

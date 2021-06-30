@@ -1,0 +1,51 @@
+.menu__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 12px;
+}
+@media (max-width: 320px) {
+	.menu__list {
+		display: none;
+		row-gap: 8px;
+	}
+	.menu__list-open {
+		display: grid;
+	}
+}
+.menu__item {
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+}
+.menu__link {
+	color: blue;
+}
+.menu__link-inactiive {
+	color: var(--basic-semi-light);
+}
+.menu__link-current {
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+//=== button
+
+@media (max-width: 320px) {
+	.menu__button {
+		display: block;
+		margin: 0;
+		padding: 0;
+		background-color: transparent;
+		display: none;
+		justify-self: end;
+	}
+}
+//== icon
+@media (max-width: 320px) {
+	.menu__icon-menu {
+		stroke: black;
+		display: block;
+	}
+}
+

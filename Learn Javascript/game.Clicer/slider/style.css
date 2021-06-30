@@ -1,0 +1,90 @@
+body {
+	background: rgba(0, 0, 0, 0.166);
+}
+
+
+.slider {
+	perspective: 100vw;
+	padding-top: 10%;
+}
+.spiner {
+	transform-style: preserve-3d;
+	height: 300px;
+	transform-origin: 50% 50% -500px;
+	transition: 1s;
+}
+
+.spiner img {
+	height: 300px;
+	width: 400px;
+	position: absolute;
+	left: 30%;
+	transform-origin: 50% 50% -500px;
+	outline: 1px solid transparent;
+}
+
+.spiner img:nth-child(1) {
+	transform: rotateY(0deg);
+}
+.spiner img:nth-child(2) {
+	transform: rotateY(45deg);
+}
+.spiner img:nth-child(3) {
+	transform: rotateY(90deg);
+}
+.spiner img:nth-child(4) {
+	transform: rotateY(135deg);
+}
+.spiner img:nth-child(5) {
+	transform: rotateY(180deg);
+}
+.spiner img:nth-child(6) {
+	transform: rotateY(225deg);
+}
+.spiner img:nth-child(7) {
+	transform: rotateY(270deg);
+}
+.spiner img:nth-child(8) {
+	transform: rotateY(315deg);
+}
+
+.btn {
+	display: inline-block;
+	background: none;
+	padding: 10px 20px;
+	color: black;
+	cursor: pointer;
+	border: 1px solid #3498db;
+	font-family: "montserat";
+	text-transform: uppercase;
+	position: relative;
+	overflow: hidden;
+}
+.btn:hover {
+	color: #fff;
+}
+.btn::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 0%;
+	background: #3498db;
+	z-index: -1;
+	transition: 0.8s;
+	top: 0;
+	border-radius: 0 0 50% 50%;
+}
+
+
+.btn:hover:before {
+	height: 180%;
+}
+
+.cont{
+display: grid;
+grid-template-columns: 1fr 1fr;
+	text-align:center;
+	grid-gap: 20vw;
+
+}

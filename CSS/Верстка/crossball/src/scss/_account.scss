@@ -1,0 +1,45 @@
+.box__account {
+	position: relative;
+	background: #ffffff;
+	height: 800px;
+}
+.card__item {
+	width: 100%;
+	position: absolute;
+	height: 184px;
+	background: linear-gradient(238.37deg, rgba(90, 96, 231, 0.35) 6.34%, rgba(30, 30, 40, 0) 103.77%), #2c2c2c;
+	border-radius: 10px;
+	img {
+		display: inline-block;
+		@include adaptiv-value("padding", 20, 10, 0);
+	}
+}
+.prosent {
+	position: absolute;
+	left: 40%;
+	top: 10%;
+	display: flex;
+	font-size: 30px;
+	img{
+		position: relative;
+		
+		left: -10px;
+		bottom: 20px;
+	}
+}
+
+.user {
+	position: absolute;
+	top: 35%;
+	left: 40%;
+}
+.redact {
+	position: relative;
+	bottom: 10%;
+	left: 15%;
+	img {
+		position: relative;
+		top: 35px;
+		left: -40px;
+	}
+}

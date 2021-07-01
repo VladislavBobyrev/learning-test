@@ -1,0 +1,22 @@
+// rest style brouser
+@import "./utilits/resets";
+// fonts
+@import "./fonts/font";
+@import "./utilits/variables";
+@import "./utilits/mixin";
+
+//style
+body {
+	background: #faf9f9;
+	@include adaptiv-font(16, 14);
+}
+.container {
+	display: grid;
+	grid-template-columns: [logo] 0.29fr 1fr;
+	column-gap: 3.5%;
+	padding: 0 40px;
+}
+
+
+@import "./header";
+@import "./account";

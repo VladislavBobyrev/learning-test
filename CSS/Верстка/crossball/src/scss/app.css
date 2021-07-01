@@ -312,15 +312,26 @@ body {
 }
 
 .box__account {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 184px 1fr;
+      grid-template-rows: 184px 1fr;
+  row-gap: 50px;
   position: relative;
   background: #ffffff;
   height: 800px;
+}
+
+.box__account .side__menu {
+  -ms-grid-row: 2;
+  grid-row: 2;
 }
 
 .card__item {
   width: 100%;
   position: absolute;
   height: 184px;
+  margin-bottom: 50px;
   background: linear-gradient(238.37deg, rgba(90, 96, 231, 0.35) 6.34%, rgba(30, 30, 40, 0) 103.77%), #2c2c2c;
   border-radius: 10px;
 }

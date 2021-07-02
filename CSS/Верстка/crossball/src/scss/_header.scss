@@ -1,88 +1,47 @@
 .header {
 	display: grid;
-	grid-template-columns: [logo] 0.29fr 1fr;
-	column-gap: 3.5%;
-	height: 80px;
+	grid-template-columns: 1fr minmax(295px, auto) minmax(1015px, auto) 1fr;
+	box-shadow: 0px 2px 4px #E9E9E9;
 	align-items: center;
-	padding: 0 40px;
+	padding: 0 15px;
 	margin-bottom: 20px;
-	box-shadow: 0px 2px 4px #e9e9e9;
-}
-
-// logo
-.logo {
-	grid-column: logo;
-	display: inline-block;
-	min-width: 120px;
-}
-
-//navigation
-.navigation {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-}
-.menu__nav {
-	display: flex;
-	align-items: center;
-	a {
-		color:#000;		
-	 }
-
-}
-.menu__nav-item {
-	padding-right: 10%;
-	white-space: nowrap;
-	position: relative;
-	img {
-		position: absolute;
-		width: 16px;
-	}
-}
-
-.menu__account {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-}
-.menu__footbol {
-	display: flex;
-	align-self: center;
-	justify-self: center;
-}
-
-//cli
-.menu__client {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	text-align: right;
-}
-@media (max-width: $smDesktopWidth) {
-	.menu__footbol {
-		width: 40px;
-		justify-self: end;
-	}
-	.menu__client img {
-		max-width: 35px;
-	}
-	.menu__nav-item {
-		padding-right: 8%;
-	}
-}
-
-@media (max-width: $tableWidth) {
-	.menu__footbol {
-		width: 27px;
-	}
-	.menu__client img {
-		max-width: 25px;
-	}
-	.menu__nav-item {
-		padding-right: 5%;
-	}
-}
-@media (max-width: 670px) {
-	.menu__nav-item {
-		img {
-			display: none;
+		&__logo {
+			grid-column: 2/3;
 		}
-	}
+
+		&__menu {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			
+		}
+
+		&__list {
+			display: grid;
+			grid-auto-flow: column;
+			align-items: center;
+		}
+
+		&__list li{
+	
+		}
+
+		&__item {
+			color: #222222;
+			font-size: 16px;
+		}
+
+		&__account {
+		}
+
+		&__icon {
+			display: grid;
+			grid-auto-flow: column;
+			justify-content: end;
+			align-items: center;
+		}
+
+		&__icon-item {
+			margin: 0 50px;
+		}
+
 }

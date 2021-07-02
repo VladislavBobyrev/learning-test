@@ -1,71 +1,103 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
 <!DOCTYPE html>
-<html lang="en">
-
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Заголовок страницы в браузере -->
+	<title>GRID LAYOUER</title>
+	<!-- Подключаем CSS -->
 	<link rel="stylesheet" href="./src/scss/app.css">
-	<title>Adaptiv</title>
+	<!-- Кодировка страницы -->
+	<meta charset="UTF-8">
+	<!-- Адаптив -->
+	<meta name="viewport" content="width=device-width">
 </head>
+<!-- Отображаемое тело страницы -->
 
 <body>
-
-	<header class="header">
-		<a href=""> <img class='logo' src="./src/img/account/Logo.svg" alt="logo"></a>
-		<nav class="navigation">
-			<ul class="menu__nav">
-				<li class="menu__nav-item"><a class="menu_link" href="">Расписание</a></li>
-				<li class="menu__nav-item"><a class="menu_link" href="">Игровые отчёты</a> </li>
-				<li class="menu__nav-item"><a class="menu_link" href="">Статистика</a> </li>
-				<li class="menu__nav-item"><a class="menu_link" href="">Ещё<img src="./src/img/icon/str.svg" alt=""></a></li>
-			</ul>
-			<div class="menu__account">
-				<div class="menu__footbol">
-					<a href=""><img src="./src/img/icon/foot.svg" alt=""></a>
-				</div>
-				<div class="menu__client">
-					<a href=""><img src="./src/img/account/Ava.svg" alt="avatar"></a>
-					<a href=""><img src="./src/img/icon/bag.svg" alt="sale"></a>
-				</div>
+	<!-- Оболочка (grid-контейнер) -->
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__logo">
+				<img src="./src/img/account/Logo.svg" alt="logo@">
 			</div>
-		</nav>
-	</header>	
-	<div class="container">
-		<div class="box__account">
-			<div class="card__item">
-				<img src="./src/img/account/Avab.svg" alt="avatar">
-				<h1 class="prosent">89.40<img src="./src/img/icon/Ratio.png">	</h1>		
-				
-				<div class="user">
-					<div class="user__naeme">Елишакашвили</div>
-					<div class="user__surename">Михо</div>
-				</div>
-				<div class="redact">					
-					<h1><img src="./src/img/icon/edit.png" alt="edit">Редактировать</h1>
-				</div>				
-			</div>
-			<div class="side__menu">
-				<ul>					
-					<li>Статистика</li> 
-					<ul>
-						<li>Футбол</li>
-						<li>Баскетбол</li>
-						<li>Волейбол</li>
-					</ul>
-					<li>Ближайшие игры</li>
-					<li>Игровые отчёты</li>
-					<li>История заказов</li>
-					<li>Выйти</li>
+			<nav class="header__menu">
+				<ul class="header__list">
+					<li><a href="" class="header__item">Расписание</a></li>
+					<li><a href="" class="header__item">Игровые отчёты</a></li>
+					<li><a href="" class="header__item">Статистика</a></li>
+					<li><a href="" class="header__item">Ещё</a></li>
 				</ul>
+				<div class="header__account">
+					<ul class="header__icon">
+						<li>
+							<a href="" class="header__icon-item">
+								<img src="./src/img/icon/foot.svg" alt="" srcset="">
+							</a>
+						</li>
+						<li>
+							<a href="" class="header__icon-item">
+								<img src="./src/img/account/Ava.svg" alt="" srcset="">
+							</a>
+						</li>
+						<li>
+							<a href="" class="header__icon-item">
+								<img src="./src/img/icon/bag.svg" alt="" srcset="">
+							</a>
+						</li>
+					</ul>
+
+				</div>
+			</nav>
+		</header>
+		<main class="main">
+			<aside class="sidebar">
+				<div class="sidebar__account account">
+					<img src="./src/img/account/Avab.svg" alt="ava">
+					<div class="account__text">
+						<h1>89.40</h1>
+						<div class="account__name">Елишакашвили</div>
+						<div class="account__surename">	Михо</div>						
+					</div>
+				</div>
+				<nav class="sidebar__menu">
+					<ul class="sidebar__list">
+						<li>
+							<a href="" class="sidebar__link">Статистика</a>
+						</li>
+						<ul class="sideber__two">
+							<li>
+								<a href="" class="sidebar__two-link">Футбол</a>
+							</li>
+							<li>
+								<a href="" class="sidebar__two-link">Баскетбол</a>
+							</li>
+							<li>
+								<a href="" class="sidebar__two-link">Волейбол</a>
+							</li>
+						</ul>
+						<li>
+							<a href="" class="sidebar__link">Ближайшие игры</a>
+						</li>
+						<li>
+							<a href="" class="sidebar__link">Игровые отчёты</a>
+						</li>
+						<li>
+							<a href="" class="sidebar__link">История заказов</a>
+						</li>
+						<li>
+							<a href="" class="sidebar__link">Выйти</a>
+						</li>
+					</ul>
+				</nav>
+			</aside>
+			<div class="content">
+				
 			</div>
-		</div>
-		<div class="box__table">a</div>
-
+		</main>
+		<footer class="footer"></footer>
 	</div>
-
-
-
 </body>
 
 </html>

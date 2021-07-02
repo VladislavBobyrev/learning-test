@@ -1,22 +1,21 @@
-// rest style brouser
-@import "./utilits/resets";
-// fonts
-@import "./fonts/font";
-@import "./utilits/variables";
-@import "./utilits/mixin";
-
-//style
-body {
-	background: #faf9f9;
-	@include adaptiv-font(16, 14);
+//обнуление браузеров
+@import './utilits/resets';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body{
+	height: 100vh;
+	background: #E5E5E5;
+	font-family: Montserrat;
 }
-.container {
+.wrapper {
 	display: grid;
-	grid-template-columns: [logo] 0.29fr 1fr;
-	column-gap: 3.5%;
-	padding: 0 40px;
+	min-height: 100vh;
+	grid-template-rows: minmax(auto, 80px) 1fr minmax(auto, 400px);
 }
 
+@import './header';
+@import './main';
+@import './footer';
 
-@import "./header";
-@import "./account";
+
+.footer {
+}

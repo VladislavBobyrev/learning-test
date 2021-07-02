@@ -18,15 +18,17 @@
 	border-radius: 10px;
 	img {
 		display: inline-block;
-		@include adaptiv-value("padding", 20, 10, 0);
+		@include adaptiv-value("padding", 20, 5, 0);
 	}
+
 }
 .prosent {
 	position: absolute;
-	left: 40%;
+	left:103px;
 	top: 10%;
 	display: flex;
 	font-size: 30px;
+	color: #FFFFFF;
 	img{
 		position: relative;
 		
@@ -38,15 +40,13 @@
 .user {
 	position: absolute;
 	top: 35%;
-	left: 40%;
+	left: 103px;
+	color: #FFFFFF;
+	font-size: 20px;
 }
+
 .redact {
-	position: relative;
-	bottom: 10%;
-	left: 15%;
-	img {
-		position: relative;
-		top: 35px;
-		left: -40px;
-	}
+	position: absolute;
+	top: 140px;
+	left: 0px;
 }

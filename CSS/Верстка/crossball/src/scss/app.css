@@ -338,17 +338,18 @@ body {
 
 .card__item img {
   display: inline-block;
-  padding: calc(10px + 10 * ((100vw - 320px) / 1120));
+  padding: calc(5px + 15 * ((100vw - 320px) / 1120));
 }
 
 .prosent {
   position: absolute;
-  left: 40%;
+  left: 103px;
   top: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-size: 30px;
+  color: #FFFFFF;
 }
 
 .prosent img {
@@ -360,17 +361,13 @@ body {
 .user {
   position: absolute;
   top: 35%;
-  left: 40%;
+  left: 103px;
+  color: #FFFFFF;
+  font-size: 20px;
 }
 
 .redact {
-  position: relative;
-  bottom: 10%;
-  left: 15%;
-}
-
-.redact img {
-  position: relative;
-  top: 35px;
-  left: -40px;
+  position: absolute;
+  top: 140px;
+  left: 0px;
 }

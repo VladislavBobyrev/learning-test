@@ -1,9 +1,10 @@
 .header {
 	display: grid;
-	grid-template-columns: 1fr minmax(295px, auto) minmax(1015px, auto) 1fr;
+	grid-template-columns:minmax(5px,1fr) minmax(295px, auto) minmax(3%, 50px) minmax(1015px, auto) 1fr;
 	box-shadow: 0px 2px 4px #E9E9E9;
+	background: #FAF9F9;
 	align-items: center;
-	padding: 0 15px;
+
 	margin-bottom: 20px;
 		&__logo {
 			grid-column: 2/3;
@@ -12,7 +13,7 @@
 		&__menu {
 			display: grid;
 			grid-template-columns: 1fr 1fr;
-			
+			grid-column: 4/5;			
 		}
 
 		&__list {

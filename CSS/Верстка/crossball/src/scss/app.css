@@ -281,26 +281,41 @@ body {
   padding: 0 65px 0 20px;
 }
 
-.sidebar__list li:hover {
-  height: 32px;
-  background: #efeffd;
-  border-radius: 5px;
-}
-
 .sidebar__list li {
-  height: 32px;
-  margin-bottom: 5px;
-  border-radius: 5px;
+  min-height: 32px;
 }
 
-.sidebar .out {
-  margin-top: 60px;
+.sidebar__list li ul {
+  display: none;
+  margin-top: 5px;
+}
+
+.sidebar__list li:hover ul {
+  display: block;
+  background: #fff;
+  border-radius: 5px;
 }
 
 .sidebar__list li a {
   display: block;
   color: #222222;
   font-size: 16px;
+  padding: 5px 10px;
+}
+
+.sidebar__list li a:hover {
+  background: #efeffd;
+  border-radius: 5px;
+  color: #5A60E7;
+}
+
+.sidebar__two-link {
+  max-width: 190px;
+  margin-left: 20px;
+}
+
+.sidebar .out {
+  margin-top: 60px;
 }
 
 .card {

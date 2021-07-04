@@ -2,6 +2,7 @@
 	display: grid;
 	grid-template-columns: minmax(5px, 1fr) minmax(295px, auto) minmax(3%, 50px) minmax(auto, 1015px) 1fr;
 }
+// ================= sidebar
 .sidebar {
 	grid-column: 2/3;
 	height: 800px;
@@ -13,7 +14,6 @@
 		padding: 0 65px 0 20px;
 	}
 
-	
 	&__list li {
 		position: relative;
 		min-height: 32px;
@@ -22,7 +22,6 @@
 		display: none;
 		margin-top: 5px;
 	}
-
 
 	&__list li:hover ul {
 		display: block;
@@ -36,6 +35,7 @@
 		font-size: 16px;
 		padding:5px 10px;
 	}
+
 	&__list li a:hover {
 		background: #efeffd;
 		border-radius: 5px;
@@ -58,7 +58,7 @@
 		margin-top: 60px;
 	}
 }
-
+// ========= card sidebar
 .card {
 	background: linear-gradient(238.37deg, rgba(90, 96, 231, 0.35) 6.34%, rgba(30, 30, 40, 0) 103.77%), #2c2c2c;
 	border-radius: 10px;
@@ -95,12 +95,9 @@
 	&__surename {
 	}
 }
-.sideber {
-	&__two {
-	
-	}
 
-}
+
+// ========== content main
 .content {
 	display: grid;
 	grid-template-rows: 184px 60px 1fr;

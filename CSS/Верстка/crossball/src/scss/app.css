@@ -282,6 +282,7 @@ body {
 }
 
 .sidebar__list li {
+  position: relative;
   min-height: 32px;
 }
 
@@ -307,6 +308,12 @@ body {
   background: #efeffd;
   border-radius: 5px;
   color: #5A60E7;
+}
+
+.sidebar__link:hover::after {
+  content: url(../img/icon/arrow.svg);
+  position: absolute;
+  right: 10px;
 }
 
 .sidebar__two-link {

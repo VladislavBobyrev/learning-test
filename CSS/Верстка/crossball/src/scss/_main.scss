@@ -15,6 +15,7 @@
 
 	
 	&__list li {
+		position: relative;
 		min-height: 32px;
 	}
 	&__list li ul {
@@ -38,13 +39,16 @@
 	&__list li a:hover {
 		background: #efeffd;
 		border-radius: 5px;
-		color: #5A60E7
-		;
+		color: #5A60E7;
 	}
 
-	&__link {
-	
-	}
+
+	&__link:hover::after{
+		content: url(../img/icon/arrow.svg);
+		position: absolute;
+		right: 10px;
+		}
+
 	&__two-link {
 		max-width: 190px;
 	margin-left: 20px;

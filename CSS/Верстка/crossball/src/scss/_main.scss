@@ -137,7 +137,7 @@
 	grid-column-gap: 5px;
 }
 
-// ======= search content
+// ======= search content main
 .info__search {
 	display: grid;
 	grid-template-rows: minmax(auto, 40px) 1fr;
@@ -204,52 +204,55 @@
 			width: 35px;
 			height: 35px;
 		}
-	 .pod{
-		 position: absolute;
-		 padding: 5px;
-		display: flex;
-		top: 80px;
-		color: #ACAFF3;
-		font-size: 12px;
-	}
+		.pod {
+			position: absolute;
+			padding: 5px;
+			display: flex;
+			top: 80px;
+			color: #acaff3;
+			font-size: 12px;
+		}
 	}
 }
 
-.close{
+.close {
 	margin-left: 15px;
 }
-	.close:before, .close:after {
-	position: absolute;	
-	content: ' ';
-	
+.close:before,
+.close:after {
+	position: absolute;
+	content: " ";
+
 	height: 30px;
 	width: 2px;
-	background-color: #5A60E7;
-	}
-	.close:before {
-		transform: rotate(45deg);	
-	}
-	.close:after {
+	background-color: #5a60e7;
+}
+.close:before {
+	transform: rotate(45deg);
+}
+.close:after {
 	transform: rotate(-45deg);
-	}
-.one-px::before,.one-px::after {
+}
+.one-px::before,
+.one-px::after {
 	width: 1px;
 }
-.o-px::before,.o-px::after{
-width: 0.5px;
+.o-px::before,
+.o-px::after {
+	width: 0.5px;
 }
 
-// ============= list
+// ============= list content main
 
-.content__list{
+.content__list {
 	position: relative;
 	max-width: 200px;
 	margin: auto 0;
-	
-	li{
+
+	li {
 		width: 170px;
 		padding: 10px;
-		background: #FFFFFF;
+		background: #ffffff;
 		color: #909090;
 	}
 	li:hover::after {
@@ -263,5 +266,52 @@ width: 0.5px;
 		position: absolute;
 		right: 40px;
 		top: 7px;
+	}
+}
+
+// ============= table content main
+.content__table {
+	display: grid;
+	grid-template-columns: 1fr;
+	table {
+	
+		position: absolute;
+		border-collapse: collapse;		
+		box-shadow: 0px 2px 8px #e9e9e9;
+		text-align: left;
+		.rezuit {
+			color: #5a60e7;
+			font-weight: 600;
+		}
+	}
+	thead {
+		background: #ffffff;
+		th:before {
+			content: url(../img/icon/filBtn.svg);
+			height: 6px;
+			position: relative;
+			left: -3px;
+		}
+		th:first-child::before {
+			content: '';
+		}
+	}
+
+	thead,
+	tbody {
+		tr th {
+			height: 40px;
+			padding: 22px 0 5px 20px;
+		}
+		tr:nth-child(2n) {
+			background: #ffffff;
+		}
+		
+		th:first-child {
+			width: 440px;
+		}
+		a{
+			color:  #909090;
+		}
 	}
 }

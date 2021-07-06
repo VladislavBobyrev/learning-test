@@ -568,6 +568,11 @@ body {
   color: #909090;
 }
 
+.content__list li:hover {
+  background: #efeffd;
+  color: blue;
+}
+
 .content__list li:hover::after {
   content: url(../img/icon/arrow.svg);
   position: absolute;
@@ -587,6 +592,7 @@ body {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
+  position: relative;
 }
 
 .content__table table {
@@ -606,21 +612,10 @@ body {
   background: #ffffff;
 }
 
-.content__table thead th:before {
-  content: url(../img/icon/filBtn.svg);
-  height: 6px;
-  position: relative;
-  left: -3px;
-}
-
-.content__table thead th:first-child::before {
-  content: '';
-}
-
 .content__table thead tr th,
 .content__table tbody tr th {
-  height: 40px;
-  padding: 22px 0 5px 20px;
+  height: 60px;
+  padding: 21px 20px;
 }
 
 .content__table thead tr:nth-child(2n),
@@ -633,9 +628,21 @@ body {
   width: 440px;
 }
 
+.content__table thead th,
+.content__table tbody th {
+  min-width: 130px;
+}
+
 .content__table thead a,
 .content__table tbody a {
+  display: block;
   color: #909090;
+}
+
+.content__table thead tr th {
+  padding: 0 0 5px 20px;
+  vertical-align: bottom;
+  height: 40px;
 }
 
 .footer {

@@ -1,6 +1,9 @@
 //обнуление браузеров
 @import './utilits/resets';
+// шрифт
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+// стили
 body{
 	height: 100vh;
 	background:   #FAF9F9;
@@ -15,7 +18,3 @@ body{
 @import './header';
 @import './main';
 @import './footer';
-
-
-.footer {
-}

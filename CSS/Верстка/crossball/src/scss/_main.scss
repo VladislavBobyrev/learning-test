@@ -1,8 +1,13 @@
+//================================= контейнер
+
 .main {
 	display: grid;
-	grid-template-columns: minmax(5px, 1fr) minmax(295px, auto) minmax(3%, 50px) minmax(auto, 1015px) 1fr;
+	grid-template-columns: minmax(4px, 1fr) minmax(295px, auto) minmax(3%, 50px) minmax(auto, 1015px) 1fr;
+	min-height: 1047px;
 }
-// ================= sidebar
+
+// ================================= sidebar
+
 .sidebar {
 	grid-column: 2/3;
 	height: 800px;
@@ -57,7 +62,9 @@
 		margin-top: 60px;
 	}
 }
-// ========= card sidebar
+
+// ============================== card sidebar
+
 .card {
 	background: linear-gradient(238.37deg, rgba(90, 96, 231, 0.35) 6.34%, rgba(30, 30, 40, 0) 103.77%), #2c2c2c;
 	border-radius: 10px;
@@ -95,7 +102,8 @@
 	}
 }
 
-// ========== content main
+// ============================== content main
+
 .content {
 	display: grid;
 	grid-template-rows: 184px 60px 1fr;
@@ -116,7 +124,8 @@
 	padding: 20px 20px 14px;
 }
 
-// ============== icon
+// ====================================== icon
+
 .info__icon {
 	display: grid;
 	grid-template-rows: minmax(40px, 50px) 40px;
@@ -137,7 +146,8 @@
 	grid-column-gap: 5px;
 }
 
-// ======= search content main
+// ============================ search content main
+
 .info__search {
 	display: grid;
 	grid-template-rows: minmax(auto, 40px) 1fr;
@@ -191,7 +201,8 @@
 	}
 }
 
-// ========== main social icon
+// ============================= main social icon
+
 .info__social {
 	display: grid;
 	grid-template: repeat(3, minmax(30px, auto)) / repeat(3, minmax(30px, auto));
@@ -214,6 +225,8 @@
 		}
 	}
 }
+
+// ================================ крестики 
 
 .close {
 	margin-left: 15px;
@@ -242,7 +255,7 @@
 	width: 0.5px;
 }
 
-// ============= list content main
+// ======================= list content main
 
 .content__list {
 	position: relative;
@@ -273,7 +286,8 @@
 	}
 }
 
-// ============= table content main
+// =========================== table content main
+
 .content__table {
 	display: grid;
 	grid-template-columns: 1fr;

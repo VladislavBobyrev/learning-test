@@ -1,6 +1,6 @@
 .header {
 	display: grid;
-	grid-template-columns:minmax(5px,1fr) minmax(295px, auto) minmax(3%, 50px) minmax(1015px, auto) 1fr;
+	grid-template-columns: minmax(4px,1fr) minmax(295px, auto) minmax(30px, 50px) minmax(1015px, auto) 1fr;
 	box-shadow: 0px 2px 4px #E9E9E9;
 	background: #FAF9F9;
 	align-items: center;
@@ -32,17 +32,41 @@
 		}
 
 		&__account {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			.footbol{
+				display: grid;
+				align-items: center;
+				justify-content: end;
+				a{
+					background: #fff;
+					padding: 8px 10px;
+				}
+			}
 		}
 
 		&__icon {
 			display: grid;
 			grid-auto-flow: column;
-			justify-content: end;
+			justify-content:end;
 			align-items: center;
 		}
 
 		&__icon-item {
-			margin: 0 50px;
+			margin-left: 60px;		
 		}
 
+}
+//===================  подсветка при наведении
+.flash  a {
+	display: block;
+	color: #222222;
+	font-size: 16px;
+	padding: 5px 10px;
+}
+
+.flash  a:hover {
+	background: #efeffd;
+	border-radius: 5px;
+	color: #5a60e7;
 }

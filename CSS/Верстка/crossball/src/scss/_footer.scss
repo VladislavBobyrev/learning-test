@@ -1,3 +1,9 @@
 .footer{
 	background: #222222;
+	display: grid;
+	grid-template-rows: 330px 70px;
+}
+.footer__info{
+	display: grid;
+	grid-template-columns: minmax(4px,1fr) minmax(295px, auto) minmax(30px, 50px) minmax(1015px, auto) 1fr;
 }

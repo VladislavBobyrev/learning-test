@@ -2,11 +2,11 @@
 	background: #222222;
 	display: grid;
 	grid-template-rows: 330px 70px;
-
+	
 }
 .footer__info {
 	display: grid;
-	grid-template-columns:  1fr minmax(295px, auto) minmax(30px, 50px) minmax(1015px, auto) 1fr;
+	grid-template-columns:  1fr minmax(auto, 295px) minmax(30px, 50px) minmax(auto, 1015px) 1fr;
 	border-bottom: 1px solid #fff;
 	padding: 50px 40px 0;
 }
@@ -57,10 +57,16 @@
 
 
 .footer__social{
-	display: flex;
-	padding: 15px 40px;
-	justify-content: space-between;
-	align-items: center;
+display: grid;
+grid-template-columns: 1fr minmax(295px, auto) minmax(30px, 50px) minmax(1015px, auto) 1fr;
+	.social{
+		grid-column: 2/5;
+		display: flex;
+		padding: 15px 40px;
+		justify-content: space-between;
+		align-items: center;
+	}
+	
 	p{
 		color: #fff;
 	}

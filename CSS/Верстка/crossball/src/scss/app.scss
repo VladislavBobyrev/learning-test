@@ -4,7 +4,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 // стили
-body{
+
+html, body{
+	width: 100vw;
 	height: 100vh;
 	background:   #FAF9F9;
 	font-family: Montserrat;
@@ -12,6 +14,7 @@ body{
 .wrapper {
 	display: grid;
 	min-height: 100vh;
+	min-width: 100vw;
 	grid-template-rows: minmax(auto, 80px) 1fr minmax(auto, 400px);
 }
 

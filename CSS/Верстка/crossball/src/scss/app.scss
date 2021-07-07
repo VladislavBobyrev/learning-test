@@ -16,7 +16,7 @@ html, body{
 	display: grid;
 	min-height: 100vh;
 	min-width: 100vw;
-	grid-template-rows: minmax(auto, 80px) 1fr minmax(auto, 400px);
+	//grid-template-rows: minmax(auto, 80px) 1fr minmax(auto, 400px);
 }
 
 @import './header';

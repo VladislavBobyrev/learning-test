@@ -7,6 +7,8 @@
 	padding: 0 40px;
 	margin-bottom: 20px;
 	height: 80px;
+
+	
 	&__logo {
 		grid-column: 2/3;
 	}
@@ -70,53 +72,12 @@
 }
 
 // ==================== media
-//@media (max-width: 1440px) {
-//	.header {
+@media (min-width: 1440px) {
+	.header__burger{
+		display: none;
+	}
 
-//		&__logo {
-//			width: 160px;
-//		}
-
-//		&__menu {
-//			display: grid;
-//			grid-template-columns: 1fr 2fr;
-			
-//		}
-
-//		&__list {
-//		}
-
-//		&__item {
-//			font-size: 14px;
-//		}
-
-//		&__account {
-			
-//		}
-
-//		&__icon-item .footbol, .flash{
-//			display: none;
-//		}
-
-//		&__icon {
-//			grid-column: 1;
-//			justify-content: center;
-//		}
-
-//		&__burger {
-//		}
-//}
-//.footbol {
-//	display: none;
-//}
-//.flash {
-//	display: none;
-//}
-//.bag {
-//	display: block;
-//}
-
-//}
+}
 
 @media (max-width: 1024px) {
 	.header {

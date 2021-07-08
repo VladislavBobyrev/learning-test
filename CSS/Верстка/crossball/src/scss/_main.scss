@@ -1,4 +1,4 @@
-@media (min-width: 1400px) {
+
 	//=============================== котейнер
 	.main {
 		display: grid;
@@ -281,8 +281,129 @@
 			}
 		}
 	}
-}
 
-@media (min-width:740px) {
+
+	@media (max-width: 1200px) {
+.sidebar{
+	display: none;
+}
+.content{
+	grid-column: 1/5;
+}
+.content__list{
+	display: none;
+}
+	}
+
+	
+	@media (max-width: 792px) {
+		.sidebar{
+			grid-column: 1/5;
+			display: block;
+		}
+		.content{
+			display: none;			
+		}
+		.content__list{
+			display: none;
+		}
+	}
+@media (max-width: 640px) {
+	.main {
+		padding: 0;
+		
+		display: grid;
+		grid-template-rows: 155px 80px 280px 70px 1fr;
+	}
+	.sidebar {
+	
+			&__card {
+				grid-row: 1;
+			}
+	
+			&__menu {
+			}
+	
+			&__list {
+			}
+	
+			&__link {
+			}
+	
+			&__two {
+			}
+	
+			&__two-link {
+			}
+	}
+	.card {
+	
+			&__text {
+			}
+	
+			&__name {
+			}
+	
+			&__surename {
+			}
+	
+			&__redact {
+			}
+	}
+	.out {
+	}
+	.content {
+	
+			&__info {
+			}
+	
+			&__list {
+			}
+	
+			&__table {
+			}
+	}
+	.info {
+	
+			&__icon {
+			}
+	
+			&__up {
+			}
+	
+			&__down {
+			}
+	
+			&__search {
+			}
+	
+			&__social {
+			}
+	
+			&__social-icon {
+			}
+	}
+	.search {
+	
+			&__up {
+			}
+	
+			&__down {
+			}
+	}
+	.down {
+	
+			&__block {
+			}
+	}
+	.pod {
+	}
+	.close {
+	}
+	.one-px {
+	}
+
+	.rezuit {
+	}
 	
 }

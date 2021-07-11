@@ -88,3 +88,14 @@ const setNumbers = (a) => {
 }
 
 console.log( setNumbers(3 ))
+
+const dataUser = {
+	firstName: 'Vladislav'
+}
+
+const showUser = () => {
+	console.log(this.firstName)
+}
+
+showUser.bind(dataUser)
+showUser()

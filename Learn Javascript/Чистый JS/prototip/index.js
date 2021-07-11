@@ -25,3 +25,30 @@ lena.name = 'Elena'
 
 
 const str = new String('i am string')
+
+// ==================Прототипы, наследование
+let o = {}
+console.log(o)
+
+let arr = [1, 2, 3, 4]
+
+console.log(arr.__proto__.__proto__)
+//console.log(Array.prototype.toString)
+
+
+// добавим свой метод к строкам
+String.prototype.show = function() {
+	console.log(this)
+}
+
+'boom'.show()
+
+// заимствования 
+let obj = {
+	0: "Hello",
+  1: "world!",
+  length: 2,
+}
+
+obj.join = Array.prototype.join
+console.log(obj.join)

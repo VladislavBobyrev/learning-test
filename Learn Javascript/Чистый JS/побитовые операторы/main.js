@@ -11,3 +11,6 @@ let admin = editor | ACCESS_ADMIN; // 11111
 console.log(guest)
 
 console.log(editor  & ACCESS_ADMIN)
+
+// возведение в степень
+console.log( 2 << 3)

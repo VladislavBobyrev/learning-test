@@ -1,5 +1,24 @@
 // ================== Конструктор Event
+let windowRelativeBottom = document.documentElement.getBoundingClientRect().bottom;
+let green = document.querySelector('.green')
 
+green
+console.log( green.getBoundingClientRect())
+
+
+
+
+
+
+
+
+
+
+
+
+
+console.log( document.documentElement.clientHeight)
+console.log( windowRelativeBottom)
 //let evt = new Event('click', {
 //	bubbles: true,
 //	cancelable: true,

@@ -117,3 +117,37 @@ interface Reply {
 	},
 	tags: tag[]
 }
+
+// =================================================== enums
+enum Direction {
+	Up,
+	Down,
+	left,
+	right,
+}
+
+const calcEnum = () => {
+	return 2
+}	
+enum ruls {
+	one = 1,
+	no = calcEnum()
+}
+
+enum tes {
+	A,
+	B
+}
+
+let num = tes.A
+let numb = tes[num]
+console.log(numb)
+
+// =================================================== tuple
+
+const typle: [number, string, number] = [33, 'hello', 77]
+// ts понимает что это число методы для чисел
+typle[0].toString()
+
+// понимает что строка методы для строк
+typle[1].toUpperCase()

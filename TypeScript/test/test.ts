@@ -128,7 +128,7 @@ enum Direction {
 
 const calcEnum = () => {
 	return 2
-}	
+}
 enum ruls {
 	one = 1,
 	no = calcEnum()
@@ -151,3 +151,30 @@ typle[0].toString()
 
 // понимает что строка методы для строк
 typle[1].toUpperCase()
+
+// =================================================== Generic
+//let generic<T> = (num: T): T => {
+//	console.log(new Date())
+//	return num
+//}
+
+//generic<number>(77)
+
+function generic2<T>(num: T): T {
+	console.log(new Date())
+	return num
+
+	interface generInterf {
+		transform: <T, F> (a: T) => F
+	}
+}
+
+generic2<number>(2)
+
+interface timStamp {
+	stamp: number
+}
+
+const logTimeStamp = <T extends timStamp>(num: T): T => {
+	return num
+}

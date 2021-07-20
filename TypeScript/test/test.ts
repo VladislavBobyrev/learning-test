@@ -2,7 +2,7 @@
 const a: number = 5
 let b = 'sfjls;djkf'
 let c = true
-
+let n: number[] = [1, 2, 3]
 //const d = a + c
 let d: string[] = ['kdc2', 'asfdsahf',]
 
@@ -118,6 +118,14 @@ interface Reply {
 	tags: tag[]
 }
 
+let avsver = {
+	ansver: "valsislav",
+	asc: '1234 lkajsdfljs  23 42j09 j '
+}
+interface Ansver extends Reply {
+	ansver: string,
+	asc: string
+}
 // =================================================== enums
 enum Direction {
 	Up,
@@ -143,6 +151,13 @@ let num = tes.A
 let numb = tes[num]
 console.log(numb)
 
+
+enum key {
+	up,
+	diwn
+}
+
+
 // =================================================== tuple
 
 const typle: [number, string, number] = [33, 'hello', 77]
@@ -152,6 +167,7 @@ typle[0].toString()
 // понимает что строка методы для строк
 typle[1].toUpperCase()
 
+const typl: [string, number, number] = ['sldfh', 44, 566]
 // =================================================== Generic
 //let generic<T> = (num: T): T => {
 //	console.log(new Date())
@@ -177,4 +193,9 @@ interface timStamp {
 
 const logTimeStamp = <T extends timStamp>(num: T): T => {
 	return num
+}
+
+
+const gen = <T, F>(str: T): T => {
+return str
 }

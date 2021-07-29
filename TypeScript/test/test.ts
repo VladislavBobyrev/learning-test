@@ -180,13 +180,17 @@ typle[0].toString()
 typle[1].toUpperCase()
 
 const typl: [string, number, number] = ['sldfh', 44, 566]
+
+const tp: [string, number] = ['hello', 22]
+
 // =================================================== Generic
+
 //let generic<T> = (num: T): T => {
 //	console.log(new Date())
 //	return num
 //}
 
-//generic<number>(77)
+//=generic<number>(77)
 
 function generic2<T>(num: T): T {
 	console.log(new Date())
@@ -210,4 +214,7 @@ const logTimeStamp = <T extends timStamp>(num: T): T => {
 
 const gen = <T, F>(str: T): T => {
 	return str
+}
+const gena = <T, F>(num: T): T => {
+	return num 
 }

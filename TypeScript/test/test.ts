@@ -72,6 +72,13 @@ const pirnt = (id: strNum) => {
 		b: number
 	}
 }
+interface bg {
+	color: string
+}
+
+const bgColour: bg = {
+	color: 'red'
+}
 
 const q = (point: Itest) => {
 	const s: D3Point = point as D3Point
@@ -156,6 +163,11 @@ enum key {
 	up,
 	diwn
 }
+enum pasword {
+	text,
+}
+
+let pasw = pasword.text
 
 
 // =================================================== tuple
@@ -197,5 +209,5 @@ const logTimeStamp = <T extends timStamp>(num: T): T => {
 
 
 const gen = <T, F>(str: T): T => {
-return str
+	return str
 }

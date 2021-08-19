@@ -1,0 +1,50 @@
+:root {
+  font-family: sans-serif;
+}
+
+.wrapper {
+  height: 100vh; /* Высота должна быть фиксированной, 100vh занимает всю высоту видимой области экрана */
+  overflow-x: hidden;
+  overflow-y: auto; /* Прокрутка по вертикали */
+  perspective: 2px; /* Симулируем пространство между экраном и трансформируемым объектом, в данном случае - 2px */
+}
+
+section {
+  position: relative; /* Нужно для позиционирования дочерних элементов */
+  height: 100vh; /* Высота элемента */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 0 0 5px #000;
+  color: #fff;
+}
+
+.parallax::after {
+  /* Создаем и позиционируем псевдо-элемент */
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateZ(-1px) scale(1.5); /* Отодвигаем псевдо-элемент от экрана и масштабируем, чтобы заполнить пустое пространство, так как этот элемент находится дальше, он будет двигаться медленее, симулируя повеедение реального отдаленно расположенного объекта */
+  background-size: 100%;
+  z-index: -1; /* Упреждаем перекрытие дочерними элементами */
+}
+
+/* Фон для статичного объекта */
+.static {
+  background-color: #555;
+}
+
+/* Фоновые картинки для отдаленных объектов */
+.bg1::after {
+  background-image: url('../img/73.png');
+	background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.bg2::after {
+  background-image: url('/img/pta.jpg');
+  background-position: center bottom;
+}

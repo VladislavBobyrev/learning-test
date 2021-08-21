@@ -1,0 +1,105 @@
+.main {
+	width: 100%;
+}
+.grid {
+	display: grid;
+	grid-template-columns: auto minmax(450px, 670px) minmax(450px, 670px) auto;
+}
+
+.smet {
+}
+.col1 {
+	width: 400px;
+
+	grid-column: 2;
+
+	&__title {
+		font-size: 64px;
+	}
+
+	&__subtitle {
+		font-size: 32px;
+	}
+
+	&__btn {
+		height: 60px;
+		width: 320px;
+		border-radius: 15px;
+	}
+}
+
+.smet__col2-imgbg {
+	grid-column: 3/5;
+	background: url(../img/pta.jpg) no-repeat 50% 0 / auto 100%;
+}
+.btn {
+}
+.col2 {
+}
+.grid {
+}
+.intereir {
+	.col1 {
+		grid-column: 3/4;
+	}
+	.col2 {
+		grid-row: 1;
+		grid-column: 2/3;
+	}
+	.intereir__col2-imgbg {
+		grid-column: 1/3;
+		background: url(../img/pta.jpg) no-repeat 50% 0 / auto 100%;
+	}
+}
+//   ================== до 1400рх
+@media (max-width: 1400px) {
+	.grid {
+		display: grid;
+		grid-template-columns: auto minmax(270px, 450px) minmax(270px, 450px) auto;
+	}
+	
+.col1 {
+	width: 230px;
+
+	&__title {
+		font-size: 32px;
+	}
+
+	&__subtitle {
+		font-size: 18px;
+	}
+
+	&__btn {
+		height: 40px;
+		width: 240px;
+		border-radius: 15px;
+	}
+}
+}
+
+//   ================== до 980рх
+@media (max-width: 980px) {
+	.grid {
+		display: grid;
+		grid-template-columns: auto minmax(170px, 270px) minmax(170px, 270px) auto;
+	}
+	
+.col1 {
+	width: 160px;
+
+	&__title {
+		font-size: 26px;
+	}
+
+	&__subtitle {
+		font-size: 13px;
+	}
+
+	&__btn {
+		height: 36px;
+		width: 150px;
+		border-radius: 5px;
+	}
+}
+
+}

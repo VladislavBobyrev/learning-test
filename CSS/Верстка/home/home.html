@@ -1,0 +1,382 @@
+<style>
+    .wrapper-color {
+        background-color: transparent;
+    }
+</style>
+
+
+
+{$sidebar_default = $theme_settings.sidebar_shop_home && $theme_settings.sidebar_shop}
+{$sidebar = $wa->cookie("sidebar", $sidebar_default)}
+{$wa->globals("sidebar",$sidebar)}
+
+{if !$wa->user()->isAuth()}
+<!--Навигационные вкладки -->
+<!--<ul class="nav nav-tabs nav-tabs-slider" role="navigation">
+                       <li class="active nav-li nav-li-planner">
+                           <a data-toggle="tab" class="nav-link  nav-link-planner" href="#home"
+                             aria-controls="home" data-name="1" role="tab">3D-планировщик <span class="nav-span-md">интерьеров</span></a>
+                       </li>
+                       <li class="nav-li nav-li-estimate">
+                           <a data-toggle="tab" class="nav-link nav-link-estimate" href="#profile" aria-controls="profile"  data-name="2" role="tab" >Сметы</a>
+                       </li>
+                       <li class="nav-li nav-li-team">
+                           <a data-toggle="tab" class="nav-link nav-link-team" href="#myteam" aria-controls="myteam" data-name="3" role="tab" >Моя команда</a>
+                       </li>
+                    </ul>-->
+<div class="gird__content">
+    <section class="grid__container bgi">
+        <div class="content__center">
+            <!-- Вкладки панелей основной экран-->
+            <!--<div class="tab-content tab-content-slider">-->
+            <!--<div role="tabpanel" class="tab-pane tab-pane-slide active" id="home">
+                    <div class="row-flex">-->
+
+            <div class='blokc__text'>
+                <p class="planner-name">Создайте интерьер
+                    своей мечты </p>
+                <div class="planner-about">Новый мощный планировщик, в котором вы сможете создать интерьер
+                    своей
+                    мечты
+                </div>
+                <div class="planner-items">
+                    <button class="planner-btn" onClick="window.location.href='/signup/'">Попробовать
+                        бесплатно
+                    </button>
+                    <!-- кнопка включения промо-видео  -->
+                    <a class="playIcon" href="">
+                        <img src="wa-data\public\shop\themes\room\img/playIcon.png" alt="">
+                        <p class="playIcon__text">Смотреть промо
+                            создания интерьера</p>
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </section>
+    <section class="grid__container" style="background-color: #FFF;">
+        <!-- container Roomgram - все в одном месте -->
+        <div class="content__center">
+
+
+            <h1 class="titel">Roomgram - все в одном месте</h1>
+            <p class="subtitle">Наши сервисы позволят вам самостоятельно провести все этапы ведения проекта от дизайна
+                до
+                строительства
+                <a>быстро, просто и экономично!</a>
+            </p>
+            
+            <!--контейнер для прямоугольных компонентов-->
+            <div class="container__block">
+                <div class="conteiner__row">
+                    <div class="box">
+                        <p class="box__rect">1</p>
+                        <p class="box__text"> Выбор планировки
+                            и дизайна интерьеров</p>
+                    </div>
+                    <img class="str" src="wa-data\public\shop\themes\room\img/section/stroke.png" alt="stroke">
+                    <div class="box">
+                        <p class="box__rect">2</p>
+                        <p class="box__text"> Выбор планировки
+                            и дизайна интерьеров</p>
+                    </div>
+                    <img class="str" src="wa-data\public\shop\themes\room\img/section/stroke.png" alt="stroke">
+                    <div class="box">
+                        <p class="box__rect">3</p>
+                        <p class="box__text"> Выбор планировки
+                            и дизайна интерьеров</p>
+                    </div>
+                    <img class="str" src="wa-data\public\shop\themes\room\img/section/stroke.png" alt="stroke">
+                </div>
+                <div class="conteiner__row">
+                    <img class="str" src="wa-data\public\shop\themes\room\img/section/stroke.png" alt="stroke">
+                    <div class="box">
+                        <p class="box__rect">1</p>
+                        <p class="box__text"> Выбор планировки
+                            и дизайна интерьеров</p>
+                    </div>
+                    <img class="str" src="wa-data\public\shop\themes\room\img/section/stroke.png" alt="stroke">
+                    <div class="box">
+    
+                        <p class="box__rect">2</p>
+                        <p class="box__text"> Выбор планировки
+                            и дизайна интерьеров</p>
+                    </div>
+                    <img class="str" src="wa-data\public\shop\themes\room\img/section/stroke.png" alt="stroke">
+                    <div class="box">
+                        <p class="box__rect">3</p>
+                        <p class="box__text"> Выбор планировки
+                            и дизайна интерьеров</p>
+                    </div>
+    
+                </div>
+            </div>
+           
+            <!-- блок Строителььства и ремонт помещения -->
+            <div class="two__section">
+                <h3>Строительство/ремонт помещения или целевого здания по вашему проекту</h3>
+                <img class='home' src="wa-data\public\shop\themes\room\img/section/home.png" alt="home">
+            </div>
+        </div>
+
+
+
+
+</div>
+</section>
+
+
+<!-- 3D планировщик интерьера -->
+<section class="grid__container interier">
+
+    <div class="content__center">
+        <div class="two__section m0">
+            <!-- текст и кнопка-->
+            <div class="two__section-item">
+                <p class="titel">3D-планировщик интерьера</p>
+                <div class="planner-about">
+                    <p class="p titel "> Новый мощный планировщик,
+                        в котором вы сможете создать
+                        интерьер вашей мечты</p>
+                </div>
+                <div class="planner-items smll">
+                    <button class="planner-btn smoll" onClick="window.location.href='/signup/'">Попробовать
+                        бесплатно
+                    </button>
+                </div>
+            </div>
+            <!-- первый ряд вторая колонка со скриншотом -->
+            <div class="two__section-img">
+                <img class='hall top' src="wa-data\public\shop\themes\room\img/section/screenshot.png" alt="">
+
+                <img class='desc' src="wa-data\public\shop\themes\room\img/section/desc.png" alt="">
+
+                <img class="bottom-left" src="wa-data\public\shop\themes\room\img/section/armchair.png" alt="">
+            </div>
+        </div>
+
+
+        <div class="interier__btn">
+            <button class="btn">Создание планировки</button>
+            <button class="btn">Визуализация</button>
+            <button class="btn">Готовые проекты</button>
+            <button class="btn">Каталог и кабинет дизайнера</button>
+        </div>
+</section>
+
+
+
+<!-- ======= ======================================================-->
+
+<section class="grid smeta content-right ">
+    <div class="col1">
+        <h1 class="col1__title">Составление смет</h1>
+        <h5 class="col1__subtitle">Автоматизированный сервис, позволяющий получить профессиональную смету из вашего 3D-проекта или из готовых бесплатных шаблонов за несколько секунд </h5>
+       
+
+        <button class="col1__btn smoll">Попробовать бесплатно</button>
+    </div>
+    <!-- image bg -->
+    <div class="col2 ">
+        <img class="planimg" src="wa-data\public\shop\themes\room\img/section/plan.png" alt="">
+        <img class="scheme" src="wa-data\public\shop\themes\room\img/section/budget.png" alt="">
+    </div>
+    <div class="block__btn">
+        <button class="btn">Закупки</button>
+        <button class="btn">Получение сметы</button>
+        <button class="btn">Получение чертежей</button>
+
+    </div>
+    <div class="smeta__text ">
+        <p class=" col1__smeta-textcenter">Автоматизированный сервис позволяет получить профессиональную смету из вашего 3D-проекта или
+            из готовых бесплатных шаблонов за несколько секунд</p>
+    </div>
+    
+</section>
+
+
+
+<!-- моя команда -->
+<section class="grid team">
+    <div class="col1">
+        <h1 class="col1__title">Моя команда</h1>
+        <h5 class="col1__subtitle">Выбирайте профессионального исполнителя или ищите заказы
+            в несколько кликов</h5>
+
+        <button class="col1__btn btn">Попробовать бесплатно</button>
+    </div>
+    <!-- image bg -->
+    <div class="col2 team__col2-imgbg"></div>
+    <div class="team__btn">
+        <button class="btn">Готовые проекты</button>
+        <button class="btn">Каталог и кабинет дизайнера</button>
+    </div>
+</section>
+
+<section class="grid platform content-right ">
+    <div class="col1">
+        <h1 class="col1__title">Удобная платформа
+            для всех ваших устройств</h1>
+        <h5 class="col1__subtitle">
+            Все сервисы Roomgram адаптированы для работы
+            на различных девайсах, что позволит работать над проектом в любом месте в любое время
+        </h5>
+        <div class="platform__icon">
+            <a class="col1__icon" href=""><img src="wa-data\public\shop\themes\room\img/section/icon.png" alt=""><span>
+                    App Store</span></a>
+            <a class="col1__icon" href=""><img src="wa-data\public\shop\themes\room\img/section/iconGoogle.png"
+                    alt=""><span>App Store</span></a>
+        </div>
+
+        <button class="col1__btn smoll">Попробовать бесплатно</button>
+    </div>
+    <!-- image bg -->
+    <div class="col2 ">
+        <img class="col2__img" src="wa-data\public\shop\themes\room\img/section/devices.png" alt="">
+    </div>
+    
+</section>
+
+<!--конец контейнера -->
+</div>
+
+<script>
+    $(document).ready(function () {
+        $('.nav-tabs-slider a').mouseover(function (e) {
+            e.preventDefault();
+            $(this).tab('show');
+        });
+    });
+</script>
+{include file="`$wa_active_theme_path`/footer-none-auth.html"}
+{else}
+<div class="container-fluid">
+    <div class="feature-list">
+        <div class="row f1">
+            <div class="col-md-4">
+                <div class="feature loaded">
+                    <a href="/planner/" target="_blank" rel="nofollow">
+                        <div class="icon-box ibox-plain ibox-center">
+                            <div class="ibox-icon"><img class="social__icon" alt=""
+                                    src="/wa-apps/shop/themes/room/img/icons/icon1.svg">
+                            </div>
+                            <h3>
+                                <span style="white-space: nowrap;">{_w('key126')}</span>
+                            </h3>
+                            <p>{_w('key162')}</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature loaded">
+                    <a href="/category/interiors/" target="_blank" rel="nofollow">
+                        <div class="icon-box ibox-plain ibox-center">
+                            <div class="ibox-icon"><img class="social__icon" alt=""
+                                    src="/wa-apps/shop/themes/room/img/icons/icon2.svg">
+                            </div>
+                            <h3>
+                                {_w('key127')} </h3>
+                            <p>{_w('key163')}</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature loaded">
+                    <a href="/estimate/" target="_blank" rel="nofollow">
+                        <div class="icon-box ibox-plain ibox-center">
+                            <div class="ibox-icon"><img class="social__icon" alt=""
+                                    src="/wa-apps/shop/themes/room/img/icons/icon3.svg">
+                            </div>
+                            <h3>
+                                <span style="white-space: nowrap;">{_w('key130')}</span>
+                            </h3>
+                            <p>{_w('key164')}</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row f1">
+            <div class="col-md-4">
+                <div class="feature loaded">
+                    <a href="/work/" target="_blank" rel="nofollow">
+                        <div class="icon-box ibox-plain ibox-center">
+                            <div class="ibox-icon"><img class="social__icon" alt=""
+                                    src="/wa-apps/shop/themes/room/img/icons/icon4.svg">
+                            </div>
+                            <h3>
+                                <span style="white-space: nowrap;">{_w('key131')}</span>
+                            </h3>
+                            <p>{_w('key165')}</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature loaded">
+                    <a href="/repair" target="_blank" rel="nofollow">
+                        <div class="icon-box ibox-plain ibox-center">
+                            <div class="ibox-icon"><img class="social__icon" alt=""
+                                    src="/wa-apps/shop/themes/room/img/icons/icon5.svg">
+                            </div>
+                            <h3>
+                                <span style="white-space: nowrap;">{_w('key132')}</span>
+                            </h3>
+                            <p><a href="/tile" target="_blank" rel="nofollow">{_w('key167')}</a>,
+                                <a href="/wallpaper" target="_blank" rel="nofollow">{_w('key102')}</a>,
+                                <a href="/paint" target="_blank" rel="nofollow">{_w('key103')}</a>,
+                                <a href="/varnish" target="_blank" rel="nofollow">{_w('key104')}</a>,
+                                <a href="/plaster" target="_blank" rel="nofollow">{_w('key105')}</a>,
+                                <a href="/filling" target="_blank" rel="nofollow">{_w('key106')}</a>,
+                                <a href="/walls" target="_blank" rel="nofollow">{_w('key107')}</a>,
+                                <a href="/radiators" target="_blank" rel="nofollow">{_w('key108')}</a>,
+                                <a href="/floor" target="_blank" rel="nofollow">{_w('key109')}</a>,
+                                <a href="/conditioners" target="_blank" rel="nofollow">{_w('key110')}</a>,
+                                <a href="/ventilation" target="_blank" rel="nofollow">{_w('key111')}</a>,
+                                <a href="/gypsumcardboard" target="_blank" rel="nofollow">{_w('key112')}</a>,
+                                <a href="/fireextinguishers" target="_blank" rel="nofollow">{_w('key113')}</a>,
+                                <a href="/parquet" target="_blank" rel="nofollow">{_w('key114')}</a>,
+                                <a href="/lighting" target="_blank" rel="nofollow">{_w('key186')}</a>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature loaded">
+                    <a href="/calculators" target="_blank" rel="nofollow">
+                        <div class="icon-box ibox-plain ibox-center">
+                            <div class="ibox-icon"><img class="social__icon" alt=""
+                                    src="/wa-apps/shop/themes/room/img/icons/icon6.svg">
+                            </div>
+                            <h3>
+                                <span style="white-space: nowrap;">{_w('key136')}</span>
+                            </h3>
+                            <p><a href="/calculator" target="_blank" rel="nofollow">{_w('key170')}</a>,
+                                <a href="/loan" target="_blank" rel="nofollow">{_w('key97')}</a>,
+                                <a href="/taxdeduction" target="_blank" rel="nofollow">{_w('key98')}</a>,
+                                <a href="/taxresident" target="_blank" rel="nofollow">{_w('key99')}</a>,
+                                <a href="/taxesforall" target="_blank" rel="nofollow">{_w('key100')}</a>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+{/if}
+
+{if !$wa->user()->isAuth()}
+<div class="container-fluid container-fluid__reg registration">
+
+
+</div>
+{else}
+{/if}

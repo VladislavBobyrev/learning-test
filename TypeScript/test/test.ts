@@ -3,17 +3,28 @@ const a: number = 5
 let b = 'sfjls;djkf'
 let c = true
 let n: number[] = [1, 2, 3]
+const a1: number = 5
+const b1 = 'string'
+let c1: boolean = false
+
 //const d = a + c
+let d1: string[] = ['str1', 'str2']
 let d: string[] = ['kdc2', 'asfdsahf',]
 
 let e: any = 4
 e = 'skdhfalk'
+
+let e1: any = 10
+e1 = 'str1'
 
 function test(a: number): string | number {
 	return a.toString()
 }
 console.log(test(777))
 
+function test1(a: number): string | number {
+	return a.toString()
+}
 const test2 = (a: number): number => {
 	return a * 2
 }
@@ -33,6 +44,10 @@ const prontInt = (id: number | string): void => {
 	}
 }
 
+const print1 = (id:number = 0, str:string = 'tesla'): void => {
+	console.log(`my id: ${id} my string: ${str}`)
+}
+
 const getSum = (a: number | number[]) => {
 	if (Array.isArray(a)) {
 		console.log(a.toString())
@@ -46,6 +61,15 @@ const x: null = null
 type test = {
 	a: number,
 	b: number
+}
+
+type test2 = {
+	a:number, 
+	b:string, 
+}
+
+type aaa = test2 & {
+	x: string
 }
 
 type D3Point = test & {
@@ -216,5 +240,5 @@ const gen = <T, F>(str: T): T => {
 	return str
 }
 const gena = <T, F>(num: T): T => {
-	return num 
+	return num
 }

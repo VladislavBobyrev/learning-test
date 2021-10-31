@@ -1,449 +1,121 @@
-<style>
-		.wrapper-color {
-				background-color: transparent;
-		}
-</style>
-
-
-
-{$sidebar_default = $theme_settings.sidebar_shop_home && $theme_settings.sidebar_shop}
-{$sidebar = $wa->cookie("sidebar", $sidebar_default)}
-{$wa->globals("sidebar",$sidebar)}
-
-{if !$wa->user()->isAuth()}
-<!--Навигационные вкладки -->
-<!--<ul class="nav nav-tabs nav-tabs-slider" role="navigation">
-											 <li class="active nav-li nav-li-planner">
-													 <a data-toggle="tab" class="nav-link  nav-link-planner" href="#home"
-														 aria-controls="home" data-name="1" role="tab">3D-планировщик <span class="nav-span-md">интерьеров</span></a>
-											 </li>
-											 <li class="nav-li nav-li-estimate">
-													 <a data-toggle="tab" class="nav-link nav-link-estimate" href="#profile" aria-controls="profile"  data-name="2" role="tab" >Сметы</a>
-											 </li>
-											 <li class="nav-li nav-li-team">
-													 <a data-toggle="tab" class="nav-link nav-link-team" href="#myteam" aria-controls="myteam" data-name="3" role="tab" >Моя команда</a>
-											 </li>
-										</ul>-->
-	<div class="gird__content">
-		<section class="grid__container bgi">
-						<div class="content__center">
-										<!-- Вкладки панелей основной экран-->
-										<!--<div class="tab-content tab-content-slider">-->
-										<!--<div role="tabpanel" class="tab-pane tab-pane-slide active" id="home">
-																		<div class="row-flex">-->
-
-										<div class='blokc__text'>
-														<p class="planner-name">Создайте интерьер
-																		своей мечты </p>
-														<div class="planner-about">Новый мощный планировщик, в котором вы сможете создать интерьер
-																		своей
-																		мечты
-														</div>
-														<div class="planner-items">
-																		<button class="planner-btn" onClick="window.location.href='/signup/'">Попробовать
-																						бесплатно
-																		</button>
-																		<!-- кнопка включения промо-видео  -->
-																		<a class="playIcon" href="">
-																						<img src="wa-data\public\shop\themes\room\img/section/play.png" alt="">
-																						<p class="playIcon__text">Смотреть промо
-																										создания интерьера</p>
-																		</a>
-														</div>
-										</div>
-
-
-						</div>
-
-
-		</section>
-		<section class="grid__container " style="background-color: #FFF;">
-						<!-- container Roomgram - все в одном месте -->
-						<div class="content__center roomgram">
-
-
-										<h1 class="titel">Roomgram - все в одном месте</h1>
-										<p class="subtitle">Наши сервисы позволят вам самостоятельно провести все этапы ведения проекта от дизайна
-														до
-														строительства
-														<a>быстро, просто и экономично!</a>
-										</p>
-										
-										<!--контейнер для прямоугольных компонентов-->
-										<div class="container__block">
-														<div class="conteiner__row">
-																		<div class="box">
-																						<p class="box__rect">1</p>
-																						<p class="box__text"> Выбор планировки
-																										и дизайна интерьеров</p>
-																		</div>
-																					<img class="str" src="wa-data\public\shop\themes\room\img\section/stroke.png" alt="stroke">
-																		<div class="box">
-																						<p class="box__rect">2</p>
-																						<p class="box__text"> Создание чертежа</p>
-																		</div>
-																		<img class="str" src="wa-data\public\shop\themes\room\img\section/stroke.png" alt="stroke">
-																		<div class="box">
-																						<p class="box__rect">3</p>
-																						<p class="box__text">Составление сметы</p>
-																		</div>
-																		<img class="str" src="wa-data\public\shop\themes\room\img\section/stroke.png" alt="stroke">
-														</div>
-														<div class="conteiner__row">
-																<img class="str" src="wa-data\public\shop\themes\room\img\section/stroke.png" alt="stroke">
-																		<div class="box">
-																						<p class="box__rect">4</p>
-																						<p class="box__text"> Закупка материалов</p>
-																		</div>
-																		<img class="str" src="wa-data\public\shop\themes\room\img\section/stroke.png" alt="stroke">
-																		<div class="box">
-		
-																						<p class="box__rect">5</p>
-																						<p class="box__text"> Подбор и заказ услуг исполнителей</p>
-																		</div>
-																		<img class="str" src="wa-data\public\shop\themes\room\img\section/stroke.png" alt="stroke">
-																		<div class="box">
-																						<p class="box__rect">6</p>
-																						<p class="box__text">Планирование и отслеживание работ</p>
-																		</div>
-		
-														</div>
-										</div>
-
-									<!-- мобильная версия -->
-									<div class="container__mobi">
-										<!-- контенер мобтльных баксов -->
-										<div class="mobile__box">
-												<div class="num">1</div>
-												<p>Выбор планировки 
-														и дизайна интерьера</p>
-										</div>
-										<div class="mobil__strok">
-												<img class="str" src="wa-data\public\shop\themes\room\img\section/stroke.png" alt="stroke">
-										</div>
-										<div class="mobile__box">
-												<div class="num">2</div>
-												<p>Создание чертежа</p>
-										</div>
-
-										<div class="mobil__strok doun row-three">
-												<img class="str" src="wa-data\public\shop\themes\room\img\section/stroke.png" alt="stroke">
-										</div>
-
-											<!-- контенер мобтльных баксов -->
-										<div class="mobile__box">
-												<div class="num">3</div>
-												<p>Закупка материалов</p>
-										</div>
-										<div class="mobil__strok">
-												<img class="str" src="wa-data\public\shop\themes\room\img\section/stroke.png" alt="stroke">
-										</div>
-											<!-- контенер мобтльных баксов -->
-										<div class="mobile__box">
-												<div class="num">4</div>
-												<p>Составление сметы</p>
-										</div>
-
-										<div class="mobil__strok doun row-one">
-												<img class="str" src="wa-data\public\shop\themes\room\img\section/stroke.png" alt="stroke">
-										</div>
-										<!--  контенер мобтльных баксов -->
-										<div class="mobile__box row-one">
-												<div class="num">5</div>
-												<p>Подбор и заказ услуг исполнителей</p>
-										</div>
-										<div class="mobil__strok">
-												<img class="str" src="wa-data\public\shop\themes\room\img\section/stroke.png" alt="stroke">
-										</div>
-										<div class="mobile__box">
-												<div class="num">6</div>
-												<p>Планирование и проведение работ</p>
-										</div>
-								</div>
-
-								
-										<!-- блок Строителььства и ремонт помещения -->
-										<div class="two__section">
-														<h3>Строительство/ремонт помещения или целого здания по вашему проекту</h3>
-														<img class='home' src="wa-data\public\shop\themes\room\img\section/home.png" alt="home">
-										</div>
-						</div>
-
-
-
-
-	</div>
-	</section>
-
-
-	<!-- 3D планировщик интерьера -->
-	<section class="grid__container interier">
-
-		<div class="content__center">
-						<div class="two__section m0">
-										<!-- текст и кнопка-->
-										<div class="two__section-item">
-														<p class="titel">3D-планировщик интерьера</p>
-														<p class="titel p"> Новый мощный планировщик,
-																в котором вы сможете создать
-																интерьер вашей мечты</p>
-										
-														<div class="planner-items smll">
-																		<button class="planner-btn sm" onClick="window.location.href='/signup/'">Попробовать
-																						бесплатно
-																		</button>
-														</div>
-										</div>
-										<!-- первый ряд вторая колонка со скриншотом -->
-										<div class="two__section-img">
-														<img class='hall top' src="wa-data\public\shop\themes\room\img\section/screenshot.png" alt="">
-
-														<img class='desc' src="wa-data\public\shop\themes\room\img\section/desc.png" alt="">
-
-														<img class="bottom-left" src="wa-data\public\shop\themes\room\img\section/armchair.png" alt="">
-										</div>
-						</div>
-
-
-						<div class="interier__btn">
-										<button class="btn">Создание планировки</button>
-										<button class="btn">Визуализация</button>
-										<button class="btn">Готовые проекты</button>
-										<button class="btn">Каталог и кабинет дизайнера</button>
-						</div>
-	</section>
-
-	<!-- смета -->
-	<section class="grid smeta content-right ">
-		<div class="col1">
-						<h1 class="col1__title">Составление смет</h1>
-						<h5 class="col1__subtitle">Автоматизированный сервис, позволяющий получить профессиональную смету из вашего 3D-проекта или из готовых бесплатных шаблонов за несколько секунд </h5>
-					
-
-						<button class="col1__btn planner-btn sm">Попробовать бесплатно</button>
-		</div>
-		<!-- image bg -->
-		<div class="col2 ">
-						<img class="planimg" src="wa-data\public\shop\themes\room\img\section/plan.png" alt="">
-						<img class="scheme" src="wa-data\public\shop\themes\room\img\section/budget.png" alt="">
-		</div>
-		<div class="block__btn">
-						<button class="btn">Закупки</button>
-						<button class="btn">Получение сметы</button>
-						<button class="btn">Получение чертежей</button>
-
-		</div>
-		<div class="smeta__text ">
-						<p class=" col1__smeta-textcenter">Автоматизированный сервис позволяет получить профессиональную смету из вашего 3D-проекта или
-										из готовых бесплатных шаблонов за несколько секунд</p>
-		</div>
-		
-	</section>
-
-	<!-- моя команда -->
-	<section class="grid team">
-		<div class="col1">
-						<h1 class="col1__title">Моя команда</h1>
-						<h5 class="col1__subtitle">Выбирайте профессионального исполнителя или ищите заказы
-										в несколько кликов</h5>
-
-						<button class="col1__btn planner-btn sm ">Попробовать бесплатно</button>
-		</div>
-		<!-- image bg -->
-		<div class="col2 team__col2-imgbg"></div>
-		<div class="team__btn">
-						<button class="btn">Готовые проекты</button>
-						<button class="btn">Каталог и кабинет дизайнера</button>
-		</div>
-	</section>
-
-	<!-- marcetPlase -->
-	<!--<section class="grid marcet content-right ">
-		<div class="col1">
-						<h1 class="col1__title">Маркетплэйс</h1>
-						<h5 class="col1__subtitle">Маркетплейс представляет собой оптимизированную онлайн-платформу по предоставлению продуктов и услуг.</h5>
-					
-
-						<button class="col1__btn planner-btn sm">Попробовать бесплатно</button>
-		</div>-->
-		<!-- image bg -->
-		<!--<div class="col2 ">
-						<img class="planimg" src="wa-data\public\shop\themes\room\img\section/online.png" alt="">
-					
-		</div>
-		<div class="block__btn">
-						<button class="btn">Распродажа</button>
-						<button class="btn">100% гарантия</button>
-						<button class="btn">Безопасная сделка</button>
-
-		</div>
-		
-		
-	</section>-->
-
-	
-	<!-- platform -->
-	<section class="grid platform content-right ">
-		<div class="col1">
-						<h1 class="col1__title">Удобная платформа
-										для всех ваших устройств</h1>
-						<h5 class="col1__subtitle">
-										Все сервисы Roomgram адаптированы для работы
-										на различных девайсах, что позволит работать над проектом в любом месте в любое время
-						</h5>
-						<div class="platform__icon">
-										<a class="col1__icon" href=""><img src="wa-data\public\shop\themes\room\img/section/icon.png" alt=""><span>
-																		App Store</span></a>
-										<a class="col1__icon" href=""><img src="wa-data\public\shop\themes\room\img/section/google.png"
-																		alt=""><span>App Store</span></a>
-						</div>
-
-						<button class="col1__btn planner-btn sm">Попробовать бесплатно</button>
-		</div>
-		<!-- image bg -->
-		<div class="col2 ">
-						<img class="col2__img" src="wa-data\public\shop\themes\room\img/section/devices.png" alt="">
-		</div>
-		
-	</section>
-
-	<!--конец контейнера -->
-	</div>
-
-<script>
-		$(document).ready(function () {
-				$('.nav-tabs-slider a').mouseover(function (e) {
-						e.preventDefault();
-						$(this).tab('show');
-				});
-		});
-</script>
-{include file="`$wa_active_theme_path`/footer-none-auth.html"}
-{else}
-<div class="container-fluid">
-		<div class="feature-list">
-				<div class="row f1">
-						<div class="col-md-4">
-								<div class="feature loaded">
-										<a href="/planner/" target="_blank" rel="nofollow">
-												<div class="icon-box ibox-plain ibox-center">
-														<div class="ibox-icon"><img class="social__icon" alt=""
-																		src="/wa-apps/shop/themes/room/img/icons/icon1.svg">
-														</div>
-														<h3>
-																<span style="white-space: nowrap;">{_w('key126')}</span>
-														</h3>
-														<p>{_w('key162')}</p>
-												</div>
-										</a>
-								</div>
-						</div>
-						<div class="col-md-4">
-								<div class="feature loaded">
-										<a href="/category/interiors/" target="_blank" rel="nofollow">
-												<div class="icon-box ibox-plain ibox-center">
-														<div class="ibox-icon"><img class="social__icon" alt=""
-																		src="/wa-apps/shop/themes/room/img/icons/icon2.svg">
-														</div>
-														<h3>
-																{_w('key127')} </h3>
-														<p>{_w('key163')}</p>
-												</div>
-										</a>
-								</div>
-						</div>
-						<div class="col-md-4">
-								<div class="feature loaded">
-										<a href="/estimate/" target="_blank" rel="nofollow">
-												<div class="icon-box ibox-plain ibox-center">
-														<div class="ibox-icon"><img class="social__icon" alt=""
-																		src="/wa-apps/shop/themes/room/img/icons/icon3.svg">
-														</div>
-														<h3>
-																<span style="white-space: nowrap;">{_w('key130')}</span>
-														</h3>
-														<p>{_w('key164')}</p>
-												</div>
-										</a>
-								</div>
-						</div>
-				</div>
-				<div class="row f1">
-						<div class="col-md-4">
-								<div class="feature loaded">
-										<a href="/work/" target="_blank" rel="nofollow">
-												<div class="icon-box ibox-plain ibox-center">
-														<div class="ibox-icon"><img class="social__icon" alt=""
-																		src="/wa-apps/shop/themes/room/img/icons/icon4.svg">
-														</div>
-														<h3>
-																<span style="white-space: nowrap;">{_w('key131')}</span>
-														</h3>
-														<p>{_w('key165')}</p>
-												</div>
-										</a>
-								</div>
-						</div>
-						<div class="col-md-4">
-								<div class="feature loaded">
-										<a href="/repair" target="_blank" rel="nofollow">
-												<div class="icon-box ibox-plain ibox-center">
-														<div class="ibox-icon"><img class="social__icon" alt=""
-																		src="/wa-apps/shop/themes/room/img/icons/icon5.svg">
-														</div>
-														<h3>
-																<span style="white-space: nowrap;">{_w('key132')}</span>
-														</h3>
-														<p><a href="/tile" target="_blank" rel="nofollow">{_w('key167')}</a>,
-																<a href="/wallpaper" target="_blank" rel="nofollow">{_w('key102')}</a>,
-																<a href="/paint" target="_blank" rel="nofollow">{_w('key103')}</a>,
-																<a href="/varnish" target="_blank" rel="nofollow">{_w('key104')}</a>,
-																<a href="/plaster" target="_blank" rel="nofollow">{_w('key105')}</a>,
-																<a href="/filling" target="_blank" rel="nofollow">{_w('key106')}</a>,
-																<a href="/walls" target="_blank" rel="nofollow">{_w('key107')}</a>,
-																<a href="/radiators" target="_blank" rel="nofollow">{_w('key108')}</a>,
-																<a href="/floor" target="_blank" rel="nofollow">{_w('key109')}</a>,
-																<a href="/conditioners" target="_blank" rel="nofollow">{_w('key110')}</a>,
-																<a href="/ventilation" target="_blank" rel="nofollow">{_w('key111')}</a>,
-																<a href="/gypsumcardboard" target="_blank" rel="nofollow">{_w('key112')}</a>,
-																<a href="/fireextinguishers" target="_blank" rel="nofollow">{_w('key113')}</a>,
-																<a href="/parquet" target="_blank" rel="nofollow">{_w('key114')}</a>,
-																<a href="/lighting" target="_blank" rel="nofollow">{_w('key186')}</a>
-														</p>
-												</div>
-										</a>
-								</div>
-						</div>
-						<div class="col-md-4">
-								<div class="feature loaded">
-										<a href="/calculators" target="_blank" rel="nofollow">
-												<div class="icon-box ibox-plain ibox-center">
-														<div class="ibox-icon"><img class="social__icon" alt=""
-																		src="/wa-apps/shop/themes/room/img/icons/icon6.svg">
-														</div>
-														<h3>
-																<span style="white-space: nowrap;">{_w('key136')}</span>
-														</h3>
-														<p><a href="/calculator" target="_blank" rel="nofollow">{_w('key170')}</a>,
-																<a href="/loan" target="_blank" rel="nofollow">{_w('key97')}</a>,
-																<a href="/taxdeduction" target="_blank" rel="nofollow">{_w('key98')}</a>,
-																<a href="/taxresident" target="_blank" rel="nofollow">{_w('key99')}</a>,
-																<a href="/taxesforall" target="_blank" rel="nofollow">{_w('key100')}</a>
-														</p>
-												</div>
-										</a>
-								</div>
-						</div>
-				</div>
-
-		</div>
-</div>
-{/if}
-
-{if !$wa->user()->isAuth()}
-<div class="container-fluid container-fluid__reg registration">
-
-
-</div>
-{else}
-{/if}
+<!DOCTYPE html> 
+<html lang="ru"> 
+ 
+<head> 
+  <meta charset="UTF-8"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>animation</title> 
+  <meta name="theme-color" content="#000"> 
+  <link rel="stylesheet" href="style.css"> 
+  <link rel="shortcut icon" href="/" type="image/x-icon"> 
+</head> 
+ 
+<body> 
+  <div class="wrapper"> 
+    <header> 
+      <label for="">downliad progress line</label> 
+      <progress value="60" max="90"></progress> 
+    </header> 
+ 
+    <div class="container"> 
+ 
+      <div class="sidebar"> 
+        <label for=""> 
+          <input type="text" list="sity"> 
+          <datalist id="sity"> 
+            <option value="Moscov"></option> 
+            <option value="Moscov1"></option> 
+            <option value="spb"></option> 
+            <option value="belgorod"></option> 
+          </datalist> 
+ 
+          </object> 
+        </label> 
+        <h1>MY first animaiton svg</h1> 
+        <svg fill='#ff0000'> 
+          <path width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"> 
+            <path d="M0 5C0 2.23858 2.23858 0 5 0H27C29.7614 0 32 2.23858 32 5V27C32 29.7614 29.7614 32 27 32H5C2.23858 32 0 29.7614 0 27V5Z" fill="#1B99D5" /> 
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6675 22.0249C10.6675 20.1012 12.2619 18.6836 14.0088 18.6836H17.8926C19.778 18.6836 21.2339 20.1395 21.2339 22.0249V25.9087C21.2339 27.8324 19.6394 29.25 17.8926 29.25H14.0088C12.0851 29.25 10.6675 27.6556 10.6675 25.9087V22.0249ZM14.0088 21.1836C13.5647 21.1836 13.1675 21.5585 13.1675 22.0249V25.9087C13.1675 26.3527 13.5424 26.75 14.0088 26.75H17.8926C18.3366 26.75 18.7339 26.3751 18.7339 25.9087V22.0249C18.7339 21.5202 18.3972 21.1836 17.8926 21.1836H14.0088Z" fill="white" /> 
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6675 6.09129C10.6675 4.16759 12.2619 2.75 14.0088 2.75H17.8926C19.7377 2.75 21.2339 4.1663 21.2339 5.9917V9.9751C21.2339 11.8988 19.6394 13.3164 17.8926 13.3164H14.0088C12.0851 13.3164 10.6675 11.7219 10.6675 9.9751V6.09129ZM14.0088 5.25C13.5647 5.25 13.1675 5.62494 13.1675 6.09129V9.9751C13.1675 10.4191 13.5424 10.8164 14.0088 10.8164H17.8926C18.3366 10.8164 18.7339 10.4415 18.7339 9.9751V5.9917C18.7339 5.62623 18.4375 5.25 17.8926 5.25H14.0088Z" fill="white" /> 
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.68799 15.9502C5.68799 15.2599 6.24763 14.7002 6.93799 14.7002H25.0625C25.7528 14.7002 26.3125 15.2599 26.3125 15.9502C26.3125 16.6406 25.7528 17.2002 25.0625 17.2002H6.93799C6.24763 17.2002 5.68799 16.6406 5.68799 15.9502Z" fill="white" /> 
+            <animate attributeName='d' dur='5s' repeatCount='indefinite' values=' 
+      M0 5C0 2.23858 2.23858 0 5 0H27C29.7614 0 32 2.23858 32 5V27C32 29.7614 29.7614 32 27 32H5C2.23858 32 0 29.7614 0 27V5Z; 
+      M0 5C0 3.23858 6.23858 8 9 0H27C19.7614 0 3 2.23858 62 5V27C32 19.7614 29.7614 32 27 32H5C8.23858 32 0 99.7614 0 27V5Z; 
+      M0 5C0 25.23858 3.23858 0 8 0H27C29.7614 0 32 2.23858 82 5V27C32 79.7614 22.7614 32 94 32H1C2.23858 32 0 39.7614 0 27V5Z; 
+      M0 5C0 2.23858 2.23858 0 5 0H27C29.7614 0 32 2.23858 32 5V27C32 29.7614 29.7614 32 27 32H5C2.23858 32 0 29.7614 0 27V5Z; 
+      ' /> 
+          </path> 
+        </svg> 
+ 
+        <h1>MY two animaiton svg</h1> 
+ 
+        <svg id='mysic' > 
+          <rect fill='#fff' width='10%' height='100%' rx='5%' x='0%'> 
+            <animate attributeName="height" values='20%;70%; 20%' dur='0.7s'   
+            repeatCount='indefinite' 
+            begin='0s'/> 
+            <animate attributeName="y" values='40%; 15%; 40%' dur='0.7s'  
+            repeatCount='indefinite' 
+            begin='0s' 
+            /> 
+          </rect> 
+          <rect fill='#FF0' width='10%' height='100%' rx='5%' x='20%'> 
+            <animate attributeName="height" values='20%;70%; 20%' dur='0.7s'  repeatCount='indefinite' 
+            begin='0.2s'/> 
+            <animate attributeName="y" values='40%; 15%; 40%' dur='0.7s'  
+            repeatCount='indefinite'
+						begin='0.2s' 
+            /> 
+          </rect> 
+          <rect fill='#F0F' width='10%' height='100%' rx='5%' x='40%'> 
+            <animate attributeName="height" values='20%;70%; 20%' dur='0.7s'  repeatCount='indefinite' 
+            begin='0.4s'/> 
+            <animate attributeName="y" values='40%; 15%; 40%' dur='0.7s'  
+            repeatCount='indefinite' 
+            begin='0.4s' 
+            /> 
+          </rect> 
+          <rect fill='#0F0'width='10%' height='100%' rx='5%' x='60%'> 
+            <animate attributeName="height" values='20%;70%; 20%' dur='0.7s'  repeatCount='indefinite' 
+            begin='0.2s'/> 
+            <animate attributeName="y" values='40%; 15%; 40%' dur='0.7s'  
+            repeatCount='indefinite' 
+            begin='0.2s' 
+            /> 
+          </rect> 
+          <rect fill='#00F' width='10%' height='100%' rx='5%' x='80%'> 
+            <animate attributeName="height" values='20%;70%; 20%' dur='0.7s'  repeatCount='indefinite' 
+            begin='0s'/> 
+            <animate attributeName="y" values='40%; 15%; 40%' dur='0.7s'  
+            repeatCount='indefinite' 
+            begin='0s' 
+            /> 
+          </rect> 
+        </svg> 
+      </div> 
+ 
+ 
+ 
+      <picture class="area"> 
+        <img usemap="#worcmap" src="https://images.unsplash.com/photo-1565995487495-e2a23f3af2ee?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=880&q=80" alt=""> 
+        <map name="worcmap"> 
+          <area shape="rect" coords="200,200,400,400" href="/" alt="" target="_blanc"> 
+        </map> 
+      </picture> 
+ 
+ 
+ 
+ 
+      <footer> 
+        <details> 
+          <summary>footer Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus similique magnam dicta officia porro odit, consectetur quo itaque doloribus dolorum quia optio ipsam maxime quod consequatur possimus quisquam, perferendis necessitatibus.</summary> 
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque odio vel dolorum laborum laudantium similique excepturi sequi quasi eligendi mollitia.</p> 
+        </details> 
+      </footer> 
+    </div> 
+  </div> 
+  <script src="./main.js"></script> 
+</body> 
+ 
+</html>

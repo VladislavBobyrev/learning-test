@@ -1,0 +1,62 @@
+{
+  "env": {
+    "browser": true
+  },
+  "extends": "airbnb-base/legacy",
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "module"
+  },
+  "globals": {
+    "window": true,
+    "require": true,
+    "console": true,
+    "confirm": true,
+    "Map": true,
+    "Set": true,
+    "Promise": true
+  },
+  "rules": {
+    "no-unused-vars": "off",
+    "eol-last": ["error", "never"],
+    "spaced-comment": "off",
+    "func-names": "off",
+    "no-console": "warn",
+    "no-debugger": "warn",
+    "no-alert": "warn",
+    "brace-style": ["error", "allman", {
+      "allowSingleLine": true
+    }],
+    "block-spacing": ["error", "never"],
+    "object-curly-spacing": ["error", "never"],
+    "no-multiple-empty-lines": ["error", {
+      "max": 3
+    }],
+    "operator-linebreak": ["error", "after"],
+    "linebreak-style": ["error", "windows"],
+    "no-empty": "off",
+    "max-classes-per-file": "off",
+    "max-len": "off",
+    "class-methods-use-this": "off",
+    "no-restricted-globals": "off",
+    "no-param-reassign": "off",
+    "no-use-before-define": "off",
+    "no-shadow": "off",
+    "no-loop-func": "off",
+    "no-await-in-loop": "off",
+    "no-plusplus": "off",
+    "no-restricted-syntax": "off",
+    "no-return-assign": "off",
+    "default-case": "off",
+    "no-return-await": "off",
+    "consistent-return": "off",
+    "no-nested-ternary": "off",
+    "no-underscore-dangle": "off",
+    "no-empty-function": "off",
+    "no-mixed-operators": "off",
+    "camelcase": "off",
+    "no-lonely-if": "off",
+    "no-continue": "off",
+    "guard-for-in": "off"
+  }
+}

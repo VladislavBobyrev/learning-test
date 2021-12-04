@@ -1,0 +1,59 @@
+{
+  "files.eol": "\r\n",
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "javascript.format.placeOpenBraceOnNewLineForFunctions": true,
+  "javascript.format.placeOpenBraceOnNewLineForControlBlocks": true,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": true,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
+  "[html]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "eslint.format.enable": true,
+  "eslint.validate": [
+    "javascript"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.alwaysShowStatus": true,
+  
+  //==============================================//
+  //               MY personal setting           //
+  //==============================================//
+  "sync.gist": "222d869d18ac2072570b52409b6f2aa3",
+  "window.zoomLevel": -1,
+  "editor.fontSize": 15,
+  "workbench.colorTheme": "Solarized Dark",
+  "workbench.iconTheme": "vscode-icons-mac",
+  "files.autoSave": "afterDelay",
+  "editor.letterSpacing": 1.4,
+  "editor.minimap.enabled": false,
+  "editor.bracketPairColorization.enabled": true,
+  "liveSassCompile.settings.generateMap": false,
+  "liveSassCompile.settings.formats": [
+    
+    {
+      "format": "expanded",
+      "autoprefix": "last 5 version",
+      "extensionName": ".css",
+      "savePath": "/"
+    }
+  ],
+  "[scss]": {
+    "editor.defaultFormatter": "sibiraj-s.vscode-scss-formatter"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "sibiraj-s.vscode-scss-formatter"
+  },
+}

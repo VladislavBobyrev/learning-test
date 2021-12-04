@@ -18,23 +18,23 @@
 	 	"scope": "css , scss",
 	 	"prefix": "//",
 	 	"body": [
+
 	 	" //===================================================== ",
     " //                 $1                                    ",
-    " //===================================================== ",
-    "$2"
+    " //===================================================== ", "$0",
 	 	],
 	 	"description": "Log output to console"
      },
 	 "Мар+пад+бэк+кол+б-рад+фс+фв": {
 	 	"prefix": "mp",
 	 	"body": [
-	 		"margin: $0;",
-	 		"padding: $1;",
-	 		"background: $2;",
-	 		"color: $3;",
-	 		"border-radius: $4;",
-	 		"font-size: $4;",
-	 		"font-weigth: $4;",
+	 		"margin: $1;",
+	 		"padding: $2;",
+	 		"background: $3;",
+	 		"color: $4;",
+	 		"border-radius: $5;",
+	 		"font-size: $6;",
+	 		"font-weigth: $7;","$0",
 	 	],
 	 	"description": "стандартный набор"
 	 }

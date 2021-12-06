@@ -2,7 +2,11 @@ const App = {
   data()
   {
     return {
-      counter: 42
+      counter: 42,
+      title: {
+        hello: 'hello',
+        userName: 'Vladislav'
+      }
     }
   }
 }

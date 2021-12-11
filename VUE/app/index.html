@@ -11,12 +11,21 @@
 <body>
   <div class="container pt-5" id="app">
     <div class="card center">
-      <h1>counter {{counter}}</h1>
-      <h2>!{{title.hello}}{{title.userName}} : {{(counter - 42)}} </h2>
-      <div class="flex">
-        <div class="btn primary" v-on:click='counter++'>+</div>
-        <div class="btn danger" v-on:click='counter -= 1'>-</div>
+      <h1>{{title}}</h1>
+      <div class="form-control">
+        <input type="text" 
+        v-bind:value='inputValue' 
+        v-bind:placeholder="placeholderString" 
+        v-on:input='inputCangeHandler'>
       </div>
+      <button v-on:click='addNewNotes'>добавить заметку</button>
+      <hr />
+      <ul class="list">
+        <li class="list-item" v-for="myNote in notes">
+          {{myNote}}
+        </li>
+      </ul>
+
     </div>
   </div>
 

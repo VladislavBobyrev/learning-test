@@ -2,11 +2,25 @@ const App = {
   data()
   {
     return {
-      counter: 42,
-      title: {
-        hello: 'hello',
-        userName: 'Vladislav'
-      }
+      placeholderString: 'введите название заметки',
+      title: 'Список заметок',
+      inputValue: '',
+      notes: [
+        'заметка 1',
+        'заметка 2',
+        'заметка 3'
+      ]
+    }
+  },
+  methods: {
+    inputCangeHandler(event)
+    {
+      this.inputValue = event.target.value
+    },
+    addNewNotes()
+    {
+      this.notes.push(this.inputValue)
+      this.inputValue = ''
     }
   }
 }

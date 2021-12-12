@@ -19,14 +19,16 @@
       </div>
       <button v-on:click='addNewNotes'>добавить заметку</button>
       <hr />
-      <ul class="list">
-        <li class="list-item" v-for="myNote in notes">
+      <ul class="list" v-if='notes.length !== 0'>
+        <li class="list-item" v-for="(myNote, index) in notes">
           {{myNote}}
 
-          <button class="danger" @click='deleteNotise(index + 1)'>удалить</button>
+          <button class="danger" @click='deleteNotise(index)'>удалить</button>
         </li>
       </ul>
-
+      <!-- <div class="" v-if='notes.length === 0'>заметок нет. добавте первую!</div> -->
+      <div class="" v-else-if>заметок нет. добавте первую!</div>
+      <div class="" v-else>заметок нет. добавте первую!</div>
     </div>
   </div>
 

@@ -24,7 +24,7 @@ const App = {
     },
     deleteNotise(index)
     {
-      this.notes.splice(index, 1)
+      this.notes.splice(index , 1)
     }
   }
 }

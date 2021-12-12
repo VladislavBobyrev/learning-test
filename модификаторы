@@ -1,0 +1,273 @@
+[33mcommit 32c326a009559f52f3f9b5affb40af63743b78e0[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Vladislav.Bobyrev <perets1995@gmail.com>
+Date:   Sun Dec 12 11:13:03 2021 +0300
+
+    модификаторы
+
+[33mcommit 8b095a25225f80d3cc7efb8b8b73488bcfade2ce[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Vladislav.Bobyrev <perets1995@gmail.com>
+Date:   Sat Dec 11 15:09:07 2021 +0300
+
+    список заметок на vue 3
+
+[33mcommit e29aeacdf4710a578fb927e8aec237caed73ea49[m
+Author: Vladislav.Bobyrev <perets1995@gmail.com>
+Date:   Mon Dec 6 21:32:57 2021 +0300
+
+    object on VUE
+
+[33mcommit f81a81cae4b874cc05dbd7dd4d167317fe7a4e43[m
+Author: Vladislav.Bobyrev <perets1995@gmail.com>
+Date:   Sun Dec 5 12:34:48 2021 +0300
+
+    my first counter vue3
+
+[33mcommit 057a0ad79d4bf92a318e204a0a28ff6b32ee6ac0[m
+Author: vladislav <perets1995@gmail.com>
+Date:   Sat Dec 4 13:27:03 2021 +0300
+
+    create VUE 3
+
+[33mcommit ba934ff1b3590205df051107da560b883041d4f1[m
+Author: vladislav <perets1995@gmail.com>
+Date:   Sat Dec 4 13:09:17 2021 +0300
+
+    изменил методы снипетов
+
+[33mcommit 173b1cd7d2b01c12c9a376e07c26407f72e61332[m
+Author: vladislav <perets1995@gmail.com>
+Date:   Sat Dec 4 13:07:45 2021 +0300
+
+    конфигурация scss + шаблон
+
+[33mcommit 17acfee2b3705523b1d7fad7d7fbaff6fc1dc4a1[m
+Author: vladislav <perets1995@gmail.com>
+Date:   Sat Dec 4 12:45:22 2021 +0300
+
+    персональный снипеты
+
+[33mcommit de80e49ffbf1a7750acbe3b09a438a45a3a60b69[m
+Author: vladislav <perets1995@gmail.com>
+Date:   Sat Dec 4 12:43:59 2021 +0300
+
+    конфигурационный файл vscode
+
+[33mcommit ed02d2aa8a6d8c1b7ebe1e0507b41ed749c358db[m
+Author: vladislav <perets1995@gmail.com>
+Date:   Sat Dec 4 12:39:04 2021 +0300
+
+    конфигурационный файл еслинта
+
+[33mcommit 447b753879b8d4dd8bfb01261e6080bc3dc02bcf[m
+Author: vladislav <perets1995@gmail.com>
+Date:   Wed Dec 1 21:49:49 2021 +0300
+
+    delet test
+
+[33mcommit 81ca4cc5f0b700eb884191537abda27fde73332c[m
+Author: vladislav <perets1995@gmail.com>
+Date:   Wed Dec 1 21:43:34 2021 +0300
+
+    delet folders
+
+[33mcommit 1da3556cece389e96e76f2c9cacf602adbb9fbb3[m
+Merge: 1bdfe4a 61b63cc
+Author: vladislav <perets1995@gmail.com>
+Date:   Sun Nov 28 13:42:01 2021 +0300
+
+    Merge branch 'master' of https://github.com/VladislavBobyrev/learning-test
+
+[33mcommit 1bdfe4a9b848f3d14a6ccf7e88e2fb75e5ca7b09[m
+Author: vladislav <perets1995@gmail.com>
+Date:   Sun Nov 28 13:41:31 2021 +0300
+
+    проект на vue 3
+
+[33mcommit 61b63cc7b5d24f4021e1990fd843c19ca8163465[m
+Author: vladislav <perets1995@gmail.com>
+Date:   Wed Nov 24 20:42:58 2021 +0300
+
+    создание нового проекта на VUE 3
+
+[33mcommit 4d294ce6b9eca1f3d666dc2d2fd426edf7fe2841[m
+Author: vladislav <perets1995@gmail.com>
+Date:   Tue Nov 2 22:23:12 2021 +0300
+
+    clear file
+
+[33mcommit 38e722ce27347e45d98a92031ab13196e24bef63[m
+Author: vladislav <perets1995@gmail.com>
+Date:   Sun Oct 31 20:55:19 2021 +0300
+
+    animate svg
+
+[33mcommit 923f4b4b0fd22e8f728dcec6d58cf6963f29932a[m
+Merge: ab49c25 ee98fc7
+Author: vladislav <perets1995@gmail.com>
+Date:   Thu Oct 21 21:40:46 2021 +0300
+
+    Merge branch 'master' of https://github.com/VladislavBobyrev/learning-test
+
+[33mcommit ab49c25a35369179a4f801a2c1d61d7983afc27b[m
+Author: vladislav <perets1995@gmail.com>
+Date:   Thu Oct 21 21:40:17 2021 +0300
+
+    learn TS
+
+[33mcommit ee98fc736c808e02ef9e13d600f5a16cc88078a6[m
+Author: Vladislav Bobyrev <33667903+VladislavBobyrev@users.noreply.github.com>
+Date:   Mon Sep 6 23:21:36 2021 +0300
+
+    Add files via upload
+
+[33mcommit 698d3f4577779e4d072ea93ca1ff397cb5331fd0[m
+Author: Vladislav Bobyrev <33667903+VladislavBobyrev@users.noreply.github.com>
+Date:   Tue Aug 24 18:08:44 2021 +0300
+
+    Add files via upload
+
+[33mcommit 1bf728a955cd07c210221e30cdbdbe9cf506d182[m
+Author: Vladislav Bobyrev <33667903+VladislavBobyrev@users.noreply.github.com>
+Date:   Tue Aug 24 18:08:28 2021 +0300
+
+    Delete CSS/Верстка/home directory
+
+[33mcommit c37f92a48b8ad49eadcb3d6d6218aeeb5a66c2a8[m
+Author: Vladislav Bobyrev <33667903+VladislavBobyrev@users.noreply.github.com>
+Date:   Tue Aug 24 01:57:50 2021 +0300
+
+    Add files via upload
+
+[33mcommit 00555ff379b0309ffc0e9b7c5f2f3736bae537d4[m
+Author: Vladislav Bobyrev <33667903+VladislavBobyrev@users.noreply.github.com>
+Date:   Mon Aug 23 19:09:32 2021 +0300
+
+    Add files via upload
+
+[33mcommit 44c3faffb471617e8df22aae342aa3961129cfdd[m
+Author: Vladislav Bobyrev <33667903+VladislavBobyrev@users.noreply.github.com>
+Date:   Sun Aug 22 20:58:13 2021 +0300
+
+    Add files via upload
+
+[33mcommit 56681bd35d1f1758463a02f125e48740d52e93ca[m
+Author: Vladislav Bobyrev <33667903+VladislavBobyrev@users.noreply.github.com>
+Date:   Sun Aug 22 20:10:40 2021 +0300
+
+    Delete CSS/Верстка/css/grid-img directory
+
+[33mcommit 0cafb3bf45c45701248415a28302dc34b94f3bc3[m
+Author: Vladislav Bobyrev <33667903+VladislavBobyrev@users.noreply.github.com>
+Date:   Sat Aug 21 22:43:23 2021 +0300
+
+    Add files via upload
+
+[33mcommit 9b563cc4e94af59318932d2b5fc33db9c9d47608[m
+Author: Vladislav Bobyrev <33667903+VladislavBobyrev@users.noreply.github.com>
+Date:   Sat Aug 21 22:42:15 2021 +0300
+
+    Delete CSS/Верстка/css/grid-img directory
+
+[33mcommit fa77412568033ec2a71c1202f9a3075a8083fac5[m
+Author: Vladislav Bobyrev <33667903+VladislavBobyrev@users.noreply.github.com>
+Date:   Fri Aug 20 22:58:29 2021 +0300
+
+    Add files via upload
+
+[33mcommit 2038e43689ec1483eb7082b97e7dcf3519d51a19[m
+Author: Vladislav Bobyrev <33667903+VladislavBobyrev@users.noreply.github.com>
+Date:   Thu Aug 19 22:41:34 2021 +0300
+
+    Add files via upload
+
+[33mcommit b727470fdaf3aa1df8495d9af8590aebb67242e1[m
+Author: vladislav <perets1995@gmail.com>
+Date:   Thu Jul 29 14:51:03 2021 +0300
+
+    ts generic
+
+[33mcommit ef2beb773fc07fd5c1c619cf7bf3cf5d8521026d[m
+Author: vladislav <perets1995@gmail.com>
+Date:   Thu Jul 29 14:45:30 2021 +0300
+
+    ts
+
+[33mcommit b83f83ab323544237d525f7f39cba9e20babe538[m
+Author: vladislav <perets1995@gmail.com>
+Date:   Wed Jul 28 17:06:16 2021 +0300
+
+    hello
+
+[33mcommit a35b898a0ac7fa479ce83757d75e04d25587f244[m
+Author: Vladislav Bobyrev <33667903+VladislavBobyrev@users.noreply.github.com>
+Date:   Tue Jul 20 23:03:07 2021 +0300
+
+    Add files via upload
+
+[33mcommit f45c09a964a3640bf3ebbdb91292b987617218ef[m
+Author: Vladislav Bobyrev <33667903+VladislavBobyrev@users.noreply.github.com>
+Date:   Tue Jul 20 23:02:49 2021 +0300
+
+    Delete test.ts
+
+[33mcommit b52a82a1af16969d0db324ca6c2c895a87b6fd47[m
+Author: vladislav <perets1995@gmail.com>
+Date:   Tue Jul 20 22:58:44 2021 +0300
+
+    learn TS
+
+[33mcommit 5f39379a39f8996a6eaff1cd8fb3328cb97f6be2[m
+Author: vladislav <perets1995@gmail.com>
+Date:   Mon Jul 19 12:34:47 2021 +0300
+
+    JSX
+
+[33mcommit 1301ec1fbb5a346f3f91e856b74ea0643806f99f[m
+Author: vladislav <perets1995@gmail.com>
+Date:   Mon Jul 19 12:10:42 2021 +0300
+
+    Generic
+
+[33mcommit c02f701cfed2d54f800f22e4daf61cf6ed95cf8a[m
+Author: vladislav <perets1995@gmail.com>
+Date:   Mon Jul 19 11:41:08 2021 +0300
+
+    tuple
+
+[33mcommit 42323c8e8f3e92274504502619fce96fc256dbc7[m
+Author: vladislav <perets1995@gmail.com>
+Date:   Sun Jul 18 14:24:55 2021 +0300
+
+    lesson TS
+
+[33mcommit 4a7f1f7b7d90d8db99dc43be58069a68c699387b[m
+Author: vladislav <perets1995@gmail.com>
+Date:   Sun Jul 18 11:50:16 2021 +0300
+
+    lesson TS
+
+[33mcommit 3b41409062dc185298154d5856b430d9af7d95fb[m
+Author: vladislav <perets1995@gmail.com>
+Date:   Fri Jul 16 20:26:42 2021 +0300
+
+    rest
+
+[33mcommit 66227a7f73a6939fa5e621a43338029630e50a2f[m
+Author: vladislav <perets1995@gmail.com>
+Date:   Thu Jul 15 10:52:30 2021 +0300
+
+    binary cide
+
+[33mcommit 8c4fa8125ad669bb8c82a753cd623efadb942544[m
+Author: vladislav <perets1995@gmail.com>
+Date:   Wed Jul 14 16:46:58 2021 +0300
+
+    mutation
+
+[33mcommit 1c6207ff7d1f1223eba6ecfe4d63d2ca70871e36[m
+Author: vladislav <perets1995@gmail.com>
+Date:   Wed Jul 14 16:23:44 2021 +0300
+
+    domcontentLoaded
+
+[33mcommit 6424cd3bb497b94

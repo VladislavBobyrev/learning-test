@@ -16,7 +16,10 @@
         <input type="text" 
         v-bind:value='inputValue' 
         v-bind:placeholder="placeholderString" 
-        v-on:input='inputCangeHandler'>
+        v-on:input='inputCangeHandler'
+        v-on:keypress.enter='addNewNotes'
+        >
+     
       </div>
       <button v-on:click='addNewNotes'>добавить заметку</button>
       <hr />

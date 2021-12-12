@@ -22,9 +22,9 @@ const App = {
       this.notes.push(this.inputValue)
       this.inputValue = ''
     },
-    deleteNotise()
+    deleteNotise(index)
     {
-      this.notes.pop(this.notes)
+      this.notes.splice(index, 1)
     }
   }
 }

@@ -23,7 +23,7 @@
         <li class="list-item" v-for="myNote in notes">
           {{myNote}}
 
-          <button class="danger" @click='deleteNotise'>удалить</button>
+          <button class="danger" @click='deleteNotise(index + 1)'>удалить</button>
         </li>
       </ul>
 

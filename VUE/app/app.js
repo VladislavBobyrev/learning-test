@@ -8,7 +8,7 @@ const App = {
       notes: [
         'заметка 1',
         'заметка 2',
-        'прошел 9 урок'
+        'прошел 10 урок'
       ]
     }
   },
@@ -21,6 +21,10 @@ const App = {
     {
       this.notes.push(this.inputValue)
       this.inputValue = ''
+    },
+    deleteNotise()
+    {
+      this.notes.pop(this.notes)
     }
   }
 }

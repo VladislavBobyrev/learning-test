@@ -33,6 +33,22 @@ const App = {
     deleteNotise(index)
     {
       this.notes.splice(index , 1)
+    },
+    boubliCount()
+    {
+      console.log('doubleCount')
+     return  this.notes.length * 2
+    }
+  },
+  /**
+   * computed должен обязательно чтото возвращать
+   */
+  computed: {
+
+    dobleCountComputed()
+    {
+      console.log('bodleComputed')
+      return this.notes.length * 2
     }
   }
 }

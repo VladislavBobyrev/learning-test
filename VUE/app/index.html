@@ -13,21 +13,21 @@
     <div class="card center">
       <h1>{{title}}</h1>
       <div class="form-control">
-        <input type="text" v-bind:value='inputValue' v-bind:placeholder="placeholderString"
-          v-on:input='inputCangeHandler' v-on:keypress.enter='addNewNotes'>
+        <input type="text" :value='inputValue' :placeholder="placeholderString"
+          @input='inputCangeHandler' @keypress.enter='addNewNotes'>
 
       </div>
-      <button v-on:click='addNewNotes'>добавить заметку</button>
+      <button @click='addNewNotes'>добавить заметку</button>
       <hr />
       <ul class="list" v-if='notes.length !== 0'>
         <li class="list-item" v-for="(myNote, index) in notes">
-          {{myNote}}
+          {{toUpperCase(myNote)}}
 
           <button class="danger" @click='deleteNotise(index)'>удалить</button>
         </li>
       </ul>
       <!-- <div class="" v-if='notes.length === 0'>заметок нет. добавте первую!</div> -->
-      <div class="" v-else-if>заметок нет. добавте первую!</div>
+      <!-- <div class="" v-else-if>заметок нет. добавте первую!</div> -->
       <div class="" v-else>заметок нет. добавте первую!</div>
     </div>
   </div>

@@ -8,7 +8,7 @@ const App = {
       notes: [
         'заметка 1',
         'заметка 2',
-        'прошел 10 урок'
+        'прошел 14 урок'
       ]
     }
   },
@@ -17,10 +17,18 @@ const App = {
     {
       this.inputValue = event.target.value
     },
+    toUpperCase(item)
+    {
+     return item.toUpperCase()
+    },
     addNewNotes()
     {
-      this.notes.push(this.inputValue)
-      this.inputValue = ''
+      if (this.inputValue !== '')
+      {
+        this.notes.push(this.inputValue)
+        this.inputValue = ''
+      }
+
     },
     deleteNotise(index)
     {

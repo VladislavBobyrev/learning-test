@@ -50,6 +50,12 @@ const App = {
       console.log('bodleComputed')
       return this.notes.length * 2
     }
+  },
+  watch:  {
+    inputValue(value)
+    {
+      console.log(`  input vlaue ${value}`)
+    }
   }
 }
 

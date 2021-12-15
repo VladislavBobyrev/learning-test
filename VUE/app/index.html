@@ -13,8 +13,10 @@
     <div class="card center">
       <h1>{{title}}</h1>
       <div class="form-control">
-        <input type="text" :value='inputValue' :placeholder="placeholderString"
-          @input='inputCangeHandler' @keypress.enter='addNewNotes'>
+        <input type="text" :value='inputValue'
+         :placeholder="placeholderString"
+        v-model='inputValue'
+         @keypress.enter='addNewNotes'>
 
       </div>
       <button @click='addNewNotes'>добавить заметку</button>

@@ -11,12 +11,13 @@
 <body>
   <div class="container pt-5" id="app">
     <div class="card center">
-      <h1>{{title}}</h1>
+      <h1 :style="{ 
+        color: inputValue.length < 5 ? 'red' : 'blue',
+        fontSize:  inputValue.length < 3 ? '13px' : '16px'
+      }">{{title}}</h1>
       <div class="form-control">
-        <input type="text" :value='inputValue'
-         :placeholder="placeholderString"
-        v-model='inputValue'
-         @keypress.enter='addNewNotes'>
+        <input type="text" :value='inputValue' :placeholder="placeholderString" v-model='inputValue'
+          @keypress.enter='addNewNotes'>
 
       </div>
       <button @click='addNewNotes'>добавить заметку</button>
@@ -27,17 +28,17 @@
 
           <button class="danger" @click='deleteNotise(index)'>удалить</button>
         </li>
-        <hr/>
+        <hr />
         <!-- <li><strong>количество заметок {{notes.length}}
         </strong> |умноженное на два: {{boubliCount()}}</li> -->
 
         <li><strong>количество заметок {{notes.length}}
-        <!--  dobleCountComputed не вызывается он ведет себя как гетер и сетер-->
-        </strong> |умноженное на два: {{dobleCountComputed}}</li>
+            <!--  dobleCountComputed не вызывается он ведет себя как гетер и сетер-->
+          </strong> |умноженное на два: {{dobleCountComputed}}</li>
       </ul>
       <!-- <div class="" v-if='notes.length === 0'>заметок нет. добавте первую!</div> -->
       <!-- <div class="" v-else-if>заметок нет. добавте первую!</div> -->
-      <div  v-else>заметок нет. добавте первую!</div>
+      <div v-else>заметок нет. добавте первую!</div>
     </div>
   </div>
 

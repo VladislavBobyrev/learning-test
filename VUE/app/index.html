@@ -24,7 +24,15 @@
       <hr />
       <ul class="list" v-if='notes.length !== 0'>
         <li class="list-item" v-for="(myNote, index) in notes">
-          {{toUpperCase(myNote)}}
+          <!-- <span :class="notes.length > 3 ? 'priamry' : 'bold'"> -->
+          <!-- <span :class="{
+      'priamry': true,
+      'bold': notes.length > 5
+      }"> -->
+          <span :class="['primary', { 
+            'bold' : notes.length > 5
+            }]">
+            {{toUpperCase(myNote)}} </span>
 
           <button class="danger" @click='deleteNotise(index)'>удалить</button>
         </li>

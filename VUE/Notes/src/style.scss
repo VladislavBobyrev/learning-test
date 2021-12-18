@@ -1,0 +1,45 @@
+ /*
+* github developer: https://github.com/VladislavBobyrev
+* Autoprefixer: scss
+* Browsers: last 5 version
+*/
+
+ //===================================================== 
+ //                 ПОДКЛЮЧЕНИЕ СТИЛЕЙ                                    
+ //===================================================== 
+@import './utilits/resets';
+@import './utilits/variables';
+@import './utilits/mixin';
+@import './utilits/ibg';
+
+body{
+  width: 100vw;
+  height: 100vh;
+  background: $default-color;
+  color: $darck-color;
+}
+
+.container{
+  display: grid;
+  grid-template: 20px 1fr 100px / 20px 1fr 20px;
+  grid-template-areas: "header header header"
+                        "main main main"
+                        "footer footer footer";  
+  width: 100%;
+  height: 100%;
+}
+
+header{
+  background: $light-color;
+  grid-area: header;
+}
+
+main{
+  grid-area: main;
+}
+footer{
+  background: $darck-color;
+  color: $default-color;
+  grid-area: footer;
+}
+

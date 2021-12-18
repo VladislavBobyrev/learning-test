@@ -13,7 +13,7 @@
     <div class="card center">
       <h1 :style="{ 
         color: inputValue.length < 5 ? 'red' : 'blue',
-        fontSize:  inputValue.length < 3 ? '14px' : '14px'
+        textTransform:  inputValue.length < 3 ? 'inherit' : 'uppercase'
       }">{{title}}</h1>
       <div class="form-control">
         <input type="text" :value='inputValue' :placeholder="placeholderString" v-model='inputValue'

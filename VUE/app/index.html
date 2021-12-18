@@ -13,14 +13,14 @@
     <div class="card center">
       <h1 :style="{ 
         color: inputValue.length < 5 ? 'red' : 'blue',
-        fontSize:  inputValue.length < 3 ? '13px' : '16px'
+        fontSize:  inputValue.length < 3 ? '14px' : '14px'
       }">{{title}}</h1>
       <div class="form-control">
         <input type="text" :value='inputValue' :placeholder="placeholderString" v-model='inputValue'
           @keypress.enter='addNewNotes'>
 
       </div>
-      <button @click='addNewNotes'>добавить заметку</button>
+      <button class="btn" @click='addNewNotes'>добавить заметку</button>
       <hr />
       <ul class="list" v-if='notes.length !== 0'>
         <li class="list-item" v-for="(myNote, index) in notes">
@@ -29,11 +29,10 @@
       'priamry': true,
       'bold': notes.length > 5
       }"> -->
-          <span :class="['primary', {'bold' : notes.length > 5
-            }]">
+          <span :class="['bold']">
             {{toUpperCase(myNote)}} </span>
 
-          <button class="danger" @click='deleteNotise(index)'>удалить</button>
+          <button class=" btn danger" @click='deleteNotise(index)'>удалить</button>
         </li>
         <hr />
         <!-- <li><strong>количество заметок {{notes.length}}
@@ -41,7 +40,7 @@
 
         <li><strong>количество заметок {{notes.length}}
             <!--  dobleCountComputed не вызывается он ведет себя как гетер и сетер-->
-          </strong> |умноженное на два: {{dobleCountComputed}}</li>
+          </strong> | умноженное на два : {{dobleCountComputed}}</li>
       </ul>
       <!-- <div class="" v-if='notes.length === 0'>заметок нет. добавте первую!</div> -->
       <!-- <div class="" v-else-if>заметок нет. добавте первую!</div> -->

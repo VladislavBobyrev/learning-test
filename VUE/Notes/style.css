@@ -207,10 +207,10 @@ body {
 .container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 20px 1fr 100px;
+  -ms-grid-rows: 50px 1fr 100px;
   -ms-grid-columns: 20px 1fr 20px;
-      grid-template: 20px 1fr 100px / 20px 1fr 20px;
-      grid-template-areas: "header header header" "main main main" "footer footer footer";
+      grid-template: 50px 1fr 100px / 20px 1fr 20px;
+      grid-template-areas: " . header . " "main main main" "footer footer footer";
   width: 100%;
   height: 100%;
 }
@@ -218,9 +218,17 @@ body {
 header {
   background: #999999;
   -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
+  -ms-grid-column: 2;
   grid-area: header;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main {
@@ -237,4 +245,34 @@ footer {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: footer;
+}
+
+.form-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px;
+}
+
+.form-control input {
+  width: 50%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid #C0C4CC;
+}
+
+.form-control button {
+  width: 30%;
+  border-radius: 5px;
+}
+
+.sucsees {
+  background: #26de81;
+}
+
+[v-cloak] {
+  display: none;
 }

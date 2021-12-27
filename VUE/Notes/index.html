@@ -28,14 +28,29 @@
 
 <body>
   <!-- mount("#app") -->
-  <div id="app" class="container">
+  <div id="app" class="container" v-cloak>
     <!-- ШАПКА СТРИНИЦЫ -->
     <header>
       <h1>{{title}}</h1>
     </header>
     <!-- ОСНОВНОЙ КОНТЕНТ -->
     <main>
-
+      <div class="form-control">
+        <input type="text" 
+        
+        :placeholder='plaсeholderString'
+        :value='inputValue'
+        @input='inputChengeHandler'
+        @keypress.enter='addNewNotes'
+       >
+        <button class="btn sucsees" @click='addNewNotes'>Добавить заметку</button>
+      </div>
+      <hr/>
+      <ul class="cards">
+        <li class="card-item" v-for="(myNote, index) in notes">
+          {{myNote}}
+        </li>
+      </ul>
     </main>
     <!-- ПОДВАЛ СТРИНИЦЫ -->
     <footer>

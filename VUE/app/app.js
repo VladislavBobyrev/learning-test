@@ -4,6 +4,7 @@ const App = {
     return {
       placeholderString: 'введите название заметки',
       title: 'Список заметок',
+      html: `<h1>Vue 3</h1>`,
       inputValue: '',
       notes: [
         'заметка 1',

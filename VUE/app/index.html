@@ -9,14 +9,18 @@
 </head>
 
 <body>
-  <div class="container pt-5" id="app">
+  <div class="container pt-5 card center" id="app">
+    <div class="primary" v-html='html'></div>
+    <div class="primary" v-text='title'></div>
     <div class="card center">
       <h1 :style="{ 
         color: inputValue.length < 5 ? 'red' : 'blue',
         textTransform:  inputValue.length < 3 ? 'inherit' : 'uppercase'
       }">{{title}}</h1>
       <div class="form-control">
-        <input type="text" :value='inputValue' :placeholder="placeholderString" v-model='inputValue'
+        <input type="text" :value='inputValue' 
+        :placeholder="placeholderString" 
+        v-model='inputValue'
           @keypress.enter='addNewNotes'>
 
       </div>

@@ -1,0 +1,63 @@
+//обнуление браузеров
+@import "./utilits/resets";
+@import "./utilits/ibg";
+// шрифт
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+@import "./utilits/variables";
+@import "./header";
+@import "./main";
+@import "./footer";
+// стили
+
+html,
+body {
+	width: 100vw;
+	height: 100vh;
+	background:$main-black ;
+	color: $mainFontColor;
+	font-family: Montserrat;
+	overflow-x: hidden;
+}
+.page-wrapper {
+	max-width: 65rem;
+	height: 100vh;
+	margin: 0 auto;
+	grid-template-rows: 4rem 1fr 7rem;
+}
+.page-wrapper,
+.page-header,
+.content-main,
+.page-footer,
+.main__galery{
+	display: grid;
+}
+.page-footer{
+	display: flex;
+}
+header,
+main,
+footer {
+	padding: 1rem;
+}
+header,
+footer{
+	background: $border-base;
+}
+.nav-main,
+.nav-main-items,
+.nav-main-items ol,
+.section-main section,
+.card{
+	padding: 0.5rem;
+}
+.card,
+.section-main,
+.nav-main,.nav-main-itemsu ul{
+	border-radius: 0.3rem;
+}
+
+.main__map iframe{
+	height: 500px;
+	width: 500px;
+}

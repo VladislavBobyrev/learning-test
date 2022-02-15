@@ -1,0 +1,71 @@
+//=============================== котейнер
+.content-main {
+	// grid-template-columns: 1fr minmax(auto, 295px) minmax(30px, 50px) minmax(auto, 1015px) 1fr;
+	grid-template-columns: 20rem 1fr;
+	grid-gap: 1.5rem;
+	background: $neutral-secondary;
+	overflow: auto;
+	height: 100%;
+}
+
+// ================================= sidebar
+.nav-main {
+	background: $neutral-regular;
+	box-shadow: 0px 2px 3px #e9e9e9;
+}
+.nav-main-items {
+	background: $primary-color;
+}
+.nav-main-itemsu ul {
+	margin: 1rem;
+}
+.nav-main-itemsu ul {
+	background: $main-black;
+}
+.nav-main-items ol {
+	background: $border-base;
+	margin: 0 0 0.5rem;
+}
+.section-main {
+	background: $border-base;
+	box-shadow: 0px 2px 3px #e9e9e9;
+}
+.main__card {
+	margin: 0 0 1rem;
+}
+.card {
+	background: $neutral-regular;
+}
+
+//=====================================================
+//                 Galery
+//=====================================================
+// .page_images {
+// 	display: grid;
+// 	gap: 1rem;
+// 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+// }
+.main__galery {
+	background: $border-lighter;
+	grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+	grid-gap: 0.5rem;
+}
+.item__img {
+	width: 5rem;
+	height: auto;
+}
+
+
+.galery__img {
+	position: relative;
+	padding: 0 0 90% 0;
+	background: $border-base;
+}
+
+.galery__img img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}

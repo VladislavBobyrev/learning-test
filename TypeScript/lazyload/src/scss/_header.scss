@@ -1,0 +1,13 @@
+
+header,
+.nav-header-list {
+	display: flex;
+}
+
+.page-header {
+	grid-template-columns: 10rem 0.5fr;
+	justify-content: space-between;
+}
+.nav-header-list {
+	justify-content: space-between;
+}

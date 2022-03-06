@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  font-family: Inter, Roboto, Oxygen, Fira Sans, Helvetica Neue, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  color: #EBEBEB;
+  background: #4a556d;
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.primary {
+  color: #42b983;
+}
+
+.danger {
+  color: #e53935;
+}
+
+.btn {
+  color: #42b983;
+  position: relative;
+  place-content: center;
+  place-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 99px;
+  letter-spacing: 0.05em;
+  border: 1px solid #42b983;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-right: 10px;
+  padding: 0.5rem 1.5rem;
+  white-space: nowrap;
+  font-weight: 700;
+  outline: none;
+  background: #fff;
+  -webkit-transition: all 0.22s;
+  transition: all 0.22s;
+}
+
+.btn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.btn:active {
+  -webkit-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.btn.primary {
+  background: #42b983;
+  color: #fff;
+}
+
+.btn.danger {
+  background: #e53935;
+  color: #fff;
+  border-color: #e53935;
+}
+
+.btn.warning {
+  background: #c25205;
+  color: #fff;
+  border-color: #c25205;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+}

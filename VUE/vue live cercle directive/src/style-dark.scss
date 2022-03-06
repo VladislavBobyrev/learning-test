@@ -1,0 +1,202 @@
+//=====================================================
+//                             ОСНОВНЫЕ  ПЕРЕМЕННЫЕ
+//=====================================================
+
+// Size
+$fontSize:                     14px;
+$fontWeight:                   500;
+$lineHeight:                   21px;
+
+$desktop-big-width:            2460px;
+$desktop-width:                1920px;
+$desktop-sm-width:             1024px;
+$table-width:                  768px;
+$table-sm-width:               640px;
+$phone-Width:                  480px;
+$phone-sm-width:               320px;
+
+// COLOR
+$accent:                       #37B3EC;
+
+$basic:                        #606060;
+$basic-75:                     #585858BF;
+$primary:                      #383838;
+$primary-75:                   #393939BF;
+
+$secondary:                    #EBEBEB;
+$secondary-50:                 #4a556d80;
+
+$neutral:                      #c4c4c4;
+
+$select-primary:               #FFFFFF;   
+
+// PLACEHOLDER
+$placeholder:                  rgba(244, 244, 244, 0.75);
+
+// SHADOW
+$box-shadow:                   0px 4px 15px rgba(0, 0, 0, 0.1);
+$linear-gradient:              #606060;
+$linear-gradient-text:         #FFFFFF;
+// Border Colo
+//  //===================================================== 
+//  //                 ПЕРЕМЕННЫЕ                                    
+//  //===================================================== 
+// // FONT
+// // $mainFont              : 'Montserrat';
+
+// // Size
+// $fontSize                 : 14px;
+// $fontWeight               : 500;
+// $lineHeight               : 21px;
+
+// $desktop-width            : 1920px;
+// $desktop-sm-width         : 1024px;
+// $table-width              : 768px;
+// $table-sm-width           : 640px;
+// $phone-Width              : 480px;
+// $phone-sm-width           : 320px;
+
+// // COLOR
+// $main-color               : #1B99D5;
+// $main-state               : #303133;
+
+// $color-basic              : #ffffff;
+// $color-primary            : #F6F6F6;
+// $color-primary-75         : rgba(244, 244, 244, 0.75);
+
+// $color-secondary          : #4A556D;
+// $color-secondary-50       : #4a556d80;
+
+// $neutral                  : #C4C4C4;
+// $success                  : #88c459;
+// $error                    : #f5414f;
+// $warning                  : #ffd137;
+
+// // TEXT
+// $text-primary             : #F6F6F6;
+// $text-secondary           : #4A556D;
+
+// // BUTTON
+// $btn-primary-color        : #C4C4C4;
+// $btn-primary-bg           : #C4C4C4;
+// $btn-primary-hover        : #C4C4C4;
+
+// $btn-secondary-bg         : #4a556d80;
+// $btn-secondary-color      : #4A556D;
+// $btn-secondary-hover      : #4A556D;
+
+// //ICON
+// $icon-primary-color       : #C4C4C4;
+// $icon-primary-bg          : #C4C4C4;
+// $icon-primary-hover       : #C4C4C4;
+
+// $icon-secondary-bg        : #4a556d80;
+// $icon-secondary-color     : #4A556D;
+// $icon-secondary-hover     : #4A556D;
+
+// // BORDER
+// $border                   : #4A556D;
+// $border-primary           : #1B99D5;
+// $border-focus             : #4A556D;
+
+// // PLACEHOLDER
+// $placeholder              : rgba(244, 244, 244, 0.75);
+
+// // SHADOW
+// $box-shadow               : 0px 4px 15px rgba(0, 0, 0, 0.1);
+
+// // HOVER
+// $hover                    : #C6E5F4;
+// $basic-Hover              : #ffffff;
+
+// //ACTIVE
+// $active                   : #1B99D5;
+
+// //FOCUS
+// $focus                    : #4A556D;
+
+
+
+ //===================================================== 
+ //                 MAIN                                    
+ //===================================================== 
+ @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+
+ * {
+     box-sizing: border-box;
+ }
+ html, body {
+     margin: 0;
+     padding: 0;
+     width: 100vw;
+     height: 100vh;
+ }
+ body {
+     font-family: Inter, Roboto, Oxygen, Fira Sans, Helvetica Neue, sans-serif;
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+     font-size: 16px;
+     color: $secondary;
+     background: $primary-75;
+     padding: 2rem;
+     overflow: hidden;
+ }
+ .primary {
+     color: #42b983;
+ }
+ 
+ .danger {
+     color: #e53935;
+ }
+ 
+ .btn {
+     color: #42b983;
+     position: relative;
+     place-content: center;
+     place-items: center;
+     width: fit-content;
+     border-radius: 99px;
+     letter-spacing: 0.05em;
+     border: 1px solid #42b983;
+     text-decoration: none;
+     text-transform: uppercase;
+     margin-right: 10px;
+     padding: 0.5rem 1.5rem;
+     white-space: nowrap;
+     font-weight: 700;
+     outline: none;
+     background: #fff;
+     transition: all 0.22s;
+ }
+ 
+ .btn:hover {
+     cursor: pointer;
+     opacity: 0.8;
+ }
+ 
+ .btn:active {
+     box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.3);
+ }
+ 
+ .btn.primary {
+     background: #42b983;
+     color: #fff;
+ }
+ 
+ .btn.danger {
+     background: #e53935;
+     color: #fff;
+     border-color: #e53935;
+ }
+ 
+ .btn.warning {
+     background: #c25205;
+     color: #fff;
+     border-color: #c25205;
+ }
+ 
+ .container {
+     margin: 0 auto;
+     max-width: 1000px;
+ }
+ 

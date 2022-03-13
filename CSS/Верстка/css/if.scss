@@ -1,0 +1,25 @@
+@mixin message($type){
+  border-radius: 5px; 
+  width: 100%;
+  height: 50px;
+
+  @if $type == sucsess {
+    background: lightgreen;
+    color: green;
+  } @else if  $type == warn {
+    background: lightblue;
+    color: blue;
+  } @else {
+    @warn No such type as $type
+  }
+}
+
+.message-sucsess{
+  @include message(sucsess)
+}
+.message-warn{
+  @include message(warn)
+}
+.message-undefined{
+  @include message(undefind)
+}

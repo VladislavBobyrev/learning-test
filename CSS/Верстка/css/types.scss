@@ -1,0 +1,8 @@
+$types: ('sucsess': #0f0, 'warn': #00f, "err": #0ff);
+
+@each $type, $color in $types {
+    .btn-#{$type}{
+      background: $color;
+      border: 2px solod $color;
+    }
+}

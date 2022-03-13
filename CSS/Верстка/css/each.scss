@@ -1,0 +1,10 @@
+$sizese: 10, 20, 30, 40;
+
+@each $size in $sizese {
+  .ml-#{$size}-px{
+    margin-left: -#{$size}px;
+  }
+  .ml-#{$size}{
+    margin-left: -#{$size + '%'} ;
+  }
+}

@@ -1,0 +1,6 @@
+
+@for $i from 1 through 3  {
+ li:nth-child(2n + #{$i}){
+   background: lighten(#00f, $i * 10%);
+ }
+}

@@ -1,0 +1,3 @@
+@function rem($px, $root: 16px) {
+  @return ($px / $root) * 1rem;
+}

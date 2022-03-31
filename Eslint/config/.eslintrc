@@ -1,3 +1,5 @@
+// чтобы плагин заработал нужно установить eslint  в зависимости и добавить .eslintrc
+// npx install-peerdeps -dev eslint-config-airbnb-base
 {
   "env": {
     "browser": true
@@ -60,3 +62,6 @@
     "guard-for-in": "off"
   }
 }
+
+// команда разрешает открывать консоль для git --ammend 
+// git config —global core.editor "'C:\Users\Developer 1\AppData\Local\Programs\Microsoft VS Code\Code.exe' -w" 16

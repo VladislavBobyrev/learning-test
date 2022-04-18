@@ -1,5 +1,5 @@
 // чтобы плагин заработал нужно установить eslint  в зависимости и добавить .eslintrc
-// npx install-peerdeps -dev eslint-config-airbnb-base
+// npm i-D eslint-config-airbnb-base
 {
   "env": {
     "browser": true

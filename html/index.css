@@ -1,0 +1,6 @@
+body {
+  /* css nesting */
+  & img {
+    border-radius: 30px;
+  }
+}
